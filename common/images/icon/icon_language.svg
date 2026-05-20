@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="icon_language" transform="translate(-252 -27)">
+        <path id="영역" fill="none" d="M0 0H50V50H0z" opacity="0.1" transform="translate(252 27)"/>
+        <g id="그룹_238" transform="translate(75.393 -386.697)">
+            <path id="패스_235" d="M195.48 438.4h-8.873a14.7 14.7 0 0 0 14.7 14.7c-3.219-.006-5.827-6.586-5.827-14.7z" class="cls-2"/>
+            <path id="패스_236" d="M201.3 423.7a14.7 14.7 0 0 0-14.7 14.7h8.873c.007-8.122 2.615-14.7 5.827-14.7z" class="cls-2"/>
+            <path id="패스_237" d="M201.3 453.094A14.7 14.7 0 0 0 216 438.4h-8.875c.004 8.114-2.604 14.694-5.825 14.694z" class="cls-2"/>
+            <path id="패스_238" d="M201.3 423.7c3.216 0 5.824 6.581 5.824 14.7H216a14.7 14.7 0 0 0-14.7-14.7z" class="cls-2"/>
+            <path id="패스_239" d="M195.48 438.4h11.649c0-8.118-2.608-14.7-5.824-14.7s-5.825 6.578-5.825 14.7z" class="cls-2"/>
+            <path id="패스_240" d="M207.129 438.4H195.48c0 8.118 2.608 14.7 5.825 14.7s5.824-6.586 5.824-14.7z" class="cls-2"/>
+        </g>
+    </g>
+</svg>

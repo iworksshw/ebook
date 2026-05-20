@@ -1,0 +1,26 @@
+
+<!-- 팝업 -->
+<div id="sample01" class="modPopup modal on"> <!-- class - on : 팝업오픈 -->
+	<div class="popupDim">딤영역</div>
+	<div class="popupArea" style="width:1000px;"> <!-- style - 너비값(width), 높이값(height) : 팝업 너비 및 높이 지정 -->
+		<div class="popupInMotion">
+            <button class="btnPopClose" onclick="closePopup('sample01');">닫기</button>
+			<div class="popupContGroup">
+
+                <!-- 팝업 내용 영역 -->
+
+                <!-- //팝업 내용 영역 -->
+                
+			</div>
+
+		</div>
+	</div>
+</div>
+<script>
+function openPopup($popName){
+	$("#"+$popName).addClass("on");
+}
+function closePopup($popName){
+	$("#"+$popName).removeClass("on");
+}
+</script>

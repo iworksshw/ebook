@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+    <rect data-name="사각형 182" width="60" height="60" rx="30" style="fill:#f5f5f5"/>
+    <path data-name="패스 211" d="M44.43 36.942h-5.564v-1.6h3.964v-9.578h-1.36v-1.6h2.96z"/>
+    <path data-name="패스 212" d="M21.563 36.942H16V24.158h23.689v1.6H17.603v9.578h3.96z"/>
+    <path data-name="패스 213" d="M39.668 24.96h-1.6v-5.356h-15.7v5.356h-1.6V18h18.906z"/>
+    <path data-name="패스 214" d="M39.668 42.127H20.762v-9.268h1.6v7.665h15.7v-6.863h-14.7v-1.6h16.306z"/>
+    <path data-name="사각형 60" d="M25.365 35.616h9.7v.962h-9.7z"/>
+    <path data-name="사각형 61" d="M25.365 37.607h9.7v.962h-9.7z"/>
+    <path data-name="사각형 62" d="M36.715 27.327h1.586v1.283h-1.586z"/>
+    <path data-name="사각형 63" d="M39.432 27.327h1.586v1.283h-1.586z"/>
+</svg>

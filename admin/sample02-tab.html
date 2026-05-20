@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<link type="text/css" rel="stylesheet" href="https://mng.k-sec.or.kr/mng/common/css/adminBase.css" />
+	<link rel="stylesheet" href="https://mng.k-sec.or.kr/mng/common/css/ui-lightness/jquery-ui.css"/>
+
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/jquery.js"></script>
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/jquery.easing.js"></script>
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/jquery.placeholder.min.js"></script>
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/blurPopup.js"></script>
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/selectivizr.js"></script>
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/common.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/iworks-interactive/cdn/error/stacks.min.js"></script>
+    	
+	<title>스포츠윤리센터 관리자</title>
+</head>
+
+<body id="USER_AUTH_INFO" name="CRDCRD">
+	<div id="wrap">
+
+
+        <!-- 20210902 추가 -->
+        <style>
+            .btnGroupWrap .btn_lang {display: block; float: left; box-sizing: border-box; width: calc(7.7% - 6px); height: 40px; line-height: 40px; margin-right:0; margin-left: 6px; text-align: center; border: 1px solid #ddd; background-color: white; cursor: pointer;}
+            .btnGroupWrap .btn_lang:first-child {margin-left:0;}
+            .btnGroupWrap .btn_lang.on {font-weight:bold; color:#fff; background:#428BCA;}
+        </style>
+        <div class="btnGroupWrap system_btn" id="">
+            <a class="btn_lang on" href="#">한국어</a>
+            <a class="btn_lang" href="#">우즈베크어</a>
+            <a class="btn_lang" href="#">영어</a>
+            <a class="btn_lang" href="#">라오스어</a>
+            <a class="btn_lang" href="#">중국어</a>
+            <a class="btn_lang" href="#">러시아어</a>
+            <a class="btn_lang" href="#">베트남어</a>
+            <a class="btn_lang" href="#">타이어</a>
+            <a class="btn_lang" href="#">일본어</a>
+            <a class="btn_lang" href="#">몽골어</a>
+            <a class="btn_lang" href="#">타갈로그어</a>
+            <a class="btn_lang" href="#">네팔어</a>
+            <a class="btn_lang" href="#">크메르어</a>
+        </div>
+        <!-- //20210902 추가 -->
+
+        <!-- 20210915 추가 -->
+        <ul class="tabMenu col-2">
+            <li class="tabMenuList"><a class="on" href="">메뉴명1</a></li>
+            <li class="tabMenuList"><a href="">보통 메뉴명2</a></li>
+        </ul>
+        <ul class="tabMenu col-3">
+            <li class="tabMenuList"><a class="on" href="">메뉴명1</a></li>
+            <li class="tabMenuList"><a href="">보통 메뉴명2</a></li>
+            <li class="tabMenuList"><a href="">긴 메뉴메뉴메뉴명3</a></li>
+        </ul>
+        <ul class="tabMenu col-4">
+            <li class="tabMenuList"><a class="on" href="">메뉴명1</a></li>
+            <li class="tabMenuList"><a href="">보통 메뉴명2</a></li>
+            <li class="tabMenuList"><a href="">긴 메뉴메뉴메뉴명3</a></li>
+            <li class="tabMenuList"><a class="" href="">메뉴명4</a></li>
+        </ul>
+        <ul class="tabMenu col-5">
+            <li class="tabMenuList"><a class="on" href="">메뉴명1</a></li>
+            <li class="tabMenuList"><a href="">보통 메뉴명2</a></li>
+            <li class="tabMenuList"><a href="">긴 메뉴메뉴메뉴명3</a></li>
+            <li class="tabMenuList"><a class="" href="">메뉴명4</a></li>
+            <li class="tabMenuList"><a href="">보통 메뉴명5</a></li>
+        </ul>
+        <ul class="tabMenu col-6">
+            <li class="tabMenuList"><a class="on" href="">메뉴명1</a></li>
+            <li class="tabMenuList"><a href="">보통 메뉴명2</a></li>
+            <li class="tabMenuList"><a href="">긴 메뉴메뉴메뉴명3</a></li>
+            <li class="tabMenuList"><a class="" href="">메뉴명4</a></li>
+            <li class="tabMenuList"><a href="">보통 메뉴명5</a></li>
+            <li class="tabMenuList"><a href="">긴 메뉴메뉴메뉴명6</a></li>
+        </ul>
+
+        <style>
+        /* 탭메뉴 */
+        .tabGroup {}
+        .tabGroup .tabNav {font-size:0;}
+        .tabGroup .tabNav .tabNavList {height:40px; font-size:0; box-sizing:border-box; border: 1px solid #ddd; display:inline-block;}
+        .tabGroup .tabNav .tabNavList:nth-child(n+2) {border-left:0;}
+        .tabGroup .tabNav .tabNavList.on {}
+        .tabGroup .tabNav .tabNavList a {width:100%; height:100%; padding:10px 20px 0; font-size:12px; font-weight: bold; color: #555; box-sizing:border-box; background: #fff; display:inline-block;}
+        .tabGroup .tabNav .tabNavList.on a {color: #fff; background: #5d6d7f;}
+        .tabGroup .tabCont {width:100%; margin-top:-1px; border: 1px solid #ddd; padding:20px; box-sizing:border-box;}
+        .tabGroup .tabCont .tabContList {display:none;}
+        .tabGroup .tabCont .tabContList.on {display:block;}
+        </style>
+        <div class="tabGroup">
+            <ul class="tabNav">
+                <li class="tabNavList on"><a href="">메뉴명1</a></li>
+                <li class="tabNavList"><a href="">보통 메뉴명2</a></li>
+                <li class="tabNavList"><a href="">긴 메뉴메뉴메뉴명3</a></li>
+            </ul>
+            <div class="tabCont">
+                <div class="tabContList on">내용1</div>
+                <div class="tabContList">내용2</div>
+                <div class="tabContList">내용3</div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(".tabGroup .tabNav .tabNavList a").on("click", function(e){
+                    e.preventDefault();
+                    let _idx = $(this).parent().index();
+                    $(".tabGroup .tabNav .tabNavList").eq(_idx).addClass("on").siblings().removeClass("on");
+                    $(".tabGroup .tabCont .tabContList").eq(_idx).addClass("on").siblings().removeClass("on");
+                });
+            });
+        </script>
+        <!-- //20210915 추가 -->
+
+    </div>
+
+
+
+
+
+
+    </div>
+</body>
+</html>

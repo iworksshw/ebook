@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75">
+    <defs>
+        <style>
+            .cls-1{fill:#19fe83}
+        </style>
+    </defs>
+    <g id="btn_close" transform="translate(-1611 -342)">
+        <g id="그룹_309" data-name="그룹 309" transform="translate(-2 -11)">
+            <path id="사각형_193" data-name="사각형 193" class="cls-1" transform="rotate(45 370.856 2151.755)" d="M0 0h60.608v3.03H0z"/>
+            <path id="사각형_194" data-name="사각형 194" class="cls-1" transform="rotate(135 759.84 531.561)" d="M0 0h60.608v3.031H0z"/>
+        </g>
+    </g>
+</svg>

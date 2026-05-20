@@ -1,0 +1,12 @@
+<svg id="icon_home" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#fff;stroke-width:2px}
+        </style>
+    </defs>
+    <path id="영역" style="opacity:.1;fill:none" d="M0 0h48v48H0z"/>
+    <g id="icon_home-2" data-name="icon_home" transform="translate(14 16.3)">
+        <path id="패스_59" data-name="패스 59" class="cls-2" d="M1173.135 494.01v8.954h-5.184V495.9h-4.251v7.069h-5.183v-8.959" transform="translate(-1156.159 -486.701)"/>
+        <path id="패스_60" data-name="패스 60" class="cls-2" d="m1152.632 485.423 9.666-9.666 9.8 9.8" transform="translate(-1152.632 -475.757)"/>
+    </g>
+</svg>
