@@ -1,0 +1,126 @@
+<!--#include virtual="/contents-ko/common/header.html" -->
+
+<!--#include virtual="/contents-ko/common/gnb.html" -->
+
+<div class="container" id="container">
+
+    <!--#include virtual="/contents-ko/common/sub-top.html" -->
+
+    <div class="subContents">
+
+
+
+        <!-- 컨텐츠 영역 -->
+        <div class="lytSubCont">
+            
+            <div class="comTableBasic sizeS">
+                <table class="tableType">
+                    <caption> 주한 외국 대사관 : 국가 및 연락처를 포함한 표입니다.</caption>
+                    <colgroup>
+                        <col style="width: 35%;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>국가</th>
+                            <th>연락처</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>미국</td>
+                            <td>02-397-4114</td>
+                        </tr>
+                        <tr>
+                            <td>러시아</td>
+                            <td>02-318-2116</td>
+                        </tr>
+                        <tr>
+                            <td>중국</td>
+                            <td>02-738-1038</td>
+                        </tr>
+                        <tr>
+                            <td>일본</td>
+                            <td>02-2170-5200</td>
+                        </tr>
+                        <tr>
+                            <td>베트남</td>
+                            <td>02-738-2318</td>
+                        </tr>
+                        <tr>
+                            <td>태국</td>
+                            <td>02-795-3098</td>
+                        </tr>
+                        <tr>
+                            <td>필리핀</td>
+                            <td>02-796-7387</td>
+                        </tr>
+                        <tr>
+                            <td>우즈베키스탄</td>
+                            <td>02-574-6554</td>
+                        </tr>
+                        <tr>
+                            <td>캄보디아</td>
+                            <td>02-3785-1041</td>
+                        </tr>
+                        <tr>
+                            <td>라오스</td>
+                            <td>02-796-1713</td>
+                        </tr>
+                        <tr>
+                            <td>몽골</td>
+                            <td>02-798-3464</td>
+                        </tr>
+                        <tr>
+                            <td>네팔</td>
+                            <td>02-3789-9770</td>
+                        </tr>
+                        <tr>
+                            <td>우크라이나</td>
+                            <td>02-790-5696</td>
+                        </tr>
+                        <tr>
+                            <td>미얀마</td>
+                            <td>02-790-3814</td>
+                        </tr>
+                        <tr>
+                            <td>키르기즈스탄</td>
+                            <td>02-379-0951</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <!-- //컨텐츠 영역 -->
+
+        <!-- 실제는 적용하지 않는 테스트 스크립트 -->
+        <script>
+            $(document).ready(function(){
+                //스마트 메뉴바 제거
+                $(".cptSmartRemote").removeClass("add");
+
+                //로케이션 + 2뎁스 타이틀
+                let depth1 = 10;
+                let depth2 = 9;
+                let depth1Name = $(".cptGnb .depth1Menu").eq(depth1-1).find(".depth1Name a").html();
+                let depth2Name = $(".cptGnb .depth1Menu").eq(depth1-1).find(".depth2Area .depth2Menu").eq(depth2-1).find(".depth2Name a").html();
+                $(".comLocation .item").eq(1).html(depth1Name);
+                $(".comLocation .item").eq(2).html(depth2Name);
+                $(".cptSubTop h3").html(depth2Name);
+
+            });
+        </script>
+        <!-- //실제는 적용하지 않는 테스트 스크립트 -->
+
+
+
+        <!-- 공공누리, 이전글/다음글 -->
+        <!--#include virtual="/contents-ko/common/sub-btm.html" -->
+
+    </div>
+
+</div>
+<!--#include virtual="/contents-ko/common/footer.html" -->
+
+<!--#include virtual="/contents-ko/common/bottom.html" -->

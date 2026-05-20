@@ -1,0 +1,107 @@
+<!--#include virtual="/contents-ko/common/header.html" -->
+
+<!--#include virtual="/contents-ko/common/gnb.html" -->
+
+<div class="container" id="container">
+
+    <!--#include virtual="/contents-ko/common/sub-top.html" -->
+
+    <div class="subContents">
+
+
+
+        <!-- 컨텐츠 영역 -->
+        <div class="lytSubCont">
+            
+            <!-- 3뎁스 -->
+            <div class="comH4">
+                <h3><span class="num">01</span><span class="titleText">日常服饰</span></h3>
+            </div>
+            <div class="comH4Text">
+                <p>
+                    韩国人平时穿西式服装。随着四季变化，春秋穿长袖，炎热的夏天穿短袖。寒冷的冬天外穿大衣
+                    或者夹克。去公司上班或参加重要的家庭聚会时一般会穿正装。
+                </p>
+            </div> 
+            <!-- //3뎁스 -->
+
+            <!-- 3뎁스 -->
+            <div class="comH4">
+                <h3><span class="num">02</span><span class="titleText">传统服装“韩服”</span></h3>
+            </div>
+            <div class="comH4Text">
+                <p>
+                    韩国传统服装叫“韩服”。韩服由直线与曲线完美融合展现出优美典雅的风格。韩服有礼服和常
+                    服，按性别、年龄、季节分为很多种类。基本上男士韩服由裤子和上衣、女士韩服由裙子和上衣
+                    构成。另外还有马甲、马褂、长袍。
+                </p>
+            </div> 
+            
+            <div class="comH5">
+                <h3><span class="num">(1)</span><span class="titleText">男士韩服的穿着方法</span></h3>
+            </div>
+            <div class="comH5Text">
+                <p>
+                    先穿裤子再穿上衣。穿裤子时腰带要从右边往左边系好。裤脚
+                    要用裤脚带绑好。穿上衣以后要用衣带系好，然后再穿上马甲
+                    和马褂。行大礼或外出时要套上长袍。
+                </p>
+            </div> 
+
+            <ul class="comImgGroup">
+                <li class="imgItem col12">
+                    <div class="imgBox"><img src="/common/images/sub/img_04_02_01.png" alt="남자 한복" /></div>
+                </li>
+            </ul>
+
+            <div class="comH5">
+                <h3><span class="num">(2)</span><span class="titleText">女士韩服的穿着方法</span></h3>
+            </div>
+            <div class="comH5Text">
+                <p>
+                    按顺序穿上衬裤、布袜、衬裙，然后穿上裙子。裙子的裙摆应该
+                    往左侧整理。穿上衬衣和上衣以后要将其往前拉，使其不往后
+                    倾斜。将衣带打结，并使两边带子的长度相同。
+                </p>
+            </div> 
+
+            <ul class="comImgGroup">
+                <li class="imgItem col12">
+                    <div class="imgBox"><img src="/common/images/sub/img_04_02_02.png" alt="여자 한복" /></div>
+                </li>
+            </ul>
+
+            <!-- //3뎁스 -->
+        </div>
+        <!-- //컨텐츠 영역 -->
+
+        <!-- 실제는 적용하지 않는 테스트 스크립트 -->
+        <script>
+            $(document).ready(function(){
+                //스마트 메뉴바 제거
+                //$(".cptSmartRemote").removeClass("add");
+
+                //로케이션 + 2뎁스 타이틀
+                let depth1 = 4;
+                let depth2 = 2;
+                let depth1Name = $(".cptGnb .depth1Menu").eq(depth1-1).find(".depth1Name a").html();
+                let depth2Name = $(".cptGnb .depth1Menu").eq(depth1-1).find(".depth2Area .depth2Menu").eq(depth2-1).find(".depth2Name a").html();
+                $(".comLocation .item").eq(1).html(depth1Name);
+                $(".comLocation .item").eq(2).html(depth2Name);
+                $(".cptSubTop h3").html(depth2Name);
+
+            });
+        </script>
+        <!-- //실제는 적용하지 않는 테스트 스크립트 -->
+
+
+
+        <!-- 공공누리, 이전글/다음글 -->
+        <!--#include virtual="/contents-ko/common/sub-btm.html" -->
+
+    </div>
+
+</div>
+<!--#include virtual="/contents-ko/common/footer.html" -->
+
+<!--#include virtual="/contents-ko/common/bottom.html" -->

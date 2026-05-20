@@ -1,0 +1,137 @@
+<!--#include virtual="/JPN/common/header.html" -->
+
+<!--#include virtual="/JPN/common/gnb.html" -->
+
+<div class="container" id="container">
+
+    <!--#include virtual="/JPN/common/sub-top.html" -->
+
+    <div class="subContents">
+
+
+
+        <!-- 컨텐츠 영역 -->
+        <div class="lytSubCont">
+            
+            <div class="comH3Text">
+                <p>韓国人配偶者は、結婚移民者の両親や親族を韓国に招待することができ、韓国への入国を希望する結婚移民者の両親や親族は、自らが居住する国の韓国大使館や領事館にビザを申請しなければならない。結婚移民者の両親や親族が申請するビザの種類によって招待可能な親族の範囲や提出が必要な書類が異なり、駐在国の事情によって追加の書類が必要な場合がある。ビザを申請するときに必要な書類やビザの発行が可能な親族の範囲などについては、各国の韓国大使館や領事館に問い合わせることが推奨される。</p>
+            </div>
+
+            <!-- 3뎁스 -->
+            <div class="comH4">
+                <h3><span class="num">01</span><span class="titleText"> 主な在外公館の連絡先</span></h3>
+            </div>
+            
+            <div class="comTableBasic">
+                <table class="tableType">
+                    <caption>주요 해외공관 연락처 : 주요 해외공관 및 연락처를 포함한 표입니다.</caption>
+                    <colgroup>
+                        <col style="width:30%;">
+                        <col style="width:auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>在外公館</th>
+                            <th>連絡先</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>在アメリカ合衆国大韓民国大使館</td>
+                            <td>+1-202-939-5600~3</td>
+                        </tr>
+                        <tr>
+                            <td>在中華人民共和国大韓民国大使館</td>
+                            <td>+86-10-8531-0700</td>
+                        </tr>
+                        <tr>
+                            <td>在日本国大韓民国大使館</td>
+                            <td>+81-3-3452-7611/9</td>
+                        </tr>
+                        <tr>
+                            <td>在タイ大韓民国大使館館</td>
+                            <td>+66-2-481-6000</td>
+                        </tr>
+                        <tr>
+                            <td>在ベトナム大韓民国大使館</td>
+                            <td>+84-24-3771-0404</td>
+                        </tr>
+                        <tr>
+                            <td>在モンゴル大韓民国大使館</td>
+                            <td>+976-7007-1020</td>
+                        </tr>
+                        <tr>
+                            <td>在フイリピン大韓民国大使館</td>
+                            <td>+63-2-8856-9210</td>
+                        </tr>
+                        <tr>
+                            <td>在カンボジア大韓民国大使館</td>
+                            <td>+855-23-211-900/3</td>
+                        </tr>
+                        <tr>
+                            <td>在ロシア大韓民国大使館</td>
+                            <td>+7-495-783-2727</td>
+                        </tr>
+                        <tr>
+                            <td>在ラオス大韓民国大使館</td>
+                            <td>+856-21-352-031~3</td>
+                        </tr>
+                        <tr>
+                            <td>在ウズベキスタン大韓民国大使館</td>
+                            <td>+998-71-252-3151~3</td>
+                        </tr>
+                        <tr>
+                            <td>在ネパール大韓民国大使館</td>
+                            <td>+977-1-537-0172</td>
+                        </tr>
+                        <tr>
+                            <td>在ウクライナ大韓民国大使館</td>
+                            <td>+380-44-279-6424</td>
+                        </tr>
+                        <tr>
+                            <td>在ミャンマー大韓民国大使館</td>
+                            <td>+95-1-7527-143~4</td>
+                        </tr>
+                        <tr>
+                            <td>在キルギス共和国大韓民国大使館</td>
+                            <td>+996-312-57-0-55</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //3뎁스 -->
+
+            
+        </div>
+        <!-- //컨텐츠 영역 -->
+
+        <!-- 실제는 적용하지 않는 테스트 스크립트 -->
+        <script>
+            $(document).ready(function(){
+                //스마트 메뉴바 제거
+                $(".cptSmartRemote").removeClass("add");
+
+                //로케이션 + 2뎁스 타이틀
+                let depth1 = 3;
+                let depth2 = 4;
+                let depth1Name = $(".cptGnb .depth1Menu").eq(depth1-1).find(".depth1Name a").html();
+                let depth2Name = $(".cptGnb .depth1Menu").eq(depth1-1).find(".depth2Area .depth2Menu").eq(depth2-1).find(".depth2Name a").html();
+                $(".comLocation .item").eq(1).html(depth1Name);
+                $(".comLocation .item").eq(2).html(depth2Name);
+                $(".cptSubTop h3").html(depth2Name);
+
+            });
+        </script>
+        <!-- //실제는 적용하지 않는 테스트 스크립트 -->
+
+
+
+        <!-- 공공누리, 이전글/다음글 -->
+        <!--#include virtual="/JPN/common/sub-btm.html" -->
+
+    </div>
+
+</div>
+<!--#include virtual="/JPN/common/footer.html" -->
+
+<!--#include virtual="/JPN/common/bottom.html" -->

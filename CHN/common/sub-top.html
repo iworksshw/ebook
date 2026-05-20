@@ -1,0 +1,83 @@
+<div class="lytSubTop">
+    <div class="subtopArea">
+        <!-- 20210908 추가 -->
+        <div class="comSubtop">
+            <div class="subBack">
+                <a href="#" class="backBtn">이전 페이지로</a>
+            </div>
+            <div class="subTit">
+                <h2 class="tit">날씨</h2>
+            </div>
+        </div>
+        <!-- //20210908 추가 -->        
+
+        <div class="comLocation">
+            <ul>
+                <li class="item home">홈</li>
+                <li class="item">대한민국 소개</li>
+                <li class="item">날씨</li>
+            </ul>
+        </div>
+
+        <div class="cptSubTop">
+            <div class="subTitle"><h3>날씨</h3></div>
+            <div class="subTopList">
+                <ul class="subTopGroup">
+                    <li class="item ply">
+                        <div class="player">
+                            <audio controls="controls">
+                                <source src="/upload/audio/202109081610185590.mp3" type="audio/mpeg">
+                            </audio>
+                            <!-- 20210908 오디오태그로 대체되어 삭제
+                            <button type="button" class="btnPlay">재생</button>
+                            <ul class="timeTxt">
+                                <li class="unit now">00:01</li>
+                                <li class="unit total">/ 01:00</li>
+                            </ul>
+                            <div class="timeTable">
+                                <div class="timeBar">
+                                    <div class="barNow" style="width:30%;">현재재생 위치</div>
+                                    <button type="button" class="playing" style="left:30%">재생컨트롤</button>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </li>
+                    <li class="item">
+                        <button type="button" class="subBtn download">다운로드</button>
+                    </li>
+                    <li class="item">
+                        <button type="button" class="subBtn share" onclick="openPopup('sharePop')">공유</button>
+                    </li>
+                    <li class="item prt">
+                        <button type="button" class="subBtn print">프린트</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+    $(document).ready(function(){
+       var scrT = $(document).scrollTop();
+       
+        $(window).scroll(function(){
+            var scrT = $(document).scrollTop();
+            if(scrT >= 59) {
+                $(".lytSubTop").addClass("sticky");
+            } else {
+                $(".lytSubTop").removeClass("sticky");
+            }
+        });
+
+        setTimeout(function(){
+            if(scrT >= 59) {
+                $(".lytSubTop").addClass("sticky");
+            } else {
+                $(".lytSubTop").removeClass("sticky");
+            }
+        },100);
+    })
+</script>

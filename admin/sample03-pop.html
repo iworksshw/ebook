@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<link type="text/css" rel="stylesheet" href="https://mng.k-sec.or.kr/mng/common/css/adminBase.css" />
+	<link rel="stylesheet" href="https://mng.k-sec.or.kr/mng/common/css/ui-lightness/jquery-ui.css"/>
+
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/jquery.js"></script>
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/jquery.easing.js"></script>
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/jquery.placeholder.min.js"></script>
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/blurPopup.js"></script>
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/selectivizr.js"></script>
+	<script type="text/javascript" src="https://mng.k-sec.or.kr/mng/common/js/common.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/iworks-interactive/cdn/error/stacks.min.js"></script>
+    	
+	<title>스포츠윤리센터 관리자</title>
+</head>
+
+<body id="USER_AUTH_INFO" name="CRDCRD">
+	<div id="wrap">
+
+
+        <!-- 20210902 추가 -->
+        <style>
+            .btnGroupWrap .btn_lang {display: block; float: left; box-sizing: border-box; width: calc(7.7% - 6px); height: 40px; line-height: 40px; margin-right:0; margin-left: 6px; text-align: center; border: 1px solid #ddd; background-color: white; cursor: pointer;}
+            .btnGroupWrap .btn_lang:first-child {margin-left:0;}
+            .btnGroupWrap .btn_lang.on {font-weight:bold; color:#fff; background:#428BCA;}
+        </style>
+        <div class="btnGroupWrap system_btn" id="">
+            <a class="btn_lang on" href="#" onclick="openPop('sample01')">팝업</a>
+        </div>
+        <!-- //20210902 추가 -->
+
+        
+        <!-- 20210915 추가 -->
+        <style>
+/* 팝업 */
+.popGroup {width:100vw; height:100vh; display:none; position:fixed; left:0; top:0; z-index:6000; box-sizing:border-box;}
+.popGroup.on {display:block;}
+.popGroup .dim {width:100vw; height:100vh; background:rgba(0,0,0,0.5); position:fixed; left:0; top:0; z-index:1;}
+.popGroup .popArea {width: 762px; height: 660px; max-height: calc(100% - 100px); border-radius:15px; background:#fff; overflow:hidden; position: absolute; right: 50%; bottom: 50%; transform: translate(50.6%,50.6%); z-index:2; box-sizing:border-box;}
+.popGroup .popTitGroup {  width: 100%;  height: 60px;  border-bottom: solid 1px #e6e6e6;  background:#0098ff;  position: relative; box-sizing:border-box;}
+.popGroup .popTitGroup .popTitle { width: 100%; padding: 22px 20px 0; font-size: 17px; font-weight: bold; letter-spacing: -0.6px; text-align: center; color: #fff; box-sizing:border-box;}
+.popGroup .popTitGroup .popClose { width: 20px; height: 20px; font-size: 0; border:0; background: url(/images/icon/ico-24-close.svg) center no-repeat; position: absolute; right: 20px; top: 22px; box-sizing:border-box; cursor:pointer;}
+.popGroup .popTitGroup .popClose:before {content:""; width:24px; height:2px; background:#fff; transform:rotate(45deg); position:absolute; left:-3px; top:9px}
+.popGroup .popTitGroup .popClose:after {content:""; width:24px; height:2px; background:#fff; transform:rotate(-45deg); position:absolute; left:-3px; top:9px}
+.popGroup .popContGroup { height: calc(100% - 60px); padding: 30px; overflow: auto; box-sizing:border-box;}
+        </style>
+        <div id="sample01" class="popGroup on">
+            <div class="dim"></div>
+            <div class="popArea" style="width:800px; height:auto;">
+                <div class="popTitGroup">
+                    <div class="popTitle">타이틀 영역</div>
+                    <button class="popClose" onclick="closePop('sample01')">닫기</button>
+                </div>
+                <div class="popContGroup">
+                    <!-- 팝업 컨텐츠 영역 -->
+                    <h4 class="h4_title">기본정보</h4>
+                    <table class="tb_list">
+                        <caption>기본정보</caption>
+                        <colgroup>
+                            <col width="20%">
+                            <col width="">
+                            <col width="20%">
+                            <col width="">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">메뉴 경로</th>
+                                <td colspan="3">한국생활>한국적응</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">메뉴명</th>
+                                <td colspan="3">의료지원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">최초 메뉴 생성일</th>
+                                <td>2016-12-20</td>
+                                <th scope="row">최초 메뉴 생성자</th>
+                                <td>최고관리자(admin)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="h4_title mg_t30">변경정보</h4>
+                    <table class="tb_list">
+                        <caption>변경정보</caption>
+                        <colgroup>
+                            <col width="30%">
+                            <col width="">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="center">변경일시</th>
+                                <th class="center">변경 소속</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="center">yyyy-mm-dd hh24:mi:ss</td>
+                                <td>최고관리자(admin)</td>
+                            </tr>
+                            <tr>
+                                <td class="center">yyyy-mm-dd hh24:mi:ss</td>
+                                <td>인식개선사업팀(hohoho)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- //팝업 컨텐츠 영역 -->
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+
+            });
+            function openPop($idName){
+                $("#"+$idName).addClass("on");
+            }
+            function closePop($idName){
+                $("#"+$idName).removeClass("on");
+            }
+        </script>
+        <!-- //20210915 추가 -->
+
+    </div>
+
+
+
+
+
+
+    </div>
+</body>
+</html>

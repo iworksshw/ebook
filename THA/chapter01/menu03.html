@@ -1,0 +1,65 @@
+<!--#include virtual="/contents-ko/common/header.html" -->
+
+<!--#include virtual="/contents-ko/common/gnb.html" -->
+
+<div class="container" id="container">
+
+    <!--#include virtual="/contents-ko/common/sub-top.html" -->
+
+    <div class="subContents">
+
+
+
+        <!-- 컨텐츠 영역 -->
+        <div class="lytSubCont">
+            
+            <div class="comH3Text">
+                <p>อัตราแลกเปลี่ยนเงินตรา (ณ วันที่ 5 สิงหาคม 2022: 1,298.50 วอนต่อ 1 ดอลลาร์สหรัฐ  1,329.01 วอนต่อ 1 ยูโร 975.40 วอนต่อ 100 เยน 192.30 วอนต่อ 1 หยวน 5.55 วอนต่อ 1 ดอง</p>
+            </div>
+
+            <!-- 리스트 : 참고, 주의 -->
+            <ul class="comNoteList">
+                <li class="noteItem">มีการเปลี่ยนแปลงทุกวันตามสภาพเศรษฐกิจ</li>
+            </ul>
+
+            <ul class="comImgGroup">
+                <li class="imgItem col6 col6m">
+                    <div class="imgBox"><img src="/common/images/sub/img_01_03_01.png" alt="화페" /></div>
+                </li>
+                <li class="imgItem col6 col6m">
+                    <div class="imgBox"><img src="/common/images/sub/img_01_03_02.png" alt="계산기 화폐" /></div>
+                </li>
+            </ul>
+            
+        </div>
+        <!-- //컨텐츠 영역 -->
+
+        <!-- 실제는 적용하지 않는 테스트 스크립트 -->
+        <script>
+            $(document).ready(function(){
+                //스마트 메뉴바 제거
+                $(".cptSmartRemote").removeClass("add");
+
+                //로케이션 + 2뎁스 타이틀
+                let depth1 = 1;
+                let depth2 = 3;
+                let depth1Name = $(".cptGnb .depth1Menu").eq(depth1-1).find(".depth1Name a").html();
+                let depth2Name = $(".cptGnb .depth1Menu").eq(depth1-1).find(".depth2Area .depth2Menu").eq(depth2-1).find(".depth2Name a").html();
+                $(".comLocation .item").eq(1).html(depth1Name);
+                $(".comLocation .item").eq(2).html(depth2Name);
+                $(".cptSubTop h3").html(depth2Name);
+
+            });
+        </script>
+        <!-- //실제는 적용하지 않는 테스트 스크립트 -->
+
+
+        <!-- 공공누리, 이전글/다음글 -->
+        <!--#include virtual="/contents-ko/common/sub-btm.html" -->
+
+    </div>
+
+</div>
+<!--#include virtual="/contents-ko/common/footer.html" -->
+
+<!--#include virtual="/contents-ko/common/bottom.html" -->

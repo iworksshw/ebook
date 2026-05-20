@@ -1,0 +1,101 @@
+<!--#include virtual="/contents-ko/common/header.html" -->
+
+<!--#include virtual="/contents-ko/common/gnb.html" -->
+
+<div class="container" id="container">
+
+    <div class="subContents">
+
+        <div class="comSubtop">
+            <div class="subBack">
+                <a href="#" class="backBtn">이전 페이지로</a>
+            </div>
+            <div class="subTit">
+                <h2 class="tit">날씨</h2>
+            </div>
+        </div>
+        
+        <div class="comLocation">
+            <ul>
+                <li class="item home">홈</li>
+                <li class="item">통합검색</li>
+            </ul>
+        </div>
+
+
+        <!-- 컨텐츠 영역 -->
+        <div class="lytSubCont">
+            
+            <div class="cptGlobalSearch inPage">
+                <ul class="srchGroup">
+                    <li class="item slct">
+                        <select class="visSlct" title="검색 카테고리 선택">
+                            <option>전체</option>
+                        </select>
+                    </li>
+                    <li class="item input">
+                        <input class="visInput" type="text" placeholder="검색어를 입력해주세요.">
+                    </li>
+                    <li class="item search">
+                        <button class="visSrchBtn" type="submit">검색</button>
+                    </li>
+                </ul>
+                <ul class="tagGroup">
+                    <li class="item">
+                        <button class="tagBtn" type="button">#여권유효기간</button>
+                    </li>
+                    <li class="item">
+                        <button class="tagBtn" type="button">#외국인등록</button>
+                    </li>
+                    <li class="item">
+                        <button class="tagBtn" type="button">#자녀교육</button>
+                    </li>
+                    <li class="item">
+                        <button class="tagBtn" type="button">#의료지원</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cptSearchPage">
+                <div class="srchTitle"><h3><span class="outShadow">“<b>RRR</b>에 대한 검색결과는 <b>0</b>건 입니다.”</h3></span></div>
+
+                <!-- 쳅터영역 -->
+                <div class="srchCont">
+                    <div class="srchContTitle icon">
+                        <h4 class="tit">검색조건에 대한 검색결과가 없습니다.</h4>
+                    </div>
+                    <div class="srchResult">
+                        <ul class="comDotList">
+                            <li class="dotItem">단어의 철자가 정확한지 확인해 주시기 바랍니다.</li>
+                            <li class="dotItem">검색어의 단어 수를 줄이거나, 다른 검색어(유사어)로 검색해 보시기 바랍니다.</li>
+                            <li class="dotItem">일반적으로 많이 사용하는 검색어로 다시 검색해 주시기 바랍니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //쳅터영역 -->
+
+            </div>
+            
+        </div>
+        <!-- //컨텐츠 영역 -->
+
+        <!-- 실제는 적용하지 않는 테스트 스크립트 -->
+        <script>
+            $(document).ready(function(){
+                //스마트 메뉴바 제거
+                $(".cptSmartRemote").removeClass("add");
+                
+                //다음/이전버튼 제거
+                $(".lytFootBtns").hide();
+
+            });
+        </script>
+        <!-- //실제는 적용하지 않는 테스트 스크립트 -->
+
+
+    </div>
+
+</div>
+<!--#include virtual="/contents-ko/common/footer.html" -->
+
+<!--#include virtual="/contents-ko/common/bottom.html" -->

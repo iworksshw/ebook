@@ -1,0 +1,108 @@
+<!--#include virtual="/contents-ko/common/header.html" -->
+
+<!--#include virtual="/contents-ko/common/gnb.html" -->
+
+<div class="container" id="container">
+
+    <!--#include virtual="/contents-ko/common/sub-top.html" -->
+
+    <div class="subContents">
+
+
+
+        <!-- 컨텐츠 영역 -->
+        <div class="lytSubCont">
+            
+            <!-- 3뎁스 -->
+            <div class="comH4">
+                <h3><span class="num">01</span><span class="titleText">일상복</span></h3>
+            </div>
+            <div class="comH4Text">
+                <p>
+                    한국 사람은 평소에 양장을 한다. 사계절의 변화에 맞춰 봄과 가을에는 긴 소매 옷을 입고 날씨가 
+                    더운 여름에는 짧은 소매 옷을 입는다. 날씨가 추운 겨울에는 코트나 점퍼 등의 외투를 덧입는다. 
+                    회사에 출근하거나 중요한 가족 모임 등이 있을 때는 보통 정장을 갖춰 입는다.
+                </p>
+            </div> 
+            <!-- //3뎁스 -->
+
+            <!-- 3뎁스 -->
+            <div class="comH4">
+                <h3><span class="num">02</span><span class="titleText">전통의상 ‘한복’</span></h3>
+            </div>
+            <div class="comH4Text">
+                <p>
+                    한국의 전통의상을 ‘한복’이라고 부른다. 직선과 곡선이 조화를 이뤄 아름다우며 단아한 멋이 있다. 
+                    한복의 종류는 예복과 평상복, 남녀별, 나이별, 계절별로 다양하게 나뉜다. 기본적으로 남자한복은 
+                    바지와 저고리, 여자 한복은 치마와 저고리로 구성되어 있다. 여기에 더해 조끼, 마고자, 두루마기 
+                    등을 착용한다.
+                </p>
+            </div> 
+            
+            <div class="comH5">
+                <h3><span class="num">(1)</span><span class="titleText">남자 한복 입는 방법</span></h3>
+            </div>
+            <div class="comH5Text">
+                <p>
+                    바지와 저고리순으로 입는다. 바지를 입을 때는 허리띠를 오른쪽에서 왼쪽으로 여며야 한다. 바짓부리는 대님으로 맨다. 저고리를 입은 뒤에 고름을 매고 그 위에 조끼와 마고자를 입는다. 두루마기는 절을 할 때나 외출할 때 덧입는다. 
+                </p>
+            </div> 
+
+            <ul class="comImgGroup">
+                <li class="imgItem col12">
+                    <div class="imgBox"><img src="/common/images/sub/img_04_02_01.png" alt="남자 한복" /></div>
+                </li>
+            </ul>
+
+            <div class="comH5">
+                <h3><span class="num">(2)</span><span class="titleText">여자 한복 입는 방법</span></h3>
+            </div>
+            <div class="comH5Text">
+                <p>
+                    속바지, 버선, 속치마 순으로 입고, 그 위에 겉치마를 입는다. 
+                    겉치마 자락이 왼쪽으로 오게 여며야 바르다. 속저고리와 겉저고리를 입은 뒤에는 저고리가 뒤로 넘어가지 않도록 앞으로 당겨 
+                    정돈한다. 저고리 옷고름은 매듭을 지어 두 고름이 같은 길이가 
+                    되도록 한다.
+                </p>
+            </div> 
+
+            <ul class="comImgGroup">
+                <li class="imgItem col12">
+                    <div class="imgBox"><img src="/common/images/sub/img_04_02_02.png" alt="여자 한복" /></div>
+                </li>
+            </ul>
+
+            <!-- //3뎁스 -->
+        </div>
+        <!-- //컨텐츠 영역 -->
+
+        <!-- 실제는 적용하지 않는 테스트 스크립트 -->
+        <script>
+            $(document).ready(function(){
+                //스마트 메뉴바 제거
+                //$(".cptSmartRemote").removeClass("add");
+
+                //로케이션 + 2뎁스 타이틀
+                let depth1 = 4;
+                let depth2 = 2;
+                let depth1Name = $(".cptGnb .depth1Menu").eq(depth1-1).find(".depth1Name a").html();
+                let depth2Name = $(".cptGnb .depth1Menu").eq(depth1-1).find(".depth2Area .depth2Menu").eq(depth2-1).find(".depth2Name a").html();
+                $(".comLocation .item").eq(1).html(depth1Name);
+                $(".comLocation .item").eq(2).html(depth2Name);
+                $(".cptSubTop h3").html(depth2Name);
+
+            });
+        </script>
+        <!-- //실제는 적용하지 않는 테스트 스크립트 -->
+
+
+
+        <!-- 공공누리, 이전글/다음글 -->
+        <!--#include virtual="/contents-ko/common/sub-btm.html" -->
+
+    </div>
+
+</div>
+<!--#include virtual="/contents-ko/common/footer.html" -->
+
+<!--#include virtual="/contents-ko/common/bottom.html" -->

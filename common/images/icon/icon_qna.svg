@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="81.496">
+    <defs>
+        <style>
+            .cls-1{fill:#04d6b4}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(-410 -839)">
+        <circle id="타원_45" data-name="타원 45" class="cls-1" cx="40" cy="40" r="40" transform="translate(410 839)"/>
+        <path id="패스_277" data-name="패스 277" class="cls-1" d="M2457.667 907.961s7.616 10.01 13.492 11.026-33.2 4.328-48.671-3.989 35.179-7.037 35.179-7.037z" transform="translate(-1990)"/>
+    </g>
+</svg>

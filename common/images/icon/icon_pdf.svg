@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <clipPath id="0g52e3qcaa">
+            <path data-name="사각형 203" style="fill:#fff" d="M0 0h26v34.332H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 314">
+        <path data-name="패스 272" d="M0 0v34.333h26v-21.94h-1.694V32.31H1.694V2.028h17.23l5.634 6.627 1.189-1.442L19.617 0z" transform="translate(12 7.999)" style="fill:#fff"/>
+        <g data-name="그룹 312" transform="translate(12 8)" style="clip-path:url(#0g52e3qcaa)">
+            <path data-name="패스 273" d="M32.549 8.876h-5.467a.94.94 0 0 1-.847-1.01l-.008-6.852a1.03 1.03 0 0 1 .532-.941.753.753 0 0 1 .928.241l5.474 6.851a1.161 1.161 0 0 1 .165 1.1.859.859 0 0 1-.778.614m-4.62-2.027h2.641l-2.646-3.309z" transform="translate(-7.446)" style="fill:#fff"/>
+        </g>
+    </g>
+    <path data-name="사각형 204" transform="translate(10 22)" style="fill:#fff" d="M0 0h24v13H0z"/>
+    <text transform="translate(14 32)" style="fill:#292929;font-size:9px;font-family:NotoSansCJKkr-Black,Noto Sans CJK KR;font-weight:800;letter-spacing:-.05em"><tspan x="0" y="0">PDF</tspan></text>
+</svg>

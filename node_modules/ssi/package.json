@@ -1,0 +1,26 @@
+{
+  "name": "ssi",
+  "version": "0.3.0",
+  "description": "Server Side Includes for NodeJS",
+  "author": "Chen-Heng Chang <wandererm@gmail.com> (http://kidwm.net/)",
+  "main": "index.js",
+  "keywords": [
+    "ssi",
+    "server side includes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kidwm/node-ssi.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^6.0.1",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}

@@ -1,0 +1,131 @@
+
+@charset "UTF-8";
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------- 모듈 Module -------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* ------------------------------ 팝업 ------------------------------ */
+.modPopup {width:100%; height:100%; display:none; position:fixed; left:0; top:0; z-index:1500; align-items: center; justify-content: center;}
+.modPopup.on {display:flex;}
+
+.modPopup .popupDim {width:100%; height:100%; font-size:0; background:rgba(0,0,0,0.4); position:fixed; left:0; top:0;}
+.modPopup.on .popupDim {opacity:0; animation: popOpenDimd 0.2s linear forwards;}
+@keyframes popOpenDimd { 0% {opacity:0;} 100% {opacity:1;} }
+
+.modPopup .popupArea {width:762px; max-width: calc(100% - 180px); height:auto; max-height: calc(100% - 100px); /*position:absolute; right:50%; bottom:50%; transform: translate(50%,50%);*/ }
+
+.modPopup .popupInMotion {width:100%; height:100%; background:#fff;}
+.modPopup.on .popupInMotion {opacity:0; transform:scale(0.7); animation: popOpenScale 0.3s linear forwards;}
+@keyframes popOpenScale { 0% {opacity:0; transform:scale(0.7);} 100% {opacity:1; transform:scale(1);} }
+
+.modPopup .btnPopClose {width:75px; height:75px; font-size:0; border:0; background:url(/common/images/icon/btn_close.svg) center / 75px no-repeat; position:absolute; right:-80px; top:-15px; cursor:pointer;}
+.modPopup .popupContGroup {height:100%; max-height: calc(100vh - 100px); padding:50px; overflow:auto; box-shadow: 5px 10px 30px 0 rgba(0, 0, 0, 0.5);}
+.modPopup .popupContGroup.noPd {padding:0;}
+.modPopup .popupContGroup::-webkit-scrollbar {width: 6px;}
+.modPopup .popupContGroup::-webkit-scrollbar-thumb {background-color: rgba(0,0,0,0.25);}
+
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+	/* 모바일 > 딤팝업 */
+	.modPopup.modal {z-index:1500;}
+	.modPopup.modal .popupArea {width:calc(100% - 40px) !important; max-width:none;}
+    .modPopup.modal .btnPopClose {width:48px; height:48px; background:url(/common/images/icon/btn_close.svg) center / 48px no-repeat; position:absolute; right:0px; top:-48px;}
+    .modPopup.modal .popupContGroup {padding:30px 20px;}
+	
+	/* 모바일 > 풀팝업 */
+	.modPopup.full {}
+    .modPopup.full .popupContGroup {padding-bottom:0;}
+    .modPopup.full .popupContGroup:after {content:""; display:block; width:100%; padding-bottom:90px;}
+
+    .modPopup .popupContGroup.noPd {padding:0;}
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------- 공통 Layout -------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+/*  ---------------------------------------- GNB ---------------------------------------- */
+
+@media screen and (min-width: 100px) and (max-width: 1279px) {
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .lytGnb {display:none;}
+}
+
+/*  ---------------------------------------- Sub-top ---------------------------------------- */
+.lytSubTop {width: 100%;}
+.lytSubTop .subtopArea {width: 100%; padding: 50px; background: #fff;}
+
+.lytSubTop.sticky {width: 100%; padding-top: 234px;}
+.lytSubTop.sticky .subtopArea {width: calc(100% - 440px); position: fixed; top: 0; right: 80px; z-index: 9}
+.lytSubTop.sticky .comLocation {display: none;}
+.lytSubTop.sticky .cptSubTop .subTitle {font-size: 26px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.lytSubTop.sticky .cptSubTop .subTitle h3 {padding-right: 0; font-size: 26px; font-weight: 700; letter-spacing: -1.3px; box-shadow: none; transition: all 0.2s;}
+  
+@media screen and (min-width: 100px) and (max-width: 1279px) {
+    .lytSubTop {width: 100%; margin-bottom: 43px;}
+    .lytSubTop .subtopArea { padding: 80px 20px 0;}
+
+    .lytSubTop.sticky {width: 100%; padding-top: 0;}
+    .lytSubTop.sticky .subtopArea {width: 100%; position: static;}
+    .lytSubTop.sticky .comLocation {display: block;}
+    .lytSubTop.sticky .cptSubTop .subTitle {white-space: normal; overflow: visible; text-overflow: none;}
+    .lytSubTop.sticky .cptSubTop .subTitle h3 {padding-right: 4px; font-size: 50px; font-weight: 700; letter-spacing: -2.5px; box-shadow: inset 0 -32px 0 #cceaff;}
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {    
+    .lytSubTop.sticky .cptSubTop .subTitle h3 {padding-right: 2px; font-size: 25px; letter-spacing: -1.25px; box-shadow: inset 0 -15px 0 #cceaff;transition: none;}
+}
+
+/*  ---------------------------------------- Sub-cont ---------------------------------------- */
+@media screen and (min-width: 100px) and (max-width: 1023px) {
+    .lytSubCont * {word-break: break-all;}
+}
+
+/*  ---------------------------------------- FOOTER ---------------------------------------- */
+
+/* footer 버튼영역 */
+.lytFootBtns {position: fixed; bottom: 60px; right: 130px; z-index: 99;}
+.lytFootBtns .footbtnGroup::after {display: block; content: ""; clear: both;}
+.lytFootBtns .footbtnGroup .item {float: left; }
+.lytFootBtns .footbtnGroup .item:first-child {margin-right: 10px;}
+.lytFootBtns .footbtnGroup .item.mHome {display: none;}
+.lytFootBtns .footbtnGroup .arrowBtn {width: 80px; height: 80px; border-radius: 50%; font-size: 0; background-color: rgba(204,234,255,0.5); background-position: 50% 50%; background-repeat: no-repeat; display: block;position: relative; transition: all 0.3s;}
+.lytFootBtns .footbtnGroup .arrowBtn.prev {background-image: url(/common/images/icon/arrow-m-left-k.svg);}
+.lytFootBtns .footbtnGroup .arrowBtn.next {background-image: url(/common/images/icon/arrow-m-right-k.svg);}
+.lytFootBtns .footbtnGroup .arrowBtn .btnName {width: 100%; font-size: 15px; font-weight: 700; color: #000; text-align: center; display: inline-block; position: absolute; left: 0; bottom: -35px; opacity: 0; transition: all 0.3s;}
+
+.lytFootBtns .footbtnGroup .arrowBtn:hover {background-color: #0098ff;box-shadow: 0 3px 10px rgba(0,0,0,0.2); transition: all 0.3s;}
+.lytFootBtns .footbtnGroup .arrowBtn.prev:hover {background-image: url(/common/images/icon/arrow-m-left-w.svg); background-position: calc(50% - 5px) 50%;}
+.lytFootBtns .footbtnGroup .arrowBtn.next:hover {background-image: url(/common/images/icon/arrow-m-right-w.svg);background-position: calc(50% + 5px) 50%;}
+.lytFootBtns .footbtnGroup .arrowBtn:hover .btnName { bottom: -25px; opacity: 1; transition: all 0.3s;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .lytFootBtns {width: 100%; height: 50px; background: #fff; bottom: 0; right: 0; z-index: 99;}
+    .lytFootBtns .footbtnGroup {display: flex; justify-content: center; align-items: center;}
+    .lytFootBtns .footbtnGroup .item {width: 30%; float: none;}
+    .lytFootBtns .footbtnGroup .item:first-child {margin-right:0;}
+    .lytFootBtns .footbtnGroup .item.mHome {display: block;}
+    .lytFootBtns .footbtnGroup .homeBtn {width: 100%; height: 48px; font-size: 0; background: url(/common/images/icon/icon_home_blue.svg) center no-repeat; display: block;}
+    .lytFootBtns .footbtnGroup .arrowBtn {width: 100%; height: 48px; border-radius: 0; background-color: transparent;transition: none;}
+    .lytFootBtns .footbtnGroup .arrowBtn.prev {background-image: url(/common/images/icon/icon_prev.svg);}
+    .lytFootBtns .footbtnGroup .arrowBtn.next {background-image: url(/common/images/icon/icon_next.svg);}
+    .lytFootBtns .footbtnGroup .arrowBtn .btnName {display: none;}
+    
+    .lytFootBtns .footbtnGroup .arrowBtn:hover {background-color: transparent;box-shadow: none; transition: none;}
+    .lytFootBtns .footbtnGroup .arrowBtn.prev:hover {background-image: url(/common/images/icon/icon_prev.svg); background-position: 50% 50%;}
+    .lytFootBtns .footbtnGroup .arrowBtn.next:hover {background-image: url(/common/images/icon/icon_next.svg);background-position: 50% 50%;}
+    .lytFootBtns .footbtnGroup .arrowBtn:hover .btnName {display: none;}
+}
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- Depth1 Name -------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* ----------------------------------------- Depth1 > Page Name ----------------------------------------- */
+
+/* Layout name */
+/* Module name */

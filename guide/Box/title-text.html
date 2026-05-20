@@ -1,0 +1,80 @@
+
+<!-- Guide : s -->
+<div class="g-area">
+
+    <strong class="g-area-tit">일반 타이틀 + 텍스트</strong>
+    <xmp>
+        <div class="cptBox type02">
+            <div class="boxArea">
+                <!-- 박스영역 컨텐츠 -->
+                <div class="comBoxTitle"><em>여권</em></div>
+                <div class="comBoxText">
+                    <p>소지자의 국적 등 인적사항을 기재한 신분증명서로서 반드시 휴대하여야
+                        한다.</p>
+                </div> 
+                <!-- //박스영역 컨텐츠 -->
+            </div>
+        </div>
+    </xmp>
+    <div class="g-origin-img viewImg"><img src="/guide/Images/greybox_tit1_contents.png" alt="박스 및 컨텐츠"></div>
+    <div class="g-sample-url">샘플 바로가기 : <a href="http://ebook.pub.iwi.co.kr/contents-ko/chapter03/menu01.html" target="_blank">http://ebook.pub.iwi.co.kr/contents-ko/chapter03/menu01.html</a></div>
+
+    <strong class="g-area-tit">기호 타이틀</strong>
+    <xmp>
+        <div class="cptBox type02">
+            <div class="boxArea">
+                <!-- 박스영역 컨텐츠 -->
+                <div class="comBoxTitle addList"><em>앞면</em></div>
+                <ul class="comDotList">
+                    <li class="dotItem">신분증 명칭
+                        <ul class="comBarList">
+                            <li class="barItem">(한글) 외국인등록증 (영문) ALIEN REGISTRATION CARD</li>
+                            <li class="barItem">(한글) 영주증 (영문) PERMANENT RESIDENT CARD</li>
+                            <li class="barItem">(한글) 외국국적동포 국내거소신고증 (영문) OVERSEAS KOREAN RESIDENT CARD</li>
+                        </ul>
+                    </li>
+                    <li class="dotItem">외국인등록번호 : ○○○○○○-○○○○○○○ 형태로 표기</li>
+                    <li class="dotItem">성별 : 남자는 M, 여자는 F로 표기</li>
+                    <li class="dotItem">성명 : 여권상의 영문성명을 표기</li>
+                    <li class="dotItem">국가/지역 : 국적을 영문으로 표기</li>
+                    <li class="dotItem">체류자격 : 출입국관리법시행령 제12조에 의한 체류자격을 표기(결혼이민자(F-6))</li>
+                    <li class="dotItem">발급기관 : 한글과 영문으로 표기</li>
+                </ul>
+                <!-- //박스영역 컨텐츠 -->
+            </div>
+        </div>
+    </xmp>
+    <div class="g-origin-img viewImg"><img src="/guide/Images/greybox_tit2_contents.png" alt="박스 및 컨텐츠"></div>
+    <div class="g-sample-url">샘플 바로가기 : <a href="http://ebook.pub.iwi.co.kr/contents-ko/chapter03/menu01.html" target="_blank">http://ebook.pub.iwi.co.kr/contents-ko/chapter03/menu01.html</a></div>
+
+    
+</div>
+<!-- Guide : e -->
+
+<script type="text/javascript">
+$(".g-area-tit, .g-area-tit01").each(function(){
+    var obj = $(this).next("xmp");
+    if(!obj.length) return;
+    var btn = '<p class="g-btn-source"><a href="#" style="font-size: 13px; color: #434343;">소스보기</a></p>';
+    var code = '<xmp class="g-code">'+obj.html()+'</xmp>';
+    $(this).append(btn);
+    $(this).after(code);
+    $(this).next().after('<div class="g-view"><div class="g-true-area">'+obj.html()+'</div></div>');
+});
+$(".g-btn-source a").click(function(){
+    var me = $(this).parent().parent().parent();
+    var obj = $(this).parent().parent().next();
+    if(obj.is(":hidden")){
+        obj.show();
+        me.addClass("on");
+    }else{
+        obj.hide();
+        me.removeClass("on");
+    }
+    return false;
+});
+
+$(".g-origin-img").click(function(){
+    $(this).toggleClass("viewImg")
+})
+</script>
