@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.172" height="20">
+    <defs>
+        <style>
+            .cls-1{fill:#003d66}
+        </style>
+    </defs>
+    <g id="arrow" transform="rotate(-90 10 10)">
+        <path id="사각형_44" data-name="사각형 44" class="cls-1" transform="translate(0 6.415)" d="M0 0h14.713v4.341H0z"/>
+        <path id="사각형_45" data-name="사각형 45" class="cls-1" transform="rotate(44.998 5.707 13.78)" d="M0 0h12.141v4.342H0z"/>
+        <path id="사각형_46" data-name="사각형 46" class="cls-1" transform="rotate(45.002 1.805 23.194)" d="M0 0h4.341v12.14H0z"/>
+    </g>
+</svg>

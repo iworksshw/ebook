@@ -1,0 +1,314 @@
+﻿
+<!-- 스마트 리모컨 -->
+
+<!-- 스마트 리모컨 -->
+<div class="cptSmartRemote add"> <!-- addClass - add:리모컨 사용/비사용, on:리모컨 열기/닫기 -->
+    <div class="smartRemoteArea">
+        <div class="smartMenuGroup">
+            <ul class="menuList">
+                <!-- <li class="item"><button>봄</button></li> -->
+            </ul>
+        </div>
+        <div class="smartHideBtn">
+            <button class="hideBtn"><span class="hideText">숨기기</span><span class="showText">펼치기</span></button>
+        </div>
+    </div>
+</div>
+
+<script>
+//스마트 리모컨
+$(document).ready(function(){
+    startSmartRemote();
+});
+
+var cptName;    //콤포넌트 네임
+var h3Num;      //콤포넌트 수
+var h3Title = [];   //콤포넌트 텍스트
+var h3Top = [];     //콤포넌트 위치
+function startSmartRemote(){
+    cptName = $(".comH4");
+    h3Num = cptName.length;
+    for(i=0;i<h3Num;++i){
+        h3Title.push(cptName.eq(i).find(".titleText").html());
+    }
+    makeMenu(h3Num);
+    console.log(h3Num);
+}
+
+//스마트 메뉴 생성
+function makeMenu($num){
+    for(i=0;i<h3Num;++i){
+        if(i==0){
+            $(".cptSmartRemote .menuList").append('<li class="item on"><button>'+h3Title[i]+'</button></li>');
+        }else{
+            $(".cptSmartRemote .menuList").append('<li class="item"><button>'+h3Title[i]+'</button></li>');
+        }
+    }
+    menuClickEvent(); //스마트 메뉴 클릭이벤트
+}
+
+//스마트 메뉴 클릭이벤트
+function menuClickEvent(){
+    $(".cptSmartRemote .menuList .item button").on("click", function(e){
+        let idx = $(this).parent().index();
+        console.log(idx);
+        fnMove(idx); //스마트 메뉴 이동
+    });
+}
+
+//스마트 메뉴 이동
+function fnMove($num) {
+	event.preventDefault();
+	menuTop(); //스마트 메뉴 위치
+	$('html, body').animate({scrollTop : h3Top[$num]}, 400);
+}
+
+//스마트 메뉴 위치
+function menuTop(){
+    let offset;
+    for(i=0;i<h3Num;++i){
+        offset = cptName.eq(i).offset();
+        h3Top[i] = offset.top - $(window).height()*0.3;
+    }
+}
+
+//스마트 메뉴 스크롤
+$(window).on('scroll', function() {
+    menuTop();
+    for(i=0;i<h3Num;++i){
+        if(h3Top[i+1] && h3Top[i] <= $(window).scrollTop()+1 && $(window).scrollTop()+1 < h3Top[i+1]){
+            $(".cptSmartRemote .menuList .item").eq(i).addClass("on").siblings().removeClass("on");
+        }else if(h3Top[i] <= $(window).scrollTop()+1){
+            $(".cptSmartRemote .menuList .item").eq(i).addClass("on").siblings().removeClass("on");
+        }
+    }
+});
+
+//숨기기/펼치기 버튼
+$(".cptSmartRemote .hideBtn").on("click", function(e){
+    $(".cptSmartRemote").toggleClass("on");
+});
+</script>
+
+
+
+<!-- 서브페이지 bottom Btns -->
+<div class="lytFootBtns">
+    <div class="btnArea">
+        <ul class="footbtnGroup">
+            <li class="item">
+                <a href="#" class="arrowBtn prev">
+                    <b class="btnName">PREV</b>
+                </a>
+            </li>
+            <li class="item mHome">
+                <a href="#" class="homeBtn">메인으로</a>
+            </li>
+            <li class="item">
+                <a href="#" class="arrowBtn next">
+                    <b class="btnName">NEXT</b>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- 언어선택 팝업 -->
+<div id="langPop" class="modPopup modal"> <!-- class - on : 팝업오픈 -->
+	<div class="popupDim">딤영역</div>
+	<div class="popupArea" style="width:1000px;"> <!-- style - 너비값(width), 높이값(height) : 팝업 너비 및 높이 지정 -->
+		<div class="popupInMotion">
+            <button class="btnPopClose" onclick="closePopup('langPop');">닫기</button>
+			<div class="popupContGroup">
+
+                <!-- 팝업 내용 영역 -->
+                <div class="comPopTitle"> <!-- 언어전용이면 css명 수정해야함 -->
+                    <em>언어 선택</em>
+                </div>
+                <div class="cptLanguage">
+                    <ul>
+                        <li class="on">
+                            <a href="#">
+                                <b>한국어</b>
+                                <i>Korean</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>O’zbek tili</b>
+                                <i>우즈베크어</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>English</b>
+                                <i>영어</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>ພາສາລາ​ວ</b>
+                                <i>라오스어</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>中文</b>
+                                <i>중국어</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>Русский</b>
+                                <i>러시아어</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>Tiếng Việt</b>
+                                <i>베트남어</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>ภาษาไทย</b>
+                                <i>타이어</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>日本語</b>
+                                <i>일본어</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>Монгол хэл</b>
+                                <i>몽골어</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>Filipino</b>
+                                <i>타갈로그어</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>नेपाली</b>
+                                <i>네팔어</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <b>ខ្មែរ</b>
+                                <i>크메르어</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //팝업 내용 영역 -->
+                
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- //언어선택 팝업 -->
+
+
+<!-- 글로벌 검색 팝업 -->
+<div id="searchPop" class="modPopup modal"> <!-- class - on : 팝업오픈 -->
+	<div class="popupDim">딤영역</div>
+	<div class="popupArea" style="width:1000px;"> <!-- style - 너비값(width), 높이값(height) : 팝업 너비 및 높이 지정 -->
+		<div class="popupInMotion">
+            <button class="btnPopClose" onclick="closePopup('searchPop');">닫기</button>
+			<div class="popupContGroup">
+
+                <!-- 팝업 내용 영역 -->
+                <div class="cptGlobalSearch">
+                    <ul class="srchGroup">
+						<li class="item slct">
+							<select class="visSlct" title="검색 카테고리 선택">
+								<option>전체</option>
+							</select>
+						</li>
+						<li class="item input">
+							<input class="visInput" type="text" placeholder="검색어를 입력해주세요.">
+						</li>
+						<li class="item search">
+							<button class="visSrchBtn" type="submit">검색</button>
+						</li>
+					</ul>
+                    <ul class="tagGroup">
+						<li class="item">
+							<button class="tagBtn" type="button">#여권유효기간</button>
+						</li>
+						<li class="item">
+							<button class="tagBtn" type="button">#외국인등록</button>
+						</li>
+						<li class="item">
+							<button class="tagBtn" type="button">#자녀교육</button>
+						</li>
+						<li class="item">
+							<button class="tagBtn" type="button">#의료지원</button>
+						</li>
+					</ul>
+                </div>
+                <!-- //팝업 내용 영역 -->
+                
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- 글로벌 검색 팝업 -->
+
+
+<!-- 공유하기 팝업 -->
+<div id="sharePop" class="modPopup modal"> <!-- class - on : 팝업오픈 -->
+	<div class="popupDim">딤영역</div>
+	<div class="popupArea" style="width:730px;"> <!-- style - 너비값(width), 높이값(height) : 팝업 너비 및 높이 지정 -->
+		<div class="popupInMotion">
+            <button class="btnPopClose" onclick="closePopup('sharePop');">닫기</button>
+			<div class="popupContGroup">
+
+                <!-- 팝업 내용 영역 -->
+                <div class="comPopTitle">
+                    <em>공유하기</em>
+                </div>
+
+                <ul class="cptShare">
+                    <li class="shareItem">
+                        <button class="btnSns kakao">카카오톡</button>
+                    </li>
+                    <li class="shareItem">
+                        <button class="btnSns blog">블로그</button>
+                    </li>
+                    <li class="shareItem">
+                        <button class="btnSns fb">페이스북</button>
+                    </li>
+                    <li class="shareItem">
+                        <button class="btnSns tw">트위터</button>
+                    </li>
+                    <li class="shareItem">
+                        <button class="btnSns url">URL복사</button>
+                    </li>
+                </ul>
+                <!-- //팝업 내용 영역 -->
+                
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- 글로벌 검색 팝업 -->
+
+<script>
+function openPopup($popName){
+	$("#"+$popName).addClass("on");
+}
+function closePopup($popName){
+	$("#"+$popName).removeClass("on");
+}
+</script>

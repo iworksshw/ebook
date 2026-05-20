@@ -1,0 +1,18 @@
+<svg id="icon_프린트" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <rect id="사각형_182" data-name="사각형 182" width="60" height="60" rx="30" style="fill:#0098ff"/>
+    <g id="icon" transform="translate(-1101.832 -251.617)">
+        <path id="패스_211" data-name="패스 211" class="cls-2" d="M511.1 395.257h-5.564v-1.6h3.964v-9.578h-1.36v-1.6h2.96z" transform="translate(635.162 -106.698)"/>
+        <path id="패스_212" data-name="패스 212" class="cls-2" d="M475.446 395.257h-5.563v-12.784h23.689v1.6h-22.086v9.578h3.96z" transform="translate(647.949 -106.698)"/>
+        <path id="패스_213" data-name="패스 213" class="cls-2" d="M496.213 379.831h-1.6v-5.356h-15.7v5.356h-1.6v-6.96h18.906z" transform="translate(645.287 -103.254)"/>
+        <path id="패스_214" data-name="패스 214" class="cls-2" d="M496.213 404.859h-18.906v-9.268h1.6v7.665h15.7v-6.863h-14.7v-1.6h16.306z" transform="translate(645.287 -111.115)"/>
+        <path id="사각형_60" data-name="사각형 60" class="cls-2" transform="translate(1127.197 287.233)" d="M0 0h9.7v.962H0z"/>
+        <path id="사각형_61" data-name="사각형 61" class="cls-2" transform="translate(1127.197 289.224)" d="M0 0h9.7v.962H0z"/>
+        <path id="사각형_62" data-name="사각형 62" class="cls-2" transform="translate(1138.547 278.944)" d="M0 0h1.586v1.283H0z"/>
+        <path id="사각형_63" data-name="사각형 63" class="cls-2" transform="translate(1141.264 278.944)" d="M0 0h1.586v1.283H0z"/>
+    </g>
+</svg>

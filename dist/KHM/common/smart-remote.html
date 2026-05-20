@@ -1,0 +1,89 @@
+
+<!-- 스마트 리모컨 -->
+<div class="cptSmartRemote add"> <!-- addClass - add:리모컨 사용/비사용, on:리모컨 열기/닫기 -->
+    <div class="smartRemoteArea">
+        <div class="smartMenuGroup">
+            <ul class="menuList">
+                <!-- <li class="item"><button>봄</button></li> -->
+            </ul>
+        </div>
+        <div class="smartHideBtn">
+            <button class="hideBtn"><span class="hideText">숨기기</span><span class="showText">펼치기</span></button>
+        </div>
+    </div>
+</div>
+
+<script>
+//스마트 리모컨
+$(document).ready(function(){
+    startSmartRemote();
+});
+
+var cptName;    //콤포넌트 네임
+var h3Num;      //콤포넌트 수
+var h3Title = [];   //콤포넌트 텍스트
+var h3Top = [];     //콤포넌트 위치
+function startSmartRemote(){
+    cptName = $(".comH4");
+    h3Num = cptName.length;
+    for(i=0;i<h3Num;++i){
+        h3Title.push(cptName.eq(i).find(".titleText").html());
+    }
+    makeMenu(h3Num);
+    console.log(h3Num);
+}
+
+//스마트 메뉴 생성
+function makeMenu($num){
+    for(i=0;i<h3Num;++i){
+        if(i==0){
+            $(".cptSmartRemote .menuList").append('<li class="item on"><button>'+h3Title[i]+'</button></li>');
+        }else{
+            $(".cptSmartRemote .menuList").append('<li class="item"><button>'+h3Title[i]+'</button></li>');
+        }
+    }
+    menuClickEvent(); //스마트 메뉴 클릭이벤트
+}
+
+//스마트 메뉴 클릭이벤트
+function menuClickEvent(){
+    $(".cptSmartRemote .menuList .item button").on("click", function(e){
+        let idx = $(this).parent().index();
+        console.log(idx);
+        fnMove(idx); //스마트 메뉴 이동
+    });
+}
+
+//스마트 메뉴 이동
+function fnMove($num) {
+	event.preventDefault();
+	menuTop(); //스마트 메뉴 위치
+	$('html, body').animate({scrollTop : h3Top[$num]}, 400);
+}
+
+//스마트 메뉴 위치
+function menuTop(){
+    let offset;
+    for(i=0;i<h3Num;++i){
+        offset = cptName.eq(i).offset();
+        h3Top[i] = offset.top - $(window).height()*0.3;
+    }
+}
+
+//스마트 메뉴 스크롤
+$(window).on('scroll', function() {
+    menuTop();
+    for(i=0;i<h3Num;++i){
+        if(h3Top[i+1] && h3Top[i] <= $(window).scrollTop()+1 && $(window).scrollTop()+1 < h3Top[i+1]){
+            $(".cptSmartRemote .menuList .item").eq(i).addClass("on").siblings().removeClass("on");
+        }else if(h3Top[i] <= $(window).scrollTop()+1){
+            $(".cptSmartRemote .menuList .item").eq(i).addClass("on").siblings().removeClass("on");
+        }
+    }
+});
+
+//숨기기/펼치기 버튼
+$(".cptSmartRemote .hideBtn").on("click", function(e){
+    $(".cptSmartRemote").toggleClass("on");
+});
+</script>

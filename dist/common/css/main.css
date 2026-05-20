@@ -1,0 +1,186 @@
+﻿@charset "UTF-8";
+
+.lytMain {width: 100%;}
+
+/* 메인비주얼 */
+.lytMain .mainVisual {width: 100%; padding: 90px 0 110px; text-align: center; background: url(/ebook/common/images/main/main_visual01.jpg) center / cover no-repeat;}
+.lytMain .mainVisual .visTit {margin-bottom: 25px; font-size: 40px; color: #000; letter-spacing: -2px; line-height: 1.3; word-break: keep-all;}
+.lytMain .mainVisual .visTit b {color: #0098ff; font-weight: 700;}
+.lytMain .mainVisual .visSrch {margin: 25px 0 30px; padding: 0 50px;}
+.lytMain .mainVisual .visSrch .srchGroup { display: flex; justify-content: center;}
+.lytMain .mainVisual .visSrch .unit {position: relative;}
+.lytMain .mainVisual .visSrch .unit.input {width: calc(100% - 255px);max-width: 743px;}
+.lytMain .mainVisual .visSrch .unit.input::after {display: block; content: ""; width: 1px; height: 30px; background: #000; opacity: 0.1; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+.lytMain .mainVisual .visSrch .visSlct {width: 165px; height: 80px; padding: 0 40px 0 50px; border-radius: 40px 0 0 40px; border: 5px solid #0098ff; border-right: none; font-size: 20px; font-weight: 500; color: #000; letter-spacing: -1px; background: #fff url(/ebook/common/images/icon/arrow-s-down-k.svg) calc(100% - 23px) center / 11px no-repeat; display: block; outline:none; cursor:pointer;}
+.lytMain .mainVisual .visSrch .visInput {width: 100%;  height: 80px; padding: 0 30px; border: 5px solid #0098ff; border-left: none; border-right: none; font-size: 26px; font-weight: 500; letter-spacing: -1.3px; color: #000; display: block; outline:none;}
+.lytMain .mainVisual .visSrch .visInput::placeholder {color: #757575;}
+.lytMain .mainVisual .visSrch .visInput::-webkit-input-placeholder {color: #757575;}
+.lytMain .mainVisual .visSrch .visInput:-ms-input-placeholder {color: #757575;}
+.lytMain .mainVisual .visSrch .visSrchBtn {width: 90px; height: 80px; border-radius: 0 40px 40px 0; font-size: 0; background: #0098ff url(/ebook/common/images/icon/icon_search.svg) center / 50px no-repeat;}
+.lytMain .mainVisual .visTag {margin-top: 30px;}
+.lytMain .mainVisual .visTag .item {margin-right: 10px; display: inline-block;}
+.lytMain .mainVisual .visTag .item:last-child {margin-right: 0;}
+.lytMain .mainVisual .visTag .tagBtn {padding: 0 25px; height: 40px; line-height: 40px; border-radius: 20px; font-size: 18px; font-weight: 500; color: #000; letter-spacing: -0.9px; background: #fff;}
+.lytMain .mainVisual .visScrll {display: none;}
+
+
+
+@media screen and (min-width: 100px) and (max-width: 1279px) {}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .lytMain .mainVisual {padding: 110px 0 172px; background: url(/ebook/common/images/main/main_visual01_m.jpg) center / cover no-repeat; position: relative;}
+    .lytMain .mainVisual .visTit {font-size: 25px; padding: 0 20px; letter-spacing: -1.25px; }
+    .lytMain .mainVisual .visSrch {margin: 25px 0 14px;}
+    .lytMain .mainVisual .visSrch .unit.slct {display: none;}
+    .lytMain .mainVisual .visSrch .unit.input {width: calc(100% - 50px);}
+    .lytMain .mainVisual .visSrch .unit.input::after {display: none;}
+    .lytMain .mainVisual .visSrch .visInput {height: 50px; padding: 0 20px; border: 3px solid #0098ff; border-left: 3px solid #0098ff; border-radius: 25px 0 0 25px; font-size: 14px; letter-spacing: -0.7px;}
+    .lytMain .mainVisual .visSrch .visSrchBtn {width: 50px; height: 50px; border-radius: 0 25px 25px 0; background-size: 31px;}
+    .lytMain .mainVisual .visTag {margin-top: 14px;}
+    .lytMain .mainVisual .visTag .item {margin-right: 5px;margin-bottom: 5px;}
+    .lytMain .mainVisual .visTag .tagBtn {padding: 0 10px; height: 24px; line-height: 24px; border-radius: 12px; font-size: 10px; letter-spacing: -0.5px;}
+    .lytMain .mainVisual .visScrll {width: 100%; text-align: center; display: block; position: absolute; bottom: 15px; left: 0;}
+    .lytMain .mainVisual .visScrll img {width: 48px;}
+    /* 2024.02.20 추가 */
+    .lytMain .mainVisual .visScrll img {width: 50px; height: 50px;}
+    .lytMain .mainVisual .visScrll::before {display: block; content: ""; width: 4px; height: 4px; border-radius: 50%; background: #19fe83; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); animation: scrlFade 1s infinite normal;}
+    .lytMain .mainVisual .visScrll::after {display: block; content: ""; width: 11px; height: 7px; background: url(/ebook/common/images/icon/icon-scorll-arw.png) center no-repeat; position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%); animation: scrlDown 0.5s infinite alternate;}
+    
+}
+
+/* 메인 의견등록 */
+.lytMain .mainOpinion {width:100%; text-align:center; background:#e5f4ff;}
+.lytMain .mainOpinion .text {height:68px; margin-right:15px; padding-top:19px; padding-left:80px; font-size:18px; color:#000; line-height:30px; vertical-align:middle; background:url(/ebook/common/images/icon/icon_mainbtm.svg) left center no-repeat; display:inline-block;}
+.lytMain .mainOpinion .btnOpinion {height:42px; margin:13px 0; padding:0 55px 0 28px; font-size:16px; color:#fff; border:0; border-radius:21px; vertical-align:middle; background:#19d6fe url(/ebook/common/images/icon/btn_mainbtm.svg) calc(100% - 27px) center no-repeat; display:inline-block;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .lytMain .mainOpinion {text-align:left; background:#e5f4ff url(/ebook/common/images/icon/icon_mainbtm.svg) 30px 30px no-repeat;}
+    .lytMain .mainOpinion .text{height:auto; padding-left:120px; padding-top:30px; padding-right:30px; font-size:13px; line-height:1.5; text-align:left; background:none;}
+    .lytMain .mainOpinion .btnOpinion {height: 35px; margin-left: 120px; padding:0 50px 0 24px; font-size:14px; background:#0098ff url(/ebook/common/images/icon/btn_mainbtm.svg) calc(100% - 23px) center /19px no-repeat;}
+}
+
+/* 대메뉴 */
+.lytMain .mainBigmenu {width: 100%; padding: 100px 7%; background: #f5f5f5;}
+.lytMain .mainBigmenu .mainMTit {display: none;}
+.lytMain .mainBigmenu .menuGroup {display: flex; flex-wrap: wrap;}
+.lytMain .mainBigmenu .item {width: 30%; margin-right: 5%; position: relative;}
+.lytMain .mainBigmenu .item:nth-child(3n) {margin-right: 0;}
+.lytMain .mainBigmenu .item:nth-child(n+4) {margin-top: 100px;}
+.lytMain .mainBigmenu .item::before {display: block; content: ""; width: 120%; padding-top: 465px; background: url(/ebook/common/images/main/main_shadow.png) center bottom / contain no-repeat; position: absolute; bottom: -120px; left: 50%; transform: translateX(-50%); visibility: hidden; opacity: 0; translate: all 0.2s;}
+.lytMain .mainBigmenu .menuThum {width: 100%; padding-top: 200px; position: relative;}
+.lytMain .mainBigmenu .menuThum img {width: 100%;height:100%; max-width:100%; max-height:100%; object-fit:cover; position:absolute; left:0; top:0;}
+.lytMain .mainBigmenu .menuTit {width: 100%; height: calc(100% - 200px); padding: 26px 30px; min-height: 180px; overflow: hidden;background: #fff;  position: relative;}
+.lytMain .mainBigmenu .menuTit::after {display: block; content: ""; width: 100%; height: 0; background: #0098ff; position: absolute; bottom: 0; left: 0; z-index: 1;transition: all 0.2s;}
+.lytMain .mainBigmenu .menuTit > dl {position: relative; z-index: 9;}
+.lytMain .mainBigmenu .menuTit .tit {margin-bottom:10px; font-size: 26px; font-weight: 700; color: #000; letter-spacing: -1.3px; line-height: 1.4; position: relative;}
+.lytMain .mainBigmenu .menuTit .tit::after {display: block; content: ""; width: 0; height: 10px; background: #19fe83; position: absolute; left: -30px; top: 50%; transform: translateY(-50%); transition: all 0.2s;}
+.lytMain .mainBigmenu .menuTit .desc {font-size: 17px; color: #757575; letter-spacing: -0.85px; line-height: 1.6;}
+
+.lytMain .mainBigmenu .item:hover::before {visibility: visible; opacity: 0.5; translate: all 0.2s;}
+.lytMain .mainBigmenu .item:hover .menuTit::after {height: 100%; transition: all 0.2s;}
+.lytMain .mainBigmenu .item:hover .menuTit .tit::after {width: 17px; transition: all 0.2s;}
+.lytMain .mainBigmenu .item:hover .tit {color: #fff;}
+.lytMain .mainBigmenu .item:hover .desc {color: #fff;}
+
+@media screen and (min-width: 100px) and (max-width: 1400px) {
+    .lytMain .mainBigmenu .item {width: 47.5%; margin-right: 5%; }
+    .lytMain .mainBigmenu .item:nth-child(3n) {margin-right: 5%;}
+    .lytMain .mainBigmenu .item:nth-child(2n) {margin-right: 0;}
+    .lytMain .mainBigmenu .item:nth-child(n+3) {margin-top: 100px;}
+}
+
+@media screen and (min-width: 100px) and (max-width: 1279px) {
+    .lytMain .mainBigmenu .item {width: 30%; margin-right: 5%; position: relative;}
+    .lytMain .mainBigmenu .item:nth-child(2n) {margin-right: 5%;}
+    .lytMain .mainBigmenu .item:nth-child(3n) {margin-right: 0;}
+    .lytMain .mainBigmenu .item:nth-child(n+3) {margin-top: 0;}
+    .lytMain .mainBigmenu .item:nth-child(n+4) {margin-top: 100px;}
+}
+
+@media screen and (min-width: 100px) and (max-width: 949px) {
+    .lytMain .mainBigmenu .item {width: 47.5%; margin-right: 5%; }
+    .lytMain .mainBigmenu .item:nth-child(3n) {margin-right: 5%;}
+    .lytMain .mainBigmenu .item:nth-child(2n) {margin-right: 0;}
+    .lytMain .mainBigmenu .item:nth-child(n+3) {margin-top: 100px;}
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .lytMain .mainBigmenu {padding: 30px 20px;}
+    .lytMain .mainBigmenu .mainMTit {margin-bottom: 25px; display: block;}
+    .lytMain .mainBigmenu .mainMTit .mTit {text-align: center; font-size: 22px; font-weight: 700; color: #000; letter-spacing: -1.1px;}
+    .lytMain .mainBigmenu .item {width: 100%; margin-right: 0 !important; margin-top: 30px; box-shadow: 0 3px 8px rgba(0,0,0,0.1);}
+    .lytMain .mainBigmenu .item:nth-child(n+3) {margin-top: 30px;}
+    .lytMain .mainBigmenu .item:nth-child(n+4) {margin-top: 30px;}
+    .lytMain .mainBigmenu .item:first-child {margin-top: 0;}
+    .lytMain .mainBigmenu .item::before {display: none;}
+    .lytMain .mainBigmenu .menuThum {padding-top: 53%;}
+    .lytMain .mainBigmenu .menuTit {height: auto; padding: 26px 20px; min-height: 150px;}
+    .lytMain .mainBigmenu .menuTit::after {display: none;}
+    .lytMain .mainBigmenu .menuTit .tit {margin-bottom:8px; font-size: 17px; letter-spacing: -0.85px;}
+    .lytMain .mainBigmenu .menuTit .tit::after {width: 15px;left: -20px; transition: none;}
+    .lytMain .mainBigmenu .menuTit .desc {font-size: 14px;}
+
+    .lytMain .mainBigmenu .item:hover .menuTit .tit::after {width: 15px;}
+    .lytMain .mainBigmenu .item:hover .tit {color: #000;}
+    .lytMain .mainBigmenu .item:hover .desc {color: #757575;}
+}
+
+/* 부록/FAQ */
+.lytMain .mainAdds {width: 100%; padding: 30px 0 40px 40px;}
+.lytMain .mainAdds::after {display: block; content: ""; clear: both;}
+.lytMain .mainAdds .item {width: calc(33.3333% - 27px); margin-left: 40px; padding: 0 40px 0 160px; background: left center no-repeat; float: left; position: relative;}
+.lytMain .mainAdds .item:first-child {width: calc(33.3333% - 27px); margin-left: 0;}
+.lytMain .mainAdds .item::after {display: block; content: ""; width: 1px; height: 120px; background: #dbdbdb; position: absolute; top: 10px; left: -50px; }
+.lytMain .mainAdds .item:first-child:after {display: none;}
+.lytMain .mainAdds .item.icon01 {background-image: url(/ebook/common/images/main/main_icon_supple.jpg);}
+.lytMain .mainAdds .item.icon02 {background-image: url(/ebook/common/images/main/main_icon_FAQ.jpg);}
+.lytMain .mainAdds .item.icon03 {background-image: url(/ebook/common/images/main/main_icon_plus.jpg);}
+.lytMain .mainAdds .adds {width: 100%; padding: 13px 0;}
+.lytMain .mainAdds .adds .tit {font-size: 25px; font-weight: 700; color: #000; letter-spacing: -1.25px;}
+.lytMain .mainAdds .adds .conts .txt {font-size: 17px; color: #757575; letter-spacing: -0.85px; line-height: 1.6;}
+.lytMain .mainAdds .adds .conts .goPage {display: inline-block; margin-top: 20px; padding-right: 20px; font-size: 15px; font-weight: 700; color: #000; letter-spacing: -0.75px; background: url(/ebook/common/images/icon/btn_more.png) right center no-repeat;}
+
+@media screen and (min-width: 100px) and (max-width: 1400px) {
+    .lytMain .mainAdds .item {width: 100%; margin-left:0; padding:30px 40px 30px 160px;}
+    .lytMain .mainAdds .item:first-child {width: 100%; margin-left:0;}
+    .lytMain .mainAdds .item::after {width: calc(100% - 40px); height: 1px; top: 0; left: 0; }
+}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .lytMain .mainAdds {padding: 25px 20px 40px;}
+    .lytMain .mainAdds .item {width:100%; margin-left: 0; padding: 28px 0 28px 100px; background-size: 80px;background-position: left 30px; float: none;}
+    .lytMain .mainAdds .item:first-child {width: 100%; margin-left: 0; padding-top: 0;background-position: left 2px; }
+    .lytMain .mainAdds .item::after {width: 100%; height: 1px; top: 0; left: 0; }
+    .lytMain .mainAdds .adds {padding: 0;}
+    .lytMain .mainAdds .adds .tit {font-size: 16px; letter-spacing: -0.8px;}
+    .lytMain .mainAdds .adds .conts .txt {font-size: 13px; letter-spacing: -0.65px; line-height: 1.4;}
+    .lytMain .mainAdds .adds .conts .goPage {margin-top: 10px; padding-right: 17px; font-size: 12px;  background-size: 12px;}    
+}
+
+
+/* 메인 BI */
+.lytMain .mainBI {width: 100%; border-top: 1px solid #dbdbdb;}
+.lytMain .mainBI .biArea {padding: 36px 100px 60px; position:relative;}
+.lytMain .mainBI .guideMsg {width:calc(100% - 500px); height:100%; padding:0 0 24px 70px; font-size:14px; color:#000; display:flex; align-items:center; position:absolute; left:0; top:0;}
+.lytMain .mainBI .family {width: 100%; text-align: right;}
+.lytMain .mainBI .family .item {height: 40px; margin-left: 30px; display: inline-block; vertical-align: middle;}
+.lytMain .mainBI .family .item img {height: 100%;}
+.lytMain .mainBI .family .item:last-child {height: 34px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .lytMain .mainBI .biArea {padding:36px 20px 60px;}
+    .lytMain .mainBI .guideMsg {width:100%; padding:0 0 10px; position:static;}
+}
+
+/* 2024.02.20. */
+/* 플로팅배너 */
+.lytMain .mainFloat {width: 320px; position: fixed; bottom: 40px; right: 120px;z-index: 99;}
+.lytMain .mainFloat .downPDF {width: 320px; height: 114px; padding: 14px 30px 0 0; background: url(../images/main/banner_download.png) center no-repeat; display: flex; align-items: center;}
+.lytMain .mainFloat .downPDF p {width: 100%; text-align: right; font-size: 16px; color: #fff; font-weight: 700; line-height: 1.36; }
+.lytMain .mainFloat .downPDF b {font-size: 22px; font-weight: 500;}
+.lytMain .mainFloat .closePDF {width: 30px; height: 35px; font-size: 0; background: url(../images/icon/btn_close_k.png) right center no-repeat; position: absolute; top: -21px; right: 0;}
+
+@media screen and (min-width: 100px) and (max-width: 1279px) {
+    .lytMain .mainFloat {right: 40px;}
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .lytMain .mainFloat {right: 50%; transform: translateX(50%);}
+}

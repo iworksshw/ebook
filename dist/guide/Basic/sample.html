@@ -1,0 +1,169 @@
+
+<!-- Guide : s -->
+<div class="g-area">
+    
+    <strong class="g-area-tit">H4 + 텍스트</strong>
+    <xmp>
+
+    </xmp>
+    
+    <strong class="g-area-tit">H5 + 텍스트</strong>
+    <xmp>
+        
+    </xmp>
+    
+    <strong class="g-area-tit">H6 + 텍스트</strong>
+    <xmp>
+        
+    </xmp>
+    
+    <strong class="g-area-tit">혼합 샘플</strong>
+    <xmp>
+
+    </xmp>
+
+
+    <strong class="g-area-tit">H3 + 텍스트 + 이미지</strong>
+    <xmp>
+        <div class="comH4"> <!-- ex : 1. 명절 -->
+            <h3><span class="num">01</span><span class="titleText">봄</span></h3>
+        </div>
+
+        <div class="comH5"> <!-- ex : (1) 설날(음력 1월 1일) -->
+            <h5><span class="num">01</span><span class="titleText">봄</span></h3>
+        </div>
+        <div class="comH6"> <!-- ex : ◉ 설날(음력 1월 1일) -->
+            <h6><span class="num">01</span><span class="titleText">봄</span></h3>
+        </div>
+
+        <div class="lytSubCont">
+            <div class="h4Cont"></div> <!-- 3뎁스 단락 -->
+            <div class="h5Cont"></div> <!-- 4뎁스 단락 -->
+            <div class="h6Cont"></div> <!-- 5뎁스 단락 -->
+        </div>
+
+        <div class="comH3Text"><p></p></div>   <!-- 3뎁스 메뉴 바로 아래 설명 텍스트 -->
+        <div class="comH4Text"><p></p></div>   <!-- 4뎁스 타이틀 이후 일반 설명 텍스트 -->
+
+        <!-- 이미지 그룹 -->
+        <ul class="comImgGroup">
+            <li class="imgItem col3">   <!-- col12:100%, col6:50%, col4:33.33%, col3:25% -->
+                <div class="imgBox"><img src="" alt="" /></div>
+                <i class="imgTag">&lt; 이미지 알럿과 동일한 텍스트 &gt;</i>
+            </li>
+        </ul>
+
+        <dl class="comH6Desc">
+            <dt class="descTit">폰트 크기는 넣지 않습니다 두께나 칼라만 넣습니다.</dt>
+            <dd class="descMsg">폰트 크기는 넣지 않습니다 두께나 칼라만 넣습니다.</dd>
+        </dl>
+
+        <!-- 리스트 : 점 -->
+        <ul class="comDotList">
+            <li class="dotItem"></li> <!-- ex : • 음력 새해가 시작되는 날 -->
+        </ul>
+
+        <!-- 리스트 : 바 -->
+        <ul class="comBarList">
+            <li class="barItem"></li> <!-- ex : - 음력 새해가 시작되는 날 -->
+        </ul>
+
+        <!-- 리스트 : 참조, 주석 -->
+        <ul class="comRefList">
+            <li class="refItem"></li> <!-- ex : * 음력 새해가 시작되는 날 -->
+        </ul>
+
+        <!-- 리스트 : 참고, 주의 -->
+        <ul class="comNoteList">
+            <li class="noteItem"></li> <!-- ex : ※ 설날 전날, 설날, 설날 다음날 -->
+        </ul>
+
+        <!-- 리스트 : 숫자 -->
+        <ol class="comNumList">
+            <li class="numItem"></li> <!-- ex : ① 음력 새해가 시작되는 날 -->
+        </ol>
+
+        <!-- 리스트 : 가나다 -->
+        <ol class="comTextList">
+            <li class="TextItem"></li> <!-- ex : 가. 음력 새해가 시작되는 날 -->
+        </ol>
+
+        <!-- 테이블 -->
+    </xmp>
+
+
+<!--
+    <strong class="g-area-tit">Button Area (Mobile - 3button) - Center</strong>
+    <xmp>
+        <div class="comBtnArea">
+            <div class="btnArea">
+                <div class="alignArea center mThr">
+                    <button class="btn grey lg">초기화</button>
+                    <button class="btn dark lg">취소</button>
+                    <button class="btn blue lg">적용하기</button>
+                </div>
+            </div>
+        </div>
+    </xmp>
+
+    <strong class="g-area-tit">Button Area - Left</strong>
+    <xmp>
+        <div class="comBtnArea">
+            <div class="btnArea">
+                <div class="alignArea left">
+                    <button class="btn blue lg">적용하기</button>
+                </div>
+            </div>
+        </div>
+    </xmp>
+
+    <strong class="g-area-tit">Button Area - Right</strong>
+    <xmp>
+        <div class="comBtnArea">
+            <div class="btnArea">
+                <div class="alignArea right">
+                    <button class="btn blue lg">적용하기</button>
+                </div>
+            </div>
+        </div>
+    </xmp>
+    
+    <strong class="g-area-tit">Button Area (Mobile - 2button) - Center : 로그인 버튼 적용(Large Button과 동일)</strong>
+    <xmp>
+        <div class="comBtnArea">
+            <div class="btnArea">
+                <div class="alignArea center mTwo">
+                    <button class="btn dark login">취소</button>
+                    <button class="btn blue login">휴면해제요청</button>
+                </div>
+            </div>
+        </div>
+    </xmp>
+-->
+    
+    </div>
+    <!-- Guide : e -->
+    
+    <script type="text/javascript">
+    $(".g-area-tit, .g-area-tit01").each(function(){
+        var obj = $(this).next("xmp");
+        if(!obj.length) return;
+        var btn = '<p class="g-btn-source"><a href="#" style="font-size: 13px; color: #434343;">소스보기</a></p>';
+        var code = '<xmp class="g-code">'+obj.html()+'</xmp>';
+        $(this).append(btn);
+        $(this).after(code);
+        $(this).next().after('<div class="g-view"><div class="g-true-area">'+obj.html()+'</div></div>');
+    });
+    $(".g-btn-source a").click(function(){
+        var me = $(this).parent().parent().parent();
+        var obj = $(this).parent().parent().next();
+        if(obj.is(":hidden")){
+            obj.show();
+            me.addClass("on");
+        }else{
+            obj.hide();
+            me.removeClass("on");
+        }
+        return false;
+    });
+    </script>

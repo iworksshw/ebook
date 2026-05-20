@@ -1,0 +1,129 @@
+
+@media print {
+    * {letter-spacing:0 !important;}
+
+	.cptGnb {display:none;} /* 글로벌네비게이션 */
+    .cptQuick {display:none;} /* 우측 고정영역 */
+    .lytFootBtns {display:none;} /* 이전 다음 버튼 */
+    .comLocation {display:none;} /* 로케이션 */
+    .cptSubTop .subTitle {width:100%;}
+    .cptSubTop .subTopList {display:none;} /* 퀵버튼 */
+    .comPublicNuri {display:none;} /* 공공누리 */
+    .comAnotherPost {display:none;} /* 이전글/다음글 */
+    .cptSmartRemote {display:none;} /* 스마트리모컨 */
+    .cptSmartRemote.add {display:none;}
+
+    .container {padding:0;}
+    .subContents {max-width: none;}
+
+    /* 2뎁스 메뉴 스티키 해제 */
+    .lytSubTop.sticky {width: 100%; padding-top: 0;}
+    .lytSubTop.sticky .subtopArea {width: 100%; position:static;}
+    .lytSubTop.sticky .comLocation {display: none;}
+    .lytSubTop.sticky .cptSubTop .subTitle {width:100%; white-space: wrap; overflow: visible; text-overflow:unset;}
+    .lytSubTop.sticky .cptSubTop .subTitle h3 {padding-right: 4px; font-size: 50px; font-weight: 700; letter-spacing: -2.5px; box-shadow: inset 0 -32px 0 #cceaff; transition: all 0.2s; }
+
+        
+    /* 이미지 영역 */
+    .comImgGroup {margin-top:20px; margin-bottom:40px; font-size:0; display:block;}
+    .comImgGroup .imgItem {font-size:0; vertical-align:top; display:inline-block;}
+    .comImgGroup .imgItem.col12 {width:100%; margin-top:20px;}
+    .comImgGroup .imgItem.col12:first-child {margin-top:0;}
+    .comImgGroup .imgItem.col6 {width:calc(50% - 10px); margin-left:20px;}
+    .comImgGroup .imgItem.col6:nth-child(n + 3) {margin-top:20px;}
+    .comImgGroup .imgItem.col6:nth-child(2n + 1) {margin-left:0;}
+    .comImgGroup .imgItem.col4 {width:calc(33.333% - 13.333px); margin-left:19.999px;}
+    .comImgGroup .imgItem.col4:nth-child(n + 4) {margin-top:20px;}
+    .comImgGroup .imgItem.col4:nth-child(3n + 1) {margin-left:0;}
+    .comImgGroup .imgItem.col3 {width:calc(25% - 15px); margin-left:20px;}
+    .comImgGroup .imgItem.col3:nth-child(n + 5) {margin-top:20px;}
+    .comImgGroup .imgItem.col3:nth-child(4n + 1) {margin-left:0;}
+    .comImgGroup .imgItem .imgBox {font-size:0; position:relative;}
+    .comImgGroup .imgItem .imgBox img {width:100%;}
+    .comImgGroup .imgItem .imgBox .inImgGroup {width:100%; position:absolute; left:0; top:0;}
+    .comImgGroup .imgItem .imgTag {width:100%; margin-top:5px; font-size:17px; font-style:normal; font-weight:400; line-height:1.59; letter-spacing:-0.05em; text-align:center; color:#000; display:inline-block;}
+    .comImgGroup .imgItem .imgDesc {width: 100%; margin-top: 15px;}
+    .comImgGroup .imgItem .imgDesc > dt {font-size: 17px; font-weight: 500; color: #000; letter-spacing: -0.85px;}
+    .comImgGroup .imgItem .imgDesc > dd {margin-top: 4px; font-size: 17px; color: #757575; letter-spacing: -0.85px;}
+
+    @media screen and (min-width: 100px) and (max-width: 767px) {
+        .comImgGroup {margin-top:10px; margin-bottom:30px; display:flex; flex-wrap:wrap; justify-content:space-between;}
+        .comImgGroup .imgItem.col12m {width:100%; margin-top:17px;}
+        .comImgGroup .imgItem.col12m:first-child {margin-top:0;}
+        .comImgGroup .imgItem.col6m {width:calc(50% - 5px); margin-left:10px;}
+        .comImgGroup .imgItem.col6m:nth-child(n + 3) {margin-top:17px;}
+        .comImgGroup .imgItem.col6m:nth-child(2n + 1) {margin-left:0;}
+        .comImgGroup .imgItem.col4m {width:calc(33.333% - 7px); margin-left:10px;}
+        .comImgGroup .imgItem.col4m:nth-child(n + 4) {margin-top:17px;}
+        .comImgGroup .imgItem.col4m:nth-child(3n + 1) {margin-left:0;}
+        .comImgGroup .imgItem.col3m {width:calc(25% - 7.5px); margin-left:10px;}
+        .comImgGroup .imgItem.col3m:nth-child(n + 5) {margin-top:17px;}
+        .comImgGroup .imgItem.col3m:nth-child(4n + 1) {margin-left:0;}
+        .comImgGroup .imgItem .imgTag {margin-top:7px; font-size:12px;}
+        .comImgGroup .imgItem .imgDesc {margin-top: 10px;}
+        .comImgGroup .imgItem .imgDesc > dt {font-size: 13px;}
+        .comImgGroup .imgItem .imgDesc > dd {font-size: 13px;}
+    }
+
+
+    .cptDiagram0301 .dgmGroup {display:block;}
+    .cptDiagram0301 .dgmGroup .item {padding-top:30px; display:inline-block; vertical-align:top;}
+
+    .cptDiagram0303 .dgmGroup {display:block;}
+    .cptDiagram0303 .dgmGroup .item {display:inline-block; vertical-align:top;}
+    .cptDiagram0303 .dgmTitGroup {padding-top:25px; display:block;}
+    .cptDiagram0303 .dgmContGroup {display:block;}
+
+    .cptDiagram0402 {width:100%; margin-top: 20px;}
+    .cptDiagram0402 .dgmGroup {display: block; font-size:0;}
+    .cptDiagram0402 .dgmGroup .item { display: inline-block; text-align: center; }
+    .cptDiagram0402 .dgmGroup .item .txt {text-align: center;  display:block;}
+
+    .cptDiagram0501 .dgmGroup {display:block;}
+    .cptDiagram0501 .dgmGroup .item {padding-top:30px; display:inline-block; vertical-align:top;}
+    .cptDiagram0501 .dgmGroup .item.next {margin-top:45px;}
+
+    .cptDiagram0502 .dgmWrap {font-size:0; display:block; text-align:center;}
+    .cptDiagram0502 .dgmGroup {display:inline-block; vertical-align: top;}
+
+    .cptDiagram0601 .dgmGroup {display:block;}
+    .cptDiagram0601 .dgmGroup {display:inline-block; vertical-align: top;}
+    .cptDiagram0601 .dgmGroup .itemDesc > dt {padding-top:20px; display:block;}
+    .cptDiagram0601 .dgmGroup .itemDesc > dd {padding-top:20px; display:block;}
+    
+    .cptDiagram0602 .dgmGroup {display:block;}
+    .cptDiagram0602 .dgmGroup .item {padding-top:30px; display:inline-block; vertical-align:top;}
+
+    .cptDiagram0603 .dgmGroup .item {font-size:0; display:block;}
+    .cptDiagram0603 .dgmGroup .dgmInfo {display:inline-block;}
+    .cptDiagram0603 .dgmGroup .dgmAdds {display:inline-block;}
+
+    .cptDiagram0604 .dgmGroup {height:650px; display:block; position:relative;}
+    .cptDiagram0604 .dgmGroup .item {position:absolute;}
+    .cptDiagram0604 .dgmGroup .item.od1 {left:0; top:0; }
+    .cptDiagram0604 .dgmGroup .item.od2 {right:0; top:0;}
+    .cptDiagram0604 .dgmGroup .item.od3 {right:calc(50% - 100px); top:25px;}
+    .cptDiagram0604 .dgmGroup .item.od4 {right:0; top: 95px;}
+    .cptDiagram0604 .dgmGroup .item.od5 {left:0; top:275px; }
+    .cptDiagram0604 .dgmGroup .item.od6 {right:calc(50% - 100px); top: 275px;}
+    .cptDiagram0604 .dgmGroup .item.od7 {right:0; top:275px;}
+    .cptDiagram0604 .dgmGroup .item.od6::before {bottom:auto; top:175px;}
+    .cptDiagram0604 .dgmGroup .item.od6::after {bottom:auto; top:175px;}
+
+    .cptDiagram0701 .dgmGroup .organ > dd {padding-top:30px; display:block;}
+
+    .cptDiagram0703 .dgmGroup {display:block;}
+    .cptDiagram0703 .item {width:100%; margin-top:60px;}
+    
+    .cptDiagram0801 .dgmGroup {display:block;}
+    .cptDiagram0801 .dgmGroup .item {padding-top:30px; display:inline-block; vertical-align:top;}
+
+    .cptDiagram0901 .dgmGroup {display:block;}
+    .cptDiagram0801 .dgmGroup .item {display:inline-block;}
+    .cptDiagram0901 .dgmTitGroup {padding-top: 30px; padding-left: 20px; display:block;}
+    .cptDiagram0901 .dgmContGroup {display:block;}
+    .cptDiagram0901 .dgmBtmGroup {display:block; text-align:center; padding-top:25px;}
+    
+    .cptDiagram0902 .dgmGroup {display:block;}
+    .cptDiagram0902 .dgmGroup .item {padding-top:30px; display:inline-block; vertical-align:top;}
+}

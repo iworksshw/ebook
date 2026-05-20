@@ -1,0 +1,1778 @@
+﻿@charset "UTF-8";
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------- Common ----------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* --------------------------------- 공통 일반 --------------------------------- */
+/* Headline 4 */
+.comH4 {width:100%; margin-top:50px; position:relative;}
+.comH4:first-child {margin-top:0;}
+.comH4 .num {width:32px; height:32px; font-family:Roboto; font-size:18px; font-weight:900; line-height:32px; letter-spacing:-0.05em; text-align: center; color:#fff; border-radius:50%; background:#04d6b4; display:inline-block; position:absolute; left:0; top:0;}
+.comH4 .titleText {padding-left:39px; font-size:24px; font-weight:bold; line-height:1.5; text-align:left; color:#000; display:inline-block;}
+.comH4 .titleText .brScript {display:none;}
+.comH4 .point {margin-left:10px; padding:0 23px; font-size:18px; font-weight:bold; color:#0098ff; line-height:1.76; letter-spacing:-0.05em; display:inline-block; position:relative;}
+.comH4 .point:before {content:""; width:18px; height:17px; background:url(/ebook/common/images/icon/icon_star.svg) center no-repeat; display:inline-block; position:absolute; left:0; top:4px;}
+.comH4 .point:after {content:""; width:18px; height:17px; background:url(/ebook/common/images/icon/icon_star.svg) center no-repeat; display:inline-block; position:absolute; right:0; top:4px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comH4 {width:100%; margin-top:40px;}
+    .comH4 .num {width:23px; height:23px; padding-top:2px; font-size:12px; font-weight:bold; line-height:20px;}
+    .comH4 .titleText {padding-left:30px; font-size:17px;}
+}
+
+/* Headline 5 ex) (1) 서비스 제공내용 */
+.comH5 {width:100%; margin-top:50px; position:relative;}
+.comH5:first-child {margin-top:0;}
+.comH5 .num {font-size:18px; font-weight:bold; line-height:1.67; text-align:left; color:#000; position:absolute; left:0; top:-1px;}
+.comH5 .titleText {padding-left:25px; font-size:18px; font-weight:bold; line-height:1.67; text-align:left; color:#000;}
+.comH5 .titleText.double {padding-left: 33px;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comH5 {width:100%; margin-top:40px;}
+    .comH5 .num {font-size:15px;}
+    .comH5 .titleText {padding-left:20px; font-size:15px;}
+}
+
+/* Headline 6 (타이틀형) ex) ■ 설날(음력 1월1일) */
+.comH6 {width:100%; margin-top:50px; margin-bottom:10px; position:relative;}
+.comH6 h6 {width:100%; padding-left:16px; font-size:17px; font-weight:500; line-height:1.76; letter-spacing:-0.05em; color:#000; display:block; position:relative;}
+.comH6.grey h6 {color:#757575;}
+.comH6 h6:before {content:""; width:8px; height:8px; background:#0098ff; position:absolute; left:0; top:10px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comH6 {width:100%; margin-top:20px; margin-bottom:5px; position:relative;}
+    .comH6 h6 {width:100%; padding-left:13px; font-size:13px; line-height:1.69;}
+    .comH6 h6:before {content:""; width:6px; height:6px; top:7px; top:6px;}
+}
+
+/* Headline 6 (디스크립션형) ex) ■ 1월1일 : 양력 새해가 시작되는날 */
+.comH6Desc {width:100%; padding-left:16px; margin-top:50px; position:relative;}
+.comH6Desc .descTit:before {content:""; width:8px; height:8px; background:#0098ff; position:absolute; left:0; top:10px;}
+.comH6Desc .descTit {font-size:17px; font-weight:500; line-height:1.76; letter-spacing:-0.05em; color:#000; display:inline;}
+.comH6Desc .descMsg {font-size:17px; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; color:#757575; display:inline;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comH6Desc {width:100%; padding-left:13px; margin-top:20px; position:relative;}
+    .comH6Desc .descTit:before {content:""; width:6px; height:6px; background:#0098ff; position:absolute; left:0; top:7px;}
+    .comH6Desc .descTit {font-size:13px; line-height:1.69;}
+    .comH6Desc .descMsg {font-size:13px; line-height:1.69;}
+}
+
+
+/* Headline 3 하단 텍스트 */
+.comH3Text {margin-top:10px;}
+.comH3Text p {font-size:20px; font-weight:400; line-height:1.5; letter-spacing:-0.05em; text-align:left; color:#000;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comH3Text {margin-top:0;}
+    .comH3Text p {margin-top:0; font-size:14px;}
+}
+
+/* Headline 4 하단 텍스트 */
+.comH4Text {margin-top:10px;}
+.comH4Text p {font-size:17px; font-weight:400; line-height:1.76; letter-spacing:-0.05em; text-align:left; color:#757575;}
+
+.comH4Text.np * {word-break: break-all;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comH4Text {margin-top:5px;}
+    .comH4Text p {font-size:13px;}
+}
+
+/* Headline 5 하단 텍스트 */
+.comH5Text {margin-top:10px;}
+.comH5Text p {font-size:17px; font-weight:400; line-height:1.76; letter-spacing:-0.05em; text-align:left; color:#757575;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comH5Text {margin-top:5px;}
+    .comH5Text p {font-size:13px;}
+}
+
+/* Headline 6 하단 텍스트 */
+.comH6Text {margin-top:10px;}
+.comH6Text p {font-size:17px; font-weight:400; line-height:1.76; letter-spacing:-0.05em; text-align:left; color:#757575;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comH6Text {margin-top:5px;}
+    .comH6Text p {font-size:13px;}
+}
+
+/* 숫자 타이틀(주로 박스 내에 사용 */
+.comNumTitle {width:100%; margin-top:30px; padding-left:27px; position:relative;}
+.comNumTitle:first-child {margin-top:0;}
+.comNumTitle > .num {width:20px; height:20px; min-height:20px; padding-top:3px; font-family: Roboto; font-size:12px; font-weight:normal; line-height:1.25; letter-spacing:-0.05em; text-align:center; color:#fff; border-radius:50%; background:#0098ff; display:block; position:absolute; left:0; top:3px;}
+.comNumTitle > .numText {width:100%; font-size:17PX; font-weight:500; line-height:1.76; letter-spacing:-0.05em; color:#000; display:inline-block;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comNumTitle {width:100%; margin-top:20px; padding-left:22px;}
+    .comNumTitle > .num {width:15px; height:15px; min-height:15px; padding-top:2px; font-size:10px; line-height:1.25; top:3px;}
+    .comNumTitle > .numText {font-size:13PX; line-height:1.69;}
+}
+
+/* 리스트 : 점 ex) • 의미 : 음력 새해가 시작되는 날 */
+.comDotList {width:100%; margin-top:10px;}
+.comDotList .dotItem {width:100%; margin-top:5px; padding-left:16px; font-size:17px; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; color:#757575; position:relative;}
+.comDotList .dotItem:before {content:""; width:8px; height:8px; background:url(/ebook/common/images/icon/icon-dot.svg) center no-repeat; position:absolute; left:0; top:9px;}
+
+.comDotList.np * {word-break: break-all;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comDotList {width:100%; margin-top:5px;}
+    .comDotList .dotItem {width:100%; padding-left:13px; font-size:13px; line-height:1.69;}
+    .comDotList .dotItem:before {content:""; position:absolute; left:0; top:6px;}
+}
+
+/* 리스트 : 바 ex) - (한글) 외국인등록증 (영문) ALIEN REGISTRATION CARD */
+.comBarList {width:100%; margin-top:10px;}
+.comBarList .barItem {width:100%; margin-top:5px; padding-left:10px; font-size:17px; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; color:#757575; position:relative;}
+.comBarList .barItem:before {content:"-"; width:8px; height:8px; position:absolute; left:0; top:0;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comBarList {width:100%; margin-top:5px;}
+    .comBarList .barItem {width:100%; padding-left:8px; font-size:13px; line-height:1.69;}
+    .comBarList .barItem:before {content:"-"; position:absolute; left:0; top:0;}
+}
+
+/* 리스트 : 숫자 */
+.comNumList {width:100%; margin-top:10px;}
+.comNumList .numItem {margin-top:11px; padding-left:27px; position:relative;}
+.comNumList .numItem:first-child {margin-top:0;}
+.comNumList .numItem > .num {width:20px; height:20px; min-height:20px; padding-top:2px; font-family: Roboto; font-size:12px; font-weight:normal; line-height:1.25; letter-spacing:-0.05em; text-align:center; color:#757575; border:1px solid #757575; border-radius:50%; display:block; position:absolute; left:0; top:3px;}
+.comNumList .numItem > .numText {width:100%; font-size:17PX; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; color:#757575; display:inline-block;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comNumList {width:100%; margin-top:5px;}
+    .comNumList .numItem {margin-top:3px; padding-left:25px;}
+    .comNumList .numItem > .num {width:15px; height:15px; min-height:15px; padding-top:1px; font-size:10px; line-height:1.25; top:3px;}
+    .comNumList .numItem > .numText {font-size:13PX; line-height:1.69;}
+}
+/* 리스트 : 기호 */
+.comTextList {width:100%; margin-top:10px;}
+.comTextList .textItem {margin-top:11px; padding-left:27px; position:relative;}
+.comTextList .textItem:first-child {margin-top:0;}
+.comTextList .textItem > .num {font-size:17PX; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; text-align:center; color:#737373; display:block; position:absolute; left:0; top:0;}
+.comTextList .textItem > .numText {width:100%; font-size:17PX; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; color:#757575; display:inline-block;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comTextList {width:100%; margin-top:5px;}
+    .comTextList .textItem {margin-top:3px; padding-left:18px;}
+    .comTextList .textItem > .num {font-size:13px; line-height:1.69;}
+    .comTextList .textItem > .numText {font-size:13PX; line-height:1.69;}
+}
+
+/* 리스트 (※당구장) */
+.comNoteList {width:100%; margin-top:10px;}
+.comNoteList .noteItem {padding-left:20px; font-size:15px; font-weight:500; line-height:1.76; letter-spacing:-0.05em; color:#000; position:relative;}
+.comNoteList .noteItem:before {content:"※"; position:absolute; left:0; top:0;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comNoteList {width:100%; margin-top:5px;}
+    .comNoteList .noteItem {padding-left:15px; font-size:11px;}
+}
+
+/* 리스트 (*별) */
+.comRefList {width:100%; margin-top:10px;}
+.comRefList .refItem {padding-left:10px; font-size:15px; font-weight:500; line-height:1.76; letter-spacing:-0.05em; color:#000; position:relative;}
+.comRefList .refItem:before {content:"*"; position:absolute; left:0; top:-2px;}
+.comRefList .refItem.two {padding-left:17px;}
+.comRefList .refItem.two:before {content:"**"; position:absolute; left:0; top:-2px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comRefList {width:100%; margin-top:5px;}
+    .comRefList .refItem {padding-left:8px; font-size:11px;}
+    .comRefList .refItem.two {padding-left:14px;}
+}
+
+/* 리스트 (▶ 화살표) */
+.comTriaList {width: 100%; margin-top: 12px;}
+.comTriaList .triItem {margin-bottom: 6px; padding-left: 20px; font-size: 15px; font-weight: 500; color: #000; letter-spacing: -0.75px; position: relative;}
+.comTriaList .triItem:last-child {margin-bottom: 0;}
+.comTriaList .triItem::before {display: block; content: ""; width: 9px; height: 11px; background: url(/ebook/common/images/icon/icon_triangle_list.svg) center no-repeat; position: absolute; top: 6px; left: 0;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comTriaList {margin-top: 5px;}
+    .comTriaList .triItem {margin-bottom: 3px; padding-left: 14px; font-size: 11px;}
+    .comTriaList .triItem::before {width: 6px; height: 7px; background-size: 6px; top: 3px; }
+}
+
+/* 이미지 타이틀 */
+.comImgTitle {width:100%; margin:10px 0;}
+.comImgTitle em {font-size:17px; font-weight:bold; line-height:1.76; letter-spacing:-0.05em; color:#000;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comImgTitle {width:100%; margin:5px 0;}
+    .comImgTitle em {font-size:13px; font-weight:bold; line-height:1.69;}
+}
+
+/* 이미지 영역 */
+.comImgGroup {margin-top:20px; margin-bottom:40px; display:flex; flex-wrap:wrap; justify-content:space-between;}
+.comImgGroup .imgItem {}
+.comImgGroup .imgItem.col12 {width:100%; margin-top:20px;}
+.comImgGroup .imgItem.col12:first-child {margin-top:0;}
+.comImgGroup .imgItem.col6 {width:calc(50% - 10px);}
+.comImgGroup .imgItem.col6:nth-child(n + 3) {margin-top:20px;}
+.comImgGroup .imgItem.col4 {width:calc(33.333% - 13.333px);}
+.comImgGroup .imgItem.col4:nth-child(n + 4) {margin-top:20px;}
+.comImgGroup .imgItem.col3 {width:calc(25% - 15px);}
+.comImgGroup .imgItem.col3:nth-child(n + 5) {margin-top:20px;}
+.comImgGroup .imgItem .imgBox {font-size:0; position:relative;}
+.comImgGroup .imgItem .imgBox img {width:100%;}
+.comImgGroup .imgItem .imgBox .inImgGroup {width:100%; position:absolute; left:0; top:0;}
+.comImgGroup .imgItem .imgTag {width:100%; margin-top:5px; font-size:17px; font-style:normal; font-weight:400; line-height:1.59; letter-spacing:-0.05em; text-align:center; color:#000; display:inline-block;}
+.comImgGroup .imgItem .imgDesc {width: 100%; margin-top: 15px;}
+.comImgGroup .imgItem .imgDesc > dt {font-size: 17px; font-weight: 500; color: #000; letter-spacing: -0.85px;}
+.comImgGroup .imgItem .imgDesc > dd {margin-top: 4px; font-size: 17px; color: #757575; letter-spacing: -0.85px;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comImgGroup {margin-top:10px; margin-bottom:30px; display:flex; flex-wrap:wrap; justify-content:space-between;}
+    .comImgGroup .imgItem.col12m {width:100%; margin-top:17px;}
+    .comImgGroup .imgItem.col12m:first-child {margin-top:0;}
+    .comImgGroup .imgItem.col6m {width:calc(50% - 5px);}
+    .comImgGroup .imgItem.col6m:nth-child(n + 3) {margin-top:17px;}
+    .comImgGroup .imgItem.col4m {width:calc(33.333% - 7px);}
+    .comImgGroup .imgItem.col4m:nth-child(n + 4) {margin-top:17px;}
+    .comImgGroup .imgItem.col3m {width:calc(25% - 7.5px);}
+    .comImgGroup .imgItem.col3m:nth-child(n + 5) {margin-top:17px;}
+    .comImgGroup .imgItem .imgTag {margin-top:7px; font-size:12px;}
+    .comImgGroup .imgItem .imgDesc {margin-top: 10px;}
+    .comImgGroup .imgItem .imgDesc > dt {font-size: 13px;}
+    .comImgGroup .imgItem .imgDesc > dd {font-size: 13px;}
+}
+
+
+/* 테이블 기본타입 */
+.comTableBasic {width:100%; margin:20px 0 40px; border-top:2px solid #000;}
+.comTableBasic .tableType {width:100%; table-layout:fixed; border-collapse:collapse; border-spacing:0;}
+.comTableBasic .tableType th {padding:15px 10px; font-size:17px; font-weight:500; line-height:1.76; letter-spacing:-0.05em; text-align:center; color:#000; border-left:1px solid #dbdbdb; border-bottom:1px solid #dbdbdb; background:#f5f5f5;}
+.comTableBasic .tableType th:first-child {border-left:0;}
+.comTableBasic .tableType td {padding:25px 10px; font-size:17px; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; text-align:center; color:#757575; border-left:1px solid #dbdbdb; border-bottom:1px solid #dbdbdb; background:#fff;}
+.comTableBasic .tableType td:first-child {border-left:0;}
+.comTableBasic .tableType tr:last-child td, .comTableBasic .tableType tbody tr:last-child th {border-bottom:1px solid #000;}
+.comTableBasic .tableType th.left, .comTableBasic .tableType td.left {padding-left:20px; text-align:left;}
+.comTableBasic .tableType th.line, .comTableBasic .tableType td.line {border-left:1px solid #dbdbdb;}
+.comTableBasic .tableType th.lineB, .comTableBasic .tableType td.lineB {border-bottom:1px solid #000;}
+.comTableBasic .tableType th.sky, .comTableBasic .tableType td.sky {background: #e5f4ff;}
+
+.comTableBasic .tableType .mTxtShow {display: none;}
+
+.comTableBasic.pcXL {overflow-x: auto;}
+.comTableBasic.pcXL .tableType {width:1400px;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comTableBasic {width:100%; margin:10px 0 30px; border-top:2px solid #000; overflow-x:auto;}
+    .comTableBasic::-webkit-scrollbar {height: 3px;}
+    .comTableBasic::-webkit-scrollbar-thumb {background-color: rgba(0,0,0,0.25);}
+    .comTableBasic .tableType {}
+    .comTableBasic .tableType th {padding:10px; font-size:13px; font-weight:normal; line-height:1.69;}
+    .comTableBasic .tableType td {padding:10px; font-size:13px; font-weight:normal; line-height:1.69;}
+    .comTableBasic.sizeS .tableType {min-width:100%;}
+    .comTableBasic.sizeM .tableType {min-width:500px;}
+    .comTableBasic.sizeL .tableType {min-width:750px;}
+    .comTableBasic.sizeXL .tableType {min-width:1000px;}
+
+    .comTableBasic .tableType .mTxtShow {display: inline;}
+}
+
+.comTableBasic.en .tableType th, .comTableBasic.en .tableType td {font-size: 13px; line-height: 1.3; word-break: break-all;}
+.comTableBasic.np .tableType th, .comTableBasic.np .tableType td {word-break: break-all;}
+.comTableBasic.ph .tableType th, .comTableBasic.ph .tableType td {word-break: break-all;}
+
+
+/* 페이지 단위 */
+.comResultGroup {width: 100%; margin-bottom: -10px;}
+.comResultGroup::after {display: block; content: ""; clear: both;}
+.comResultGroup .floatL {float: left;}
+.comResultGroup .floatR {float: right;}
+.comResultGroup .resultCmt {font-size: 15px; font-weight: 500; color: #000; letter-spacing: -0.75px;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comResultGroup {margin-top: 10px; margin-bottom: -7px;}
+    .comResultGroup .resultCmt {font-size: 11px;}
+}
+
+/* 페이징 */
+.comPagination {width:100%; margin:55px 0 60px; font-size:0; text-align:center;}
+.comPagination .arrPage {width:12px; height:23px; font-size:0; display:inline-block; vertical-align:middle; cursor:pointer;}
+.comPagination .firstPage {margin-right:7px; background:url(/ebook/common/images/icon/icon_first_page.svg) center no-repeat;}
+.comPagination .prevPage {margin-right:7px; background:url(/ebook/common/images/icon/icon_prev_page.svg) center no-repeat;}
+.comPagination .nextPage {margin-left:7px; background:url(/ebook/common/images/icon/icon_next_page.svg) center no-repeat;}
+.comPagination .LastPage {margin-left:7px; background:url(/ebook/common/images/icon/icon_last_page.svg) center no-repeat;}
+.comPagination .pageGroup {padding:0 10px; font-size:0; display:inline-block;}
+.comPagination .pageGroup .pageList {font-size:0; display:inline-block;}
+.comPagination .pageGroup .pageList li {padding:0 10px; font-size:0; display:inline-block;}
+.comPagination .pageGroup .pageList li a {height:23px; font-size:17px; font-weight:400; color:#757575; line-height:23px; vertical-align:middle; display:inline-block;}
+.comPagination .pageGroup .pageList li.on a {color:#0098ff;}
+@media screen and (min-width: 100px) and (max-width: 1023px) {
+    .comPagination {width:100%; margin:30px 0 50px;}
+    .comPagination .arrPage {width:11px; height:18px; font-size:0; display:inline-block; vertical-align:middle; cursor:pointer;}
+    .comPagination .firstPage {margin-right:5px; background:url(/ebook/common/images/icon/icon_first_page.svg) center / 7px no-repeat;}
+    .comPagination .prevPage {margin-right:0; background:url(/ebook/common/images/icon/icon_prev_page.svg) center / 3.5px no-repeat;}
+    .comPagination .nextPage {margin-left:0; background:url(/ebook/common/images/icon/icon_next_page.svg) center / 3.5px no-repeat;}
+    .comPagination .LastPage {margin-left:5px; background:url(/ebook/common/images/icon/icon_last_page.svg) center / 7px no-repeat;}
+    .comPagination .pageGroup {padding:0 5px; font-size:0; display:inline-block;}
+    .comPagination .pageGroup .pageList li {padding:0 5px;}
+    .comPagination .pageGroup .pageList li a {height:18px; font-size:13px; line-height:18px;}
+}
+
+/* --------------------------------- 서브페이지 탑영역 --------------------------------- */
+/* 서브탑 타이틀 */
+.comSubtop {display: none;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comSubtop {width: 100%; height: 60px; background: #fff; position: fixed; top: 0; left: 0; z-index: 99; display: block;}
+    .comSubtop::after {display: block;content: "";clear: both;}
+    .comSubtop .subBack {width: 70px; padding: 7px 0 0 7px; float: left;}
+    .comSubtop .subBack .backBtn {width: 100%; height: 50px; font-size: 0; background: url(/ebook/common/images/icon/icon_back.svg) left center no-repeat; display: block;}
+
+    .comSubtop .subTit {width: calc(100% - 140px);height: 60px; text-align: center;  float: left;}
+    .comSubtop .subTit .tit {width: 100%; line-height: 65px; font-size: 16px; font-weight: 700; letter-spacing: -0.8px; color: #000;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+}
+
+/* 로케이션 */
+.comLocation {width: 100%; margin-bottom: 34px;}
+.comLocation ul::after {display: block; content: ""; clear: both;}
+.comLocation .item {margin-left: 50px; font-size: 15px; font-weight: 500; letter-spacing: -0.75px; color: #757575; float: left; position: relative;}
+.comLocation .item.home {width: 30px; height: 22px; font-size: 0; background: url(/ebook/common/images/icon/icon_home_grey.svg) center no-repeat;}
+.comLocation .item::after {display: block; content: ""; width: 7px; height: 22px; background: url(/ebook/common/images/icon/arrow-s-right-grey.svg) center no-repeat; position: absolute; top: 50%; left: -28px; transform: translateY(-50%);}
+.comLocation .item:first-child {margin-left: 0; color: #000;}
+.comLocation .item:first-child::after {display: none;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comLocation {margin-bottom: 10px;}
+    .comLocation .item {margin-left: 23px; font-size: 10px; letter-spacing: -0.5px; }
+    .comLocation .item.home {width: 12px; height: 15px; background-size: 12px;}
+    .comLocation .item::after {width: 4px; height: 15px; background-size: 3px; left: -14px; }
+}
+
+/* --------------------------------- 서브 하단 공통 --------------------------------- */
+/* 공공누리 */
+.comPublicNuri {width:100%; margin-top:60px; margin-bottom:20px; padding:19px 30px; font-size:0; background:#f5f5f5;}
+.comPublicNuri .imgGroup {width:140px; padding-right:20px; vertical-align:top; border-right:1px solid #c2c2c2; display:inline-block;}
+.comPublicNuri .imgGroup .imgBox {width:100%;}
+.comPublicNuri .imgGroup .imgBox img {width:100%;}
+.comPublicNuri .txtGroup {width:calc(100% - 160px); margin-left:20px; margin-top:6px; padding-left:27px; font-size:15px; font-weight:400; line-height:21px; letter-spacing:-0.05em; color:#757575; vertical-align:top; display:inline-block; position:relative;}
+.comPublicNuri .txtGroup:before {content:"!"; width:20px; height:20px; font-size:15px; font-weight:900; text-align:center; color:#fff; border-radius:50%; background:#e63434; display:block; position:absolute; left:0; top:0;}
+.comPublicNuri .txtGroup b {font-weight:400; color:#000;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comPublicNuri {width:100%; margin-top:40px; margin-bottom:20px; padding:20px 15px;}
+    .comPublicNuri .imgGroup {width:110px; padding:10px 10px 10px 0;}
+    .comPublicNuri .txtGroup {width:calc(100% - 120px); margin-left:10px; margin-top:0; padding-left:17px; font-size:10px; line-height:1.6;}
+    .comPublicNuri .txtGroup:before {content:"!"; width:12px; height:12px; font-size:9px;}
+
+}
+
+/* 이전글/다음글 */
+.comAnotherPost {width:100%; margin-top:40px; padding:30px 0 60px; border-top:1px solid #dbdbdb; display:flex; flex-wrap:nowrap;}
+.comAnotherPost .link {width:50%; display:block;}
+.comAnotherPost .prevPost {width:100%; padding:5px 0 6px 129px; text-align:left; background:url(/ebook/common/images/common/prev-post.svg) no-repeat; background-position: 0 25px; transition: all 0.5s;}
+.comAnotherPost .nextPost {width:100%; padding:5px 129px 6px 0; text-align:right; border-left:1px solid #dbdbdb; background:url(/ebook/common/images/common/next-post.svg) no-repeat; background-position: 100% 25px;transition: all 0.5s;}
+.comAnotherPost .postTit {font-size:17px; font-weight:500; line-height:20px; letter-spacing:-0.05em; color:#a8a8a8}
+.comAnotherPost .postCont {margin-top:10px; font-size:22px; font-weight:500; line-height:29px; letter-spacing:-0.05em; color:#5c5c5c}
+.comAnotherPost .link:hover .prevPost {color:#0098ff; background:url(/ebook/common/images/common/prev-post-on.svg) no-repeat;  background-position: 20px 25px;transition: all 0.5s;}
+.comAnotherPost .link:hover .nextPost {color:#0098ff; background:url(/ebook/common/images/common/next-post-on.svg) no-repeat; background-position: calc(100% - 20px) 25px;transition: all 0.5s;}
+.comAnotherPost .link:hover .postTit {color:#0098ff;}
+.comAnotherPost .link:hover .postCont {color:#0098ff;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comAnotherPost {width:100%; margin-top:40px; padding:20px 0 130px;}
+    .comAnotherPost .prevPost {width:100%; padding:3px 0 0 49px; background:url(/ebook/common/images/common/prev-post.svg) 10px 11px / 19px no-repeat;}
+    .comAnotherPost .nextPost {width:100%; padding:3px 49px 0 0; background:url(/ebook/common/images/common/next-post.svg) calc(100% - 10px) 11px / 19px no-repeat;}
+    .comAnotherPost .postTit {font-size:10px; line-height:1.5;}
+    .comAnotherPost .postCont {margin-top:0; font-size:12px; line-height:1.5;}
+    .comAnotherPost .link:hover .prevPost {background:url(/ebook/common/images/common/prev-post-on.svg) 10px 11px / 19px no-repeat;}
+    .comAnotherPost .link:hover .nextPost {background:url(/ebook/common/images/common/next-post-on.svg) calc(100% - 10px) 11px / 19px no-repeat;}
+}
+
+
+
+
+/* --------------------------------- 팝업 타이틀 --------------------------------- */
+.comPopTitle em {font-size: 30px; font-weight: bold; line-height: 1.5; letter-spacing: -0.05em; text-align: left; color: #000;}
+.comPopTitle .subText {margin-top:20px; font-size:17px; line-height:1.6; color:#000;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comPopTitle em {font-size: 20px;}
+    .comPopTitle .subText {margin-top:15px; font-size:11px;}
+}
+
+
+/* --------------------------------- com 사이 간격 예외 --------------------------------- */
+/* 공공누리 + 이전글/다음글 */
+.comPublicNuri + .comAnotherPost {margin-top:20px;}
+
+/* H5 타이틀 */
+.comH4 + .comH5 {margin-top:10px;}
+.comH5 + .comH5 {margin-top:10px;}
+.comImgTitle + .comH5 {margin-top:10px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comH4 + .comH5 {margin-top:5px;}
+    .comH5 + .comH5 {margin-top:5px;}
+    .comImgTitle + .comH5 {margin-top:5px;}
+}
+
+/* H6 타이틀 */
+.comH6:first-child {margin-top:0;}
+.comH4 + .comH6 {margin-top:10px;}
+.comH5 + .comH6 {margin-top:10px;}
+.comH6 + .comH6 {margin-top:10px;}
+.comImgTitle + .comH6 {margin-top:10px;}
+.comH6Desc + .comH6 {margin-top:10px;}
+.comH6Desc + .comH6Desc {margin-top:10px;}
+.comH4 + .comH6Desc {margin-top:10px;}
+.comH5 + .comH6Desc {margin-top:10px;}
+.comTableBasic + .comH6Desc {margin-top:10px;}
+.comImgGroup + .comH6Desc {margin-top:10px;}
+.comBoxTitle.addList + .comH6 {margin-top:10px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comH6:first-child {margin-top:0;}
+    .comH4 + .comH6 {margin-top:5px;}
+    .comH5 + .comH6 {margin-top:5px;}
+    .comH6 + .comH6 {margin-top:5px;}
+    .comImgTitle + .comH6 {margin-top:5px;}
+    .comH6Desc + .comH6 {margin-top:5px;}
+    .comH6Desc + .comH6Desc {margin-top:5px;}
+    .comH4 + .comH6Desc {margin-top:5px;}
+    .comH5 + .comH6Desc {margin-top:5px;}
+    .comTableBasic + .comH6Desc {margin-top:5px;}
+    .comImgGroup + .comH6Desc {margin-top:5px;}
+}
+/* 숫자 타이틀 */
+.comNumTitle + .comNumTitle {margin-top:10px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comNumTitle + .comNumTitle {margin-top:5px;}
+}
+
+/* 리스트 : 점 */
+.comImgGroup + .comDotList {margin-top:-20px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comImgGroup + .comDotList {margin-top:-10px;}
+    
+}
+
+/* 리스트 : 바 */
+.comImgGroup + .comBarList {margin-top:-20px;}
+.comDotList .comBarList {margin-top:0;}            /* 점 리스트 > 당구장 리스트 */
+.comNumList .comBarList {margin-top:0;}            /* 숫자 리스트 > 당구장 리스트 */
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comImgGroup + .comBarList {margin-top:-10px;}
+    
+}
+
+/* 리스트 : 숫자 */
+.comImgGroup + .comNumList {margin-top:-20px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comImgGroup + .comDotList {margin-top:-10px;}
+
+}
+
+/* 리스트 : 기호 */
+.comImgGroup + .comTextList {margin-top:-20px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comImgGroup + .comDotList {margin-top:-10px;}
+
+}
+
+/* 당구장 리스트 */
+.comTableBasic + .comNoteList {margin-top:-20px;}   /* 테이블 + 당구장 리스트 */
+.comImgGroup + .comNoteList {margin-top:-20px;}     /* 이미지 + 당구장 리스트 */
+.comDotList .comNoteList {margin-top:0;}            /* 점 리스트 > 당구장 리스트 */
+.comNumList .comNoteList {margin-top:0;}            /* 숫자 리스트 > 당구장 리스트 */
+.comTextList .comNoteList {margin-top:0;}           /* 기호 리스트 > 당구장 리스트 */
+
+/* 별 리스트 */
+.comTableBasic + .comRefList {margin-top:-20px;}    /* 테이블 + 별 리스트 */
+.comImgGroup + .comRefList {margin-top:-20px;}      /* 이미지 + 별 리스트 */
+.comDotList .comRefList {margin-top:0;}             /* 점 리스트 > 별 리스트 */
+.comNumList .comRefList {margin-top:0;}             /* 숫자 리스트 > 별 리스트 */
+.comTextList .comRefList {margin-top:0;}            /* 기호 리스트 > 별 리스트 */
+
+/* 이미지 */
+.comImgGroup + .comImgGroup {margin-top:-20px;}
+.cptMsgBox .comImgGroup:last-child {margin-bottom:0;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comImgGroup + .comImgGroup {margin-top:-10px;}
+}
+
+/* --------------------------------- 레이어팝업 --------------------------------- */
+.modLayerPop {width:500px; position:absolute; left:20px; top:20px; z-index:100000;}
+.modLayerPop .image a {display:block;}
+.modLayerPop .image a img {width:100%; display:block;}
+.modLayerPop .closeArea {width:100%; height:35px; background:#ccc;}
+.modLayerPop .closeArea .close {width: 18px; height: 18px; background: url(/ebook/common/images/event/icon_close_black.png) center no-repeat; font-size: 0; position: absolute; right: 9px; top: 9px; display: block;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+	.modLayerPop {width:calc(100% - 40px);}
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------- Component --------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* --------------------------------- 공통영역 --------------------------------- */
+
+/* 좌메뉴 */
+.cptGnb {width: 360px; height: 100vh; background: #0098ff; position: fixed; left: 0; top: 0; box-shadow: 20px 0 20px rgba(0,0,0,0.1); z-index: 10;}
+.cptGnb .gnbLogo {width: 100%; padding: 40px 30px; margin-bottom: 35px;}
+.cptGnb .gnbLogo h1 {font-size: 30px; font-weight: 700; letter-spacing: -1.5px; color: #fff;}
+.cptGnb .gnbLogo h1 a {color: #fff;}
+.cptGnb .menuArea {width: 100%; margin-top: 35px; height: calc(100vh - 320px); overflow-y: auto;}
+.cptGnb .menuArea::-webkit-scrollbar {width: 6px;}
+.cptGnb .menuArea::-webkit-scrollbar-thumb {background-color: rgba(0,0,0,0.25);}
+
+.cptGnb .menuArea .depth1Menu {width: 100%;}
+.cptGnb .menuArea .depth1Menu .depth1Name .depth1Btn {width: 100%; padding:27px 10px 27px 80px; font-size: 17px; font-weight: 500; color: #fff; letter-spacing: -0.85px; position: relative; cursor: pointer; display: block;}
+.cptGnb .menuArea .depth1Menu .depth1Name .depth1Btn::before {display: block; content: ""; width: 40px; height: 40px; border-radius: 50%; background: center no-repeat; background-color: rgba(0,0,0,0.05); position: absolute; top: 20px; left: 30px; transition: all 0.3s;}
+.cptGnb .menuArea .depth1Menu .depth1Name.icon01 .depth1Btn::before {background-image: url(/ebook/common/images/icon/icon_menu01.png);}
+.cptGnb .menuArea .depth1Menu .depth1Name.icon02 .depth1Btn::before {background-image: url(/ebook/common/images/icon/icon_menu02.png);}
+.cptGnb .menuArea .depth1Menu .depth1Name.icon03 .depth1Btn::before {background-image: url(/ebook/common/images/icon/icon_menu03.png);}
+.cptGnb .menuArea .depth1Menu .depth1Name.icon04 .depth1Btn::before {background-image: url(/ebook/common/images/icon/icon_menu04.png);}
+.cptGnb .menuArea .depth1Menu .depth1Name.icon05 .depth1Btn::before {background-image: url(/ebook/common/images/icon/icon_menu05.png);}
+.cptGnb .menuArea .depth1Menu .depth1Name.icon06 .depth1Btn::before {background-image: url(/ebook/common/images/icon/icon_menu06.png);}
+.cptGnb .menuArea .depth1Menu .depth1Name.icon07 .depth1Btn::before {background-image: url(/ebook/common/images/icon/icon_menu07.png);}
+.cptGnb .menuArea .depth1Menu .depth1Name.icon08 .depth1Btn::before {background-image: url(/ebook/common/images/icon/icon_menu08.png);}
+.cptGnb .menuArea .depth1Menu .depth1Name.icon09 .depth1Btn::before {background-image: url(/ebook/common/images/icon/icon_menu09.png);}
+.cptGnb .menuArea .depth1Menu .depth1Name.icon10 .depth1Btn::before {background-image: url(/ebook/common/images/icon/icon_menu10.png);}
+.cptGnb .menuArea .depth1Menu .depth1Name .depth1Btn::after {display: block; content: ""; width: 10px; height: 30px; background: #19fe83; position: absolute; left: 0; top: 26px;  opacity: 0; transition: all 0.2s;}
+.cptGnb .menuArea .depth1Menu:hover .depth1Name .depth1Btn::before {background-color: rgba(0,0,0,0.3); transition: all 0.3s;}
+.cptGnb .menuArea .depth1Menu:hover .depth1Name .depth1Btn::after {opacity: 1; transition: all 0.2s;}
+.cptGnb .menuArea .depth1Menu.on .depth1Name .depth1Btn::before {background-color: rgba(0,0,0,0.3); transition: all 0.3s;}
+.cptGnb .menuArea .depth1Menu.on .depth1Name .depth1Btn::after {opacity: 1; transition: all 0.2s;}
+
+.cptGnb .menuArea .depth1Menu .depth2Area {width: 100%; padding: 30px; background: #0090F2; display: none;}
+.cptGnb .menuArea .depth1Menu .depth2Menu {width: 100%; margin-bottom: 10px;}
+.cptGnb .menuArea .depth1Menu .depth2Menu:last-child {margin-bottom: 0;}
+.cptGnb .menuArea .depth1Menu .depth2Menu .depth2Name a {padding: 10px 40px 10px 0; font-size: 17px; font-weight: 500; color: #fff; letter-spacing: -0.85px; display: block; position: relative; word-break: keep-all;}
+.cptGnb .menuArea .depth1Menu .depth2Menu .depth2Name a::after {display: block; content: ""; width: 36px; height: 10px; background: url(/ebook/common/images/icon/depth2_arrow.png) center no-repeat; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); opacity: 0; transition: all 0.2s;}
+.cptGnb .menuArea .depth1Menu .depth2Menu .depth2Name a:hover::after {right: 0; opacity: 1; transition: all 0.2s;}
+.cptGnb .menuArea .depth1Menu .depth2Menu.now .depth2Name a::after {right: 0; opacity: 1;}
+.cptGnb .menuArea .depth1Menu .depth2Area .addsMovie {width: 100%; height: 170px; margin-top: 40px; position: relative;}
+.cptGnb .menuArea .depth1Menu .depth2Area .addsMovie img {width: 100%;height:100%; max-width:100%; max-height:100%; object-fit:cover; position:absolute; left:0; top:0;}
+.cptGnb .menuArea .depth1Menu .depth2Area .addsMovie .viewMovieBtn {width:100%; height: 100%;font-size: 0;  background: rgba(0,0,0,0.5); position: absolute; top: 0; left: 0; }
+.cptGnb .menuArea .depth1Menu .depth2Area .addsMovie .viewMovieBtn::after {display: block; content: ""; width: 60px; height: 60px; background: url(/ebook/common/images/icon/icon_menu_play.png) center no-repeat; position: absolute; right: 0; bottom: 0;}
+.cptGnb .menuArea .depth1Menu.on .depth2Area {display: block;}
+
+/* 20220128 수정 */
+.cptGnb .centerArea {margin-top: 58px; padding: 0 30px;}
+.cptGnb .centerArea .linkPlus {width:100%; height:70px; margin-bottom:30px; border-radius:35px; background:#005dc8;}
+.cptGnb .centerArea .linkPlus a {width:100%; height:100%; padding:15px 0 15px 30px; font-size:26px; font-weight:500; color:#fff; line-height:40px; background: url(/ebook/common/images/icon/btn_plus.svg) calc(100% - 30px) 20px no-repeat; display:block;}
+.cptGnb .centerArea .callCenter {padding: 5px 0;}
+.cptGnb .centerArea .callCenter::after {display: block; content: ""; clear: both;}
+.cptGnb .centerArea .callCenter:first-child {padding-top: 15px; border-top: 1px solid #33ADFF;}
+.cptGnb .centerArea .callCenter .center {font-size: 18px; font-weight: 500; letter-spacing: -1px; color: #fff; float: left;}
+.cptGnb .centerArea .callCenter .number {margin-top: -3px; font-size: 20px; font-weight: 700; color: #19fe83; float: right;}
+/* 20220128 수정 */
+
+@media screen and (min-width: 100px) and (max-width: 1279px) {
+    .cptGnb {width: 0; height: 0; background: transparent; overflow-y: none; position: static; box-shadow: none;}
+    .cptGnb .gnbLogo {width: calc(100% - 40px); margin: 0; padding: 0; position: absolute; top: 20px; left: 20px;z-index: 9;}
+    .cptGnb .gnbLogo h1 {font-size: 22px; color: #000;}
+    .cptGnb .gnbLogo h1 a {color: #000;}
+    .cptGnb .menuArea {display: none;}
+    .cptGnb .centerArea {display: none;}
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptGnb {display: none;}
+    .cptGnb.main {display: block;}
+    .cptGnb.main .gnbLogo h1 {font-size: 17px;letter-spacing: -0.85px;}
+}
+
+/* 우메뉴 */
+.cptQuick {width: 80px; height: 100vh; background: #292929; position: fixed; right: 0; top: 0; z-index: 1300;}
+.cptQuick .allMenu {position:fixed; top:50px; right:15px;}
+.cptQuick .allMenu .btnAllMenu {width:50px; height:50px; border:0; background:none; position:relative; outline:none;}
+.cptQuick .allMenu .btnAllMenu span { height:2px; font-size:0; background:#19fe83; display:block; position:absolute; right:7px; transition-duration:0.4s;}
+.cptQuick .allMenu .btnAllMenu span:nth-child(1){width:35px; top:13px;}
+.cptQuick .allMenu .btnAllMenu span:nth-child(2){width:20px; top:24px;}
+.cptQuick .allMenu .btnAllMenu span:nth-child(3){width:35px; top:35px;}
+.cptQuick.active .allMenu .btnAllMenu span:nth-child(1){width:35px; top:24px; right:8px; transform: rotate(-45deg);}
+.cptQuick.active .allMenu .btnAllMenu span:nth-child(2){width:0; right:24px; opacity:0;}
+.cptQuick.active .allMenu .btnAllMenu span:nth-child(3){width:35px; top:24px; right:8px; transform: rotate(45deg);}
+
+.cptQuick .globalLang {position:fixed; top:120px; right:15px;}
+
+.cptQuick .globalSearch {position:fixed; top:190px; right:15px;}
+.cptQuick .pdfDown {position:fixed; top:260px; right:15px;}
+.cptQuick .linkOriginal {position:fixed; top:330px; right:15px;}
+.cptQuick .imgScrll {position: fixed; bottom: 58px; right: 15px;}
+.cptQuick .imgScrll img {width: 50px; height: 50px;}
+.cptQuick .imgScrll::before {display: block; content: ""; width: 4px; height: 4px; border-radius: 50%; background: #19fe83; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); animation: scrlFade 1s infinite normal;}
+.cptQuick .imgScrll::after {display: block; content: ""; width: 11px; height: 7px; background: url(/ebook/common/images/icon/icon-scorll-arw.png) center no-repeat; position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%); animation: scrlDown 0.5s infinite alternate;}
+
+@keyframes scrlFade {
+    from {opacity: 1; top: 10px;}
+    to {opacity: 0; top: 20px;}
+}
+
+@keyframes scrlDown {
+    from {bottom: 5px;}
+    to {bottom: -5px;}
+}
+
+@media screen and (min-width: 100px) and (max-width: 1279px) {
+    .cptQuick {width: 0; height: 0; position: static; background: transparent;}
+    .cptQuick .globalLang {display: none;}
+    .cptQuick .globalSearch {display: none;}
+    .cptQuick .linkOriginal {display: none;}
+    .cptQuick .imgScrll {display: none;}
+    .cptQuick .pdfDown {display: none;}
+    .cptQuick .allMenu {position: fixed; top: 7px; right: 18px; z-index: 1500;}
+    .cptQuick .allMenu .btnAllMenu span { height:3px; background:#0098ff;right:10px; }
+    .cptQuick .allMenu .btnAllMenu span:nth-child(1){width:20px; top:16px;}
+    .cptQuick .allMenu .btnAllMenu span:nth-child(2){width:10px; top:23px;}
+    .cptQuick .allMenu .btnAllMenu span:nth-child(3){width:20px; top:30px;}
+    .cptQuick.active .allMenu .btnAllMenu span:nth-child(1){width:20px; top:23px; right:8px; background: #fff; transform: rotate(-45deg);}
+    .cptQuick.active .allMenu .btnAllMenu span:nth-child(2){width:0; right:23px; opacity:0;}
+    .cptQuick.active .allMenu .btnAllMenu span:nth-child(3){width:20px; top:23px; right:8px; background: #fff; transform: rotate(45deg);}
+
+    .cptQuick.main .allMenu {position: absolute;}
+}
+
+
+/* 전체메뉴 */
+.cptFullmenu {width: 0; height: 100vh; background: #fff; overflow-y: auto; position: fixed; top: 0; right: -100%; z-index: 1200; display: none;}
+.cptFullmenu::-webkit-scrollbar {width: 6px;}
+.cptFullmenu::-webkit-scrollbar-thumb {background-color: rgba(0,0,0,0.25);}
+.cptFullmenu.open {width: calc(100% - 80px);right: 80px;display: block; animation: menuOpen 0.5s;}
+@keyframes menuOpen {
+    0% {right: -100%;}
+    100% {right: 80px;}
+}
+
+.cptFullmenu .menuArea {width: 100%; padding: 70px 70px 0 70px;}
+.cptFullmenu .mHeader {display: none;}
+.cptFullmenu .fullMenu {width: 100%;}
+.cptFullmenu .fullMenu .depth1Group {width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between}
+.cptFullmenu .fullMenu .depth1Menu {width: 17.6%; margin-bottom: 50px;}
+.cptFullmenu .fullMenu .depth1Name {width: 100%; padding-bottom: 16px; margin-bottom: 20px; border-bottom: 1px solid #0098ff;}
+.cptFullmenu .fullMenu .depth1Name .depth1Btn {cursor: text;}
+.cptFullmenu .fullMenu .depth1Name .number {font-size: 20px; font-weight: 700; color: #0098ff; letter-spacing: -1px;}
+.cptFullmenu .fullMenu .depth1Name .tit {font-size: 22px; font-weight: 700; letter-spacing: -1.1px; color: #000;}
+.cptFullmenu .fullMenu .depth2Area {width: 100%;}
+.cptFullmenu .fullMenu .depth2Area .depth2Menu {margin-bottom: 10px; }
+.cptFullmenu .fullMenu .depth2Area .depth2Menu:last-child {margin-bottom: 0;}
+.cptFullmenu .fullMenu .depth2Area .depth2Menu a {font-size: 16px; font-weight: 400; color: #757575; letter-spacing: -0.8px; transition: all 0.3s;}
+.cptFullmenu .fullMenu .depth2Area .depth2Menu a:hover {color: #0098ff; transition: all 0.3s;}
+.cptFullmenu .menuFooter {width: 100%; border-top: 1px solid #dbdbdb;}
+.cptFullmenu .menuFooter .footArea {width: 100%; padding: 30px 0 38px;}
+.cptFullmenu .menuFooter .footArea::after {display: block; content: ""; clear: both;}
+.cptFullmenu .menuFooter .footRight {float: right;}
+.cptFullmenu .menuFooter .footRight .family {text-align: right;}
+.cptFullmenu .menuFooter .footRight .family .item {height: 40px; margin-left: 30px; display: inline-block;}
+.cptFullmenu .menuFooter .footRight .family .item img {height: 100%;}
+.cptFullmenu .menuFooter .footRight .mCall {display: none;}
+.cptFullmenu .menuFooter .footLeft {float: left;}
+.cptFullmenu .menuFooter .footLeft .footMenuArea {margin-bottom: 20px;}
+.cptFullmenu .menuFooter .footLeft .footWAward {margin-right: 20px; display: inline-flex; vertical-align: middle; align-items: center; column-gap: 20px;}
+.cptFullmenu .menuFooter .footLeft .footWAward img {height: 46px;}
+.cptFullmenu .menuFooter .footLeft .footMenuGroup {display: inline-block; vertical-align: middle;}
+.cptFullmenu .menuFooter .footLeft .footMenuGroup::after {display: block; content: ""; clear: both;}
+.cptFullmenu .menuFooter .footLeft .footMenu {margin-right: 30px; float: left; position: relative;}
+.cptFullmenu .menuFooter .footLeft .footMenu a {font-size: 14px; font-weight: 500; color: #000; letter-spacing: -0.7px;}
+.cptFullmenu .menuFooter .footLeft .footMenu::after {display: block; content: ""; width: 1px; height: 12px; background: #000; position: absolute; top: 50%; right: -16px; transform: translateY(-50%);}
+.cptFullmenu .menuFooter .footLeft .footMenu:last-child:after {display: none;}
+.cptFullmenu .menuFooter .footLeft .footInfo .address {font-size: 14px; letter-spacing: -0.7px; color: #000;}
+.cptFullmenu .menuFooter .footLeft .footInfo .copyright {font-size: 12px; color: #757575;}
+
+@media screen and (min-width: 100px) and (max-width: 1279px) {
+    .cptFullmenu {}
+    .cptFullmenu.open {width: 100%;right: 0;}
+    @keyframes menuOpen {
+        0% {right: -100%;}
+        100% {right: 0;}
+    }
+    .cptFullmenu .menuArea {padding: 140px 0 0 0;}
+    .cptFullmenu .mHeader {width: 100%; padding: 10px 20px 30px; background: #0098ff; display: block; position: fixed; top: 0; right: 0; animation: menuTopmove 0.5s;}
+    @keyframes menuTopmove {
+        0% {right: -100%;}
+        100% {right: 0;}            
+    }
+    .cptFullmenu .mHeader .headBtnArea {margin-bottom: 11px;}
+    .cptFullmenu .mHeader .headBtnArea::after {display: block; content: ""; clear: both;}
+    .cptFullmenu .mHeader .headBtnArea .btnItem {float: left;}
+    .cptFullmenu .mHeader .headBtn {width: 40px; height: 40px; font-size: 0; background: center no-repeat; display: block;}
+    .cptFullmenu .mHeader .headBtn.home {margin-right: 10px; background-image: url(/ebook/common/images/icon/icon_home_white.svg); background-size: 48px;}
+    .cptFullmenu .mHeader .headBtn.language {margin-right: 10px; background-image: url(/ebook/common/images/icon/icon_language.svg);background-size: 33px;}
+    .cptFullmenu .mHeader .headBtn.pdf {margin-right: 10px; background-image: url(/ebook/common/images/icon/icon_pdf.svg);background-size: 33px;}
+    .cptFullmenu .mHeader .headBtn.plus {background-image: url(/ebook/common/images/icon/icon_plus.svg);background-size: 33px;}
+    .cptFullmenu .mHeader .srchArea {width: 100%; position: relative;}
+    .cptFullmenu .mHeader .srchArea input {width: 100%; height: 48px; padding-right: 48px; border: none; border-bottom: 2px solid #fff; font-size: 17px; font-weight: 500; color: #fff; letter-spacing: -0.85px; background: none;}
+    .cptFullmenu .mHeader .srchArea input::placeholder {color: rgba(255,255,255,0.5);}
+    .cptFullmenu .mHeader .srchArea input::-webkit-input-placeholder {color: rgba(255,255,255,0.5);}
+    .cptFullmenu .mHeader .srchArea input:-ms-input-placeholder {color: rgba(255,255,255,0.5);}
+    .cptFullmenu .mHeader .srchArea .srchBtn {width: 48px; height: 48px; font-size: 0; background: url(/ebook/common/images/icon/icon_search.svg) center / 39px no-repeat; display: block; position: absolute; top: 0; right: 0;}
+    
+    .cptFullmenu .fullMenu {padding: 0 20px; margin-bottom: 40px;}
+    .cptFullmenu .fullMenu .depth1Menu {width: 100%; margin-bottom: 0;}
+    .cptFullmenu .fullMenu .depth1Name {width: 100%; height: 60px; line-height: 60px; padding-bottom: 0; margin-bottom: 0; border-bottom: 1px solid #dbdbdb; background: url(/ebook/common/images/icon/arrow-s-down-k.svg) right center / 11px no-repeat;}
+    .cptFullmenu .fullMenu .depth1Name .number {display: none;}
+    .cptFullmenu .fullMenu .depth1Name .tit {width: 100%; padding-right: 20px; line-height: 1.5; font-size: 14px; font-weight: 500; letter-spacing: -0.7px; display: inline-block;}
+    .cptFullmenu .fullMenu .depth2Area {padding: 20px 0; border-bottom: 1px solid #dbdbdb; display: none;}
+    .cptFullmenu .fullMenu .depth2Area .depth2Menu {margin-bottom: 20px; }
+    .cptFullmenu .fullMenu .depth2Area .depth2Menu a {font-size: 13px; transition: none;}
+    .cptFullmenu .fullMenu .depth2Area .depth2Menu a:hover {color: #757575;}
+    .cptFullmenu .fullMenu .depth1Menu.on .depth1Name {border-bottom: 1px solid #0098ff; background-image: url(/ebook/common/images/icon/arrow-s-up-b.png);}
+    .cptFullmenu .fullMenu .depth1Menu.on .depth1Name .tit {color: #0098ff;}
+    .cptFullmenu .fullMenu .depth1Menu.on .depth2Area {height: auto;padding: 20px 0; overflow: hidden; display: block; animation: depth2Open 0.1s;}
+    @keyframes depth2Open {
+        0% {height: 0; padding: 0;}
+        100% {height: auto;padding: 20px 0;}
+    }
+
+    .cptFullmenu .menuFooter {border-top: none; background: #f5f5f5;}
+    .cptFullmenu .menuFooter .footArea {padding: 20px 20px 30px;}
+    .cptFullmenu .menuFooter .footRight {margin-bottom: 10px; float: none;}
+    .cptFullmenu .menuFooter .footRight .family {margin-bottom: 20px; text-align: left;}
+    .cptFullmenu .menuFooter .footRight .family .item {height: 22px; margin-left: 0; margin-right: 10px;}
+    .cptFullmenu .menuFooter .footRight .mCall {display: block;}
+    .cptFullmenu .menuFooter .footRight .mCall .callcenter {font-size: 12px; font-weight: 500; color: #000; letter-spacing: -0.6px;}
+    .cptFullmenu .menuFooter .footRight .mCall .callcenter b {font-size: 14px; font-weight: 700; color: #0098ff; letter-spacing: 0;}
+    .cptFullmenu .menuFooter .footLeft {float: none;}
+    .cptFullmenu .menuFooter .footLeft .footMenuArea {margin-bottom: 5px;}
+    .cptFullmenu .menuFooter .footLeft .footMenu {margin-right: 21px;}
+    .cptFullmenu .menuFooter .footLeft .footMenu a {font-size: 10px; }
+    .cptFullmenu .menuFooter .footLeft .footMenu::after {height: 8px; right: -11px;}
+    .cptFullmenu .menuFooter .footLeft .footInfo .address {font-size: 10px;}
+    .cptFullmenu .menuFooter .footLeft .footInfo .copyright {font-size: 8px;}
+}
+
+
+/* --------------------------------- 팝업 언어선택 --------------------------------- */
+.cptLanguage {margin-top:23px;}
+.cptLanguage ul {display:flex; flex-wrap:wrap;}
+.cptLanguage ul li {width:calc(50% - 30px); min-height:35px; margin-left:60px; padding:17px 0; border-bottom:1px solid #dbdbdb;}
+.cptLanguage ul li:nth-child(2n + 1) {margin-left:0;}
+.cptLanguage ul li b {margin-right:7px; font-size: 20px; font-weight: bold; font-style: normal; line-height: 35px; letter-spacing: -0.05em; text-align: left; color: #000000;}
+.cptLanguage ul li.on b {color: #0098ff;}
+.cptLanguage ul li i {font-size: 15px; font-weight: 500; font-style: normal; line-height: 35px; letter-spacing: -1px; text-align: left; color: #757575;}
+.cptLanguage ul li.on i {color: #0098ff;}
+@media screen and (min-width: 100px) and (max-width: 1279px) {
+
+}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptLanguage {margin-top:17px;}
+    .cptLanguage ul li {width:100%;  min-height:50px; margin-left:0;  padding:13px 0;}
+    .cptLanguage ul li b {font-size: 14px; line-height: 24px;}
+    .cptLanguage ul li i {font-size: 11px; line-height: 24px;}
+}
+
+/* --------------------------------- 팝업 의견등록하기 --------------------------------- */
+.cptSendBoard {width:100%; margin-top:40px;}
+.cptSendBoard .boardArea {border-top:2px solid #000;}
+.cptSendBoard table {width:100%; border-collapse:collapse; border-spacing:0; table-layout:fixed; border-bottom:2px solid #000;}
+.cptSendBoard table th {padding:10px 15px; font-size:17px; font-weight:500; color:#000; text-align:left; vertical-align:middle; border-bottom:1px solid #dbdbdb; background:#f5f5f5;}
+.cptSendBoard table tr:last-child th {border-bottom:0;}
+.cptSendBoard table td {padding:10px; text-align:left; font-size:17px; color:#000; border-left:1px solid #dbdbdb; border-bottom:1px solid #dbdbdb;}
+.cptSendBoard table tr:last-child td {border-bottom:0;}
+.cptSendBoard table .iptBD {width:100%; height:45px; padding-left:15px; font-size:17px; color:#000; border:1px solid #dbdbdb;}
+.cptSendBoard table .iptBD.half {width:calc(50% - 17px);}
+.cptSendBoard table .iptBD.phone {max-width:150px; width:calc(33.3333% - 14px);}
+.cptSendBoard table .textArea {width:100%; height:200px; padding-left:15px; font-size:17px; color:#000; border:1px solid #dbdbdb;}
+.cptSendBoard table .point {margin-left:3px; color:#e63434;}
+.cptSendBoard table .dash {width:14px; height:45px; font-size:17px; color:#000; text-align:center; vertical-align:middle; line-height:45px; display:inline-block;}
+.cptSendBoard table .dash.at {width:27px;}
+.cptSendBoard table .tdBox {margin-top:10px; position:relative;}
+.cptSendBoard table .tdBox:first-child {margin-top:0;}
+.cptSendBoard table .tdBox .listBox {margin-right: 20px; display: inline-block; position: relative;}
+.cptSendBoard table .tdBox .listBox input[type=radio] + label {padding-left: 27px; line-height: 21px; font-size: 18px; color: #222; background: url(/ebook/common/images/icon/icon_check_off.png) left center no-repeat; cursor: pointer; display: inline-block;}
+.cptSendBoard table .tdBox .listBox input[type=radio]:checked + label {background-image: url(/ebook/common/images/icon/icon_check_on.png);}
+.cptSendBoard .boardBtnArea {width:100%; margin-top:40px; text-align:center;}
+.cptSendBoard .btn {margin-left:7px; text-align:center; border-radius:10px;}
+.cptSendBoard .btn:first-child {margin-left:0;}
+.cptSendBoard .btn.lg {width:200px; height:60px; font-size:20px; font-weight:500; line-height:58px;}
+.cptSendBoard .btn.blue {color:#fff; border:1px solid #0098ff; background:#0098ff;}
+.cptSendBoard .btn.dark {color:#fff; border:1px solid #444; background:#444;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptSendBoard table {padding-bottom:20px; border-bottom:1px solid #000; display:block;}
+    .cptSendBoard table tbody {display:block;}
+    .cptSendBoard table tr {display:block;}
+    .cptSendBoard table th {margin-top:10px; padding:0; font-size:14px; line-height:20px; border:0; background:#fff; display:block;}
+    .cptSendBoard table td {padding:0; border:0; display:block;}
+    .cptSendBoard table .iptBD {height:40px; font-size:14px; padding-left:10px;}
+    .cptSendBoard table .iptBD.half {width:calc(50% - 10px);}
+    .cptSendBoard table .iptBD.phone {width:calc(33.3333% - 8px);}
+    .cptSendBoard table .iptBD.mFull {width:100%;}
+    .cptSendBoard table .textArea {height:150px;}
+    .cptSendBoard table .dash {width:5px; height:40px; font-size:14px; line-height:40px;}
+    .cptSendBoard table .dash.at {width:13px;}
+    .cptSendBoard table .tdBox {font-size:14px;}
+    .cptSendBoard table .tdBox .listBox input[type=radio] + label {font-size:14px;}
+    .cptSendBoard .btn.mHalf {width:calc(50% - 5px);}
+}
+
+
+
+/* --------------------------------- 전체 검색 팝업 --------------------------------- */
+.cptGlobalSearch {padding:30px 50px;}
+.cptGlobalSearch .srchGroup {border-bottom:3px solid #000; display: flex; justify-content: center;}
+.cptGlobalSearch .srchGroup .item {position: relative;}
+.cptGlobalSearch .srchGroup .item.slct {}
+.cptGlobalSearch .srchGroup .item.slct .visSlct {width: 116px; height: 70px; padding-left:0; padding-right:60px; font-size: 20px; font-weight: 500; color: #000; letter-spacing: -0.05em; border:0; background: #fff url(/ebook/common/images/icon/arrow-s-down-k.svg) calc(100% - 30px) center no-repeat; display: block;}
+.cptGlobalSearch .srchGroup .item.input {width: calc(100% - 176px);}
+.cptGlobalSearch .srchGroup .item.input .visInput {width: 100%; height: 70px; padding: 0 30px; border:0; font-size: 26px; font-weight: 500; letter-spacing: -0.05em; color: #000; display: block;}
+.cptGlobalSearch .srchGroup .item.input:after { display: block; content: ""; width: 1px; height: 30px; background: #000; opacity: 0.1; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+.cptGlobalSearch .srchGroup .item.search {}
+.cptGlobalSearch .srchGroup .item.search .visSrchBtn {width: 60px; height: 60px; margin-bottom: 10px; font-size: 0; background: url(/ebook/common/images/icon/icon_sreach.svg) center no-repeat;}
+
+.cptGlobalSearch .tagGroup {margin-top: 30px; font-size:0; text-align:center;}
+.cptGlobalSearch .tagGroup .item {margin-right: 10px; display: inline-block;}
+.cptGlobalSearch .tagGroup .item .tagBtn {padding: 0 25px; height: 40px; line-height: 40px; border-radius: 20px; font-size: 18px; font-weight: 500; color: #000; letter-spacing: -0.9px; background: #f5f5f5;}
+
+.cptGlobalSearch.inPage {width:100%; max-width:1000px; padding:12px 0 30px 0;}
+.cptGlobalSearch.inPage .srchGroup {width:100%; max-width:800px; margin:0 auto;}
+@media screen and (min-width: 100px) and (max-width: 1023px) {
+    .cptGlobalSearch .srchGroup {border-bottom:2px solid #000;}
+    .cptGlobalSearch .srchGroup .item.slct {display:none;}
+    .cptGlobalSearch .srchGroup .item.input {width: calc(100% - 48px);}
+    .cptGlobalSearch .srchGroup .item.input .visInput {height: 48px; padding:0; font-size:17px;}
+    .cptGlobalSearch .srchGroup .item.input:after {display:none;}
+    .cptGlobalSearch .srchGroup .item.search {font-size:0;}
+    .cptGlobalSearch .srchGroup .item.search .visSrchBtn {width:48px; height:48px; margin-bottom:0; background: url(/ebook/common/images/icon/icon_sreach.svg) center / 40px no-repeat;}
+
+    .cptGlobalSearch .tagGroup {margin-top: 10px;}
+    .cptGlobalSearch .tagGroup .item {margin-right: 5px; margin-bottom: 5px;}
+    .cptGlobalSearch .tagGroup .item .tagBtn {padding: 0 10px; height: 24px; line-height: 24px; border-radius: 12px; font-size: 10px; letter-spacing: -0.5px;}
+    
+    .cptGlobalSearch.inPage {width:100%; padding:9px 0 30px 0;}
+}
+
+/* --------------------------------- 영상 팝업 --------------------------------- */
+.cptMoviePop {height:560px;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptMoviePop {height:calc((100vw - 40px) * 0.56);}
+}
+
+/* --------------------------------- 스마트 리모컨 --------------------------------- */
+.cptSmartRemote {display:none; position:fixed; bottom:50%; right:80px; transform:translate(0,50%); transition:0.5s all; z-index:900;}
+.cptSmartRemote.add {display:block;}
+.cptSmartRemote.on {position:fixed;}
+.cptSmartRemote .smartRemoteArea {position:relative; transition:0.3s all;}
+.cptSmartRemote .smartMenuGroup {margin-bottom:30px; 
+    -ms-transform: translate(100%, -40px) ; /* IE 11 */
+    transform: translate(calc(100% + 80px),-40px); 
+    transition:0.5s all;}
+.cptSmartRemote.on .smartMenuGroup {transform: translate(0,-40px);}
+.cptSmartRemote .smartMenuGroup .menuList {}
+.cptSmartRemote .smartMenuGroup .menuList .item {margin-top:18px; padding-right:75px; text-align:right; position:relative;}
+.cptSmartRemote .smartMenuGroup .menuList .item:first-child {margin-top:0;}
+.cptSmartRemote .smartMenuGroup .menuList .item:after {content:""; width:10px; height:5px; background:#dbdbdb; position:absolute; top:10px; right:50px; transition:0.3s all;}
+.cptSmartRemote .smartMenuGroup .menuList .item.on:after {width:40px; background:#0098ff; right:20px;}
+.cptSmartRemote .smartMenuGroup .menuList .item button {max-width:160px; font-size:17px; color:#757575; line-height:1.59; text-align:right; letter-spacing:-0.05em; }
+.cptSmartRemote .smartMenuGroup .menuList .item button .hideScript {display:none;}
+.cptSmartRemote .smartMenuGroup .menuList .item button .brScript {display:inline;}
+.cptSmartRemote .smartMenuGroup .menuList .item.on button {color:#0098ff;}
+
+.cptSmartRemote .smartHideBtn {width:100%; height:50px; font-size:0; text-align:right; position:absolute; right:0; bottom:calc(50% - 20px); transition:all 0.5s;}
+.cptSmartRemote.on .smartHideBtn {bottom:-40px;}
+.cptSmartRemote .smartHideBtn .hideBtn {width:144px; height:100%; padding:0 77px 0 0; font-size:15px; font-weight:bold; line-height:1.5; letter-spacing:-0.05em; text-align:right; border-radius:25px 0 0 25px; background:#f5f5f5; position:relative;}
+.cptSmartRemote .smartHideBtn .hideBtn:after {content:""; width:20px; height:20px; border-radius:10px; background:url(/ebook/common/images/icon/icon-smart-show.svg) center no-repeat; position:absolute; top:15px; right:50px;}
+.cptSmartRemote.on .smartHideBtn .hideBtn:after {background:url(/ebook/common/images/icon/icon-smart-hide.svg) center no-repeat;}
+.cptSmartRemote .smartHideBtn .hideBtn .hideText {display:none;}
+.cptSmartRemote .smartHideBtn .hideBtn .showText {display:inline;}
+.cptSmartRemote.on .smartHideBtn .hideBtn .hideText {display:inline;}
+.cptSmartRemote.on .smartHideBtn .hideBtn .showText {display:none;}
+
+@media screen and (min-width: 100px) and (max-width: 1279px) {
+    .cptSmartRemote {width:0%; height:100%;top:0; right:0; transform:translate(0,0); z-index:1000;}
+    .cptSmartRemote.on {width:100%; height:100%; top:0; right:0; transform:translate(0,0)}
+    .cptSmartRemote:before {content:""; width:0; height:0; background:rgba(0,0,0,0); position:fixed; top:0; right:0;;}
+    .cptSmartRemote.on:before {width:100vw; height:100vh; background:rgba(0,0,0,0.5);}
+
+    .cptSmartRemote .smartRemoteArea {width:50%; height:100%; padding-top:70px; background:#f5f5f5; position:fixed; top:0; right:0; transform: translate(100%,0); }
+    .cptSmartRemote.on .smartRemoteArea {transform: translate(0,0);}
+
+    .cptSmartRemote .smartMenuGroup {transform: translateX(0);}
+    .cptSmartRemote.on .smartMenuGroup {transform: translateX(0);}
+
+    .cptSmartRemote .smartMenuGroup .menuList {}
+    .cptSmartRemote .smartMenuGroup .menuList .item {margin-top:8px; padding:0 0 0 30px; text-align:left;}
+    .cptSmartRemote .smartMenuGroup .menuList .item:first-child {margin-top:0;}
+    .cptSmartRemote .smartMenuGroup .menuList .item:after {content:""; width:10px; height:5px; background:#dbdbdb; position:absolute; top:16px; right:auto; left:0px; transition:0.3s all;}
+    .cptSmartRemote .smartMenuGroup .menuList .item.on:after {width:20px; background:#0098ff; right:auto; left:0px;}
+    .cptSmartRemote .smartMenuGroup .menuList .item button {width:100%; max-width:calc(100% - 20px); padding:8px 0; font-size:14px; line-height:20px; text-align:left; border-bottom:1px solid #dbdbdb;}
+
+    .cptSmartRemote .smartHideBtn {width:40px; height:40px; position:absolute; top:115px; left:-40px;}
+    .cptSmartRemote .smartHideBtn .hideBtn {width:100%; height:100%; padding:0; font-size:0; border-radius:20px 0 0 20px;}
+    .cptSmartRemote .smartHideBtn .hideBtn:after {content:""; width:20px; height:20px; border-radius:10px; background:url(/ebook/common/images/icon/icon-smart-show.svg) center no-repeat; position:absolute; top:10px; right:10px;}
+    .cptSmartRemote.on .smartHideBtn .hideBtn:after {background:url(/ebook/common/images/icon/icon-smart-hide.svg) center no-repeat;}
+}
+
+/* 공유하기 */
+.cptShare {margin:45px 0 55px;}
+.cptShare .shareItem {margin-left:30px; display:inline-block;}
+.cptShare .shareItem:first-child {margin-left:0;}
+.cptShare .btnSns {width:100px; height:100px; font-size:0;}
+.cptShare .btnSns.kakao {background:url(/ebook/common/images/icon/icon_share_kakao.png) center no-repeat;}
+.cptShare .btnSns.blog {background:url(/ebook/common/images/icon/icon_share_blog.png) center no-repeat;}
+.cptShare .btnSns.fb {background:url(/ebook/common/images/icon/icon_share_fb.png) center no-repeat;}
+.cptShare .btnSns.tw {background:url(/ebook/common/images/icon/icon_share_tw.png) center no-repeat;}
+.cptShare .btnSns.url {background:url(/ebook/common/images/icon/icon_share_url.png) center no-repeat;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptShare .shareItem:nth-child(3n + 1) {margin-left:0;}
+    .cptShare .shareItem:nth-child(n + 4) {margin-top:35px;}
+    .cptShare .btnSns {width:70px; height:70px; font-size:0;}
+    .cptShare .btnSns.kakao {background:url(/ebook/common/images/icon/icon_share_kakao.png) center / 70px no-repeat;}
+    .cptShare .btnSns.blog {background:url(/ebook/common/images/icon/icon_share_blog.png) center / 70px no-repeat;}
+    .cptShare .btnSns.fb {background:url(/ebook/common/images/icon/icon_share_fb.png) center / 70px no-repeat;}
+    .cptShare .btnSns.tw {background:url(/ebook/common/images/icon/icon_share_tw.png) center / 70px no-repeat;}
+    .cptShare .btnSns.url {background:url(/ebook/common/images/icon/icon_share_url.png) center / 70px no-repeat;}
+}
+
+/* --------------------------------- 서브페이지 탑영역 --------------------------------- */
+.cptSubTop {width: 100%;}
+.cptSubTop::after {display: block; content: ""; clear: both;}
+.cptSubTop .subTitle {width: calc(100% - 520px); line-height: 60px; float: left;}
+.cptSubTop .subTitle h3 {padding-right: 4px; line-height: 1.5; font-size: 50px; font-weight: 700; color: #000; letter-spacing: -2.5px; box-shadow: inset 0 -32px 0 #cceaff; display: inline; transition: all 0.2s;}
+.cptSubTop .subTopList {float: right;}
+.cptSubTop .subTopList .subTopGroup::after {display: block; content: ""; clear: both;}
+.cptSubTop .subTopList .subTopGroup .item {margin-right: 10px; float: left;}
+.cptSubTop .subTopList .subTopGroup .item:last-child {margin-right: 0;}
+.cptSubTop .subTopList .subTopGroup .player {width: 303px; height: 60px; padding: 10px 0; border-radius: 30px; background: #f5f5f5; display: flex; justify-content: space-between; align-items: center;}
+.cptSubTop .subTopList .subTopGroup .player audio {width:100%; height:100%;}
+.cptSubTop .subTopList .subTopGroup .player .btnPlay {width: 17px; height: 22px; font-size: 0; background: url(/ebook/common/images/icon/btn_play.svg) center no-repeat;}
+.cptSubTop .subTopList .subTopGroup .player .timeTxt .unit {font-size: 13px; letter-spacing: -0.33px; color: #757575; display: inline;}
+.cptSubTop .subTopList .subTopGroup .player .timeTxt .unit.now {color: #000;}
+.cptSubTop .subTopList .subTopGroup .player .timeTable {width: 140px;}
+.cptSubTop .subTopList .subTopGroup .player .timeTable .timeBar {width: 100%; height: 2px; background: #dbdbdb;position: relative;}
+.cptSubTop .subTopList .subTopGroup .player .timeTable .timeBar .barNow {height: 2px; background: #000; font-size: 0; position: absolute; top: 0; left: 0}
+.cptSubTop .subTopList .subTopGroup .player .timeTable .timeBar .playing {width: 6px; height: 6px; border-radius: 50%; background: #000;font-size: 0; position: absolute; top: -2px;}
+.cptSubTop .subTopList .subTopGroup .subBtn {width: 60px; height: 60px; border-radius: 50%; font-size: 0; background: center no-repeat;}
+.cptSubTop .subTopList .subTopGroup .subBtn.download {background-image: url(/ebook/common/images/icon/icon_download.svg);}
+.cptSubTop .subTopList .subTopGroup .subBtn.share {background-image: url(/ebook/common/images/icon/icon_share.svg);}
+.cptSubTop .subTopList .subTopGroup .subBtn.print {background-image: url(/ebook/common/images/icon/icon_print.svg);}
+.cptSubTop .subTopList .subTopGroup .subBtn.download:hover {background-image: url(/ebook/common/images/icon/icon_download_on.svg);}
+.cptSubTop .subTopList .subTopGroup .subBtn.share:hover {background-image: url(/ebook/common/images/icon/icon_share_on.svg);}
+.cptSubTop .subTopList .subTopGroup .subBtn.print:hover {background-image: url(/ebook/common/images/icon/icon_print_on.svg);}
+audio::-webkit-media-controls-enclosure {
+    background-color: #f5f5f5;
+}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptSubTop .subTitle {width: 100%; line-height: 1; float: none;}
+    .cptSubTop .subTitle h3 {padding-right: 2px; line-height: 1.5; font-size: 25px; letter-spacing: -1.25px; box-shadow: inset 0 -15px 0 #cceaff;transition: none;}
+    .cptSubTop .subTopList {width: 100%; padding: 0 20px; float: none; position: fixed; bottom: 65px; left: 0; z-index: 9;}
+    .cptSubTop .subTopList .subTopGroup .item {margin-right: 5px; }
+    .cptSubTop .subTopList .subTopGroup .item.ply {width: calc(100% - 90px); }
+    .cptSubTop .subTopList .subTopGroup .item.prt {display: none;}
+    .cptSubTop .subTopList .subTopGroup .item:nth-last-child(2){margin-right: 0;}
+    .cptSubTop .subTopList .subTopGroup .player {width: 100%; height: 40px; border-radius: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.2);}
+    .cptSubTop .subTopList .subTopGroup .player .btnPlay {width: 17px; height: 22px; background-size: 30px;}
+    .cptSubTop .subTopList .subTopGroup .player .timeTxt .unit {font-size: 10px;}
+    .cptSubTop .subTopList .subTopGroup .player .timeTable {width: calc(100% - 95px);}
+    .cptSubTop .subTopList .subTopGroup .subBtn {width: 40px; height: 40px; background-size: 40px;box-shadow: 0 3px 10px rgba(0,0,0,0.2);}
+}
+
+
+
+/* --------------------------------- 박스 타입 --------------------------------- */
+.cptBox {width:100%; margin:20px 0 40px; background:#f5f5f5;}
+.cptBox.type00 {padding:5px 20px 14px;}
+
+.cptBox.type01 {background:#f5f5f5;}
+.cptBox.type01 .boxArea {padding:35px 40px;}
+.cptBox.type01 .boxTitle { display:inline-block; position:relative;}
+.cptBox.type01 .boxTitle em {font-size:20px; font-weight:bold; line-height:1.5; color:#0098ff;}
+.cptBox.type01 .boxTitle:before {content:""; width:34px; height:10px; background:#cceaff; display:block; position:absolute; left:-40px; top:9px;}
+.cptBox.type01 .boxText {width:100%; margin-top:35px; padding-top:35px; border-top:1px solid #c2c2c2;}
+.cptBox.type01 .boxText p {margin-bottom:10px; font-size:17px; font-weight:normal; line-height:1.76; color:#757575;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptBox {width:100%; margin:10px 0 30px; background:#f5f5f5;}
+    .cptBox.type00 {padding:10px 20px 15px;}
+
+    .cptBox.type01 .boxArea {padding:35px 20px;}
+    .cptBox.type01 .boxTitle em {font-size:15px;}
+    .cptBox.type01 .boxTitle:before {content:""; width:12px; height:8px; left:-20px; top:6px;}
+    .cptBox.type01 .boxText {width:100%; margin-top:25px; padding-top:25px;}
+    .cptBox.type01 .boxText p {margin-bottom:5px; font-size:13px; line-height:1.69;}
+}
+
+.cptBox.check {background:rgba(204,234,255,0.5);}
+.cptBox.check .boxArea {padding:40px;}
+.cptBox.check .boxTitle {padding-left:36px; display:inline-block; position:relative;}
+.cptBox.check .boxTitle em {font-size:18px; font-weight:bold; line-height:1.76; color:#000;}
+.cptBox.check .boxTitle:before {content:""; width:29px; height:26px; background:url(/ebook/common/images/icon/icon_check.svg) left top no-repeat; display:block; position:absolute; left:0px; top:0px;}
+.cptBox.check .boxText {width:100%; margin-top:10px;}
+.cptBox.check .boxText p {margin-bottom:10px; font-size:17px; font-weight:normal; line-height:1.76; color:#757575;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptBox.check .boxArea {padding:37px 20px 30px;}
+    .cptBox.check .boxTitle {padding-left:27px;}
+    .cptBox.check .boxTitle em {font-size:15px;}
+    .cptBox.check .boxTitle:before {width:20px; height:20px; background:url(/ebook/common/images/icon/icon_check.svg) left top / 20px no-repeat; top:3px;}
+    .cptBox.check .boxText {width:100%; margin-top:5px;}
+    .cptBox.check .boxText p {margin-bottom:5px; font-size:13px; line-height:1.69;}
+}
+
+.cptBox.quest {background:rgba(204,234,255,0.5);}
+.cptBox.quest .boxArea {padding:40px;}
+.cptBox.quest .boxTitle {padding-left:55px; padding-top:6px; display:inline-block; position:relative;}
+.cptBox.quest .boxTitle em {font-size:18px; font-weight:bold; line-height:1.76; color:#000;}
+.cptBox.quest .boxTitle:before {content:""; width:45px; height:43px; background:url(/ebook/common/images/icon/icon_quest.svg) left top no-repeat; display:block; position:absolute; left:0px; top:0px;}
+.cptBox.quest .boxText {width:100%; margin-top:10px;}
+.cptBox.quest .boxText p {margin-bottom:10px; font-size:17px; font-weight:normal; line-height:1.76; color:#757575;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptBox.quest .boxArea {padding:37px 20px 30px;}
+    .cptBox.quest .boxTitle {padding-left:35px; padding-top:3px;}
+    .cptBox.quest .boxTitle em {font-size:15px;}
+    .cptBox.quest .boxTitle:before {width:30px; height:29px; background:url(/ebook/common/images/icon/icon_quest.svg) left top / 30px no-repeat; top:3px;}
+    .cptBox.quest .boxText {width:100%; margin-top:5px;}
+    .cptBox.quest .boxText p {margin-bottom:5px; font-size:13px; line-height:1.69;}
+}
+
+.cptBox.type02 {background:#f5f5f5;}
+.cptBox.type02 .boxArea {padding:35px 40px;}
+.cptBox.type02 .boxTitle {height:50px; padding-top:10px; padding-left:60px; display:inline-block; position:relative;}
+.cptBox.type02 .boxTitle em {font-size:20px; font-weight:bold; line-height:1.76; color:#0098ff;}
+.cptBox.type02 .boxTitle:before {content:""; width:50px; height:50px; background:url(/ebook/common/images/icon/icon_reading_classes.svg) left top no-repeat; display:block; position:absolute; left:0px; top:0px;}
+.cptBox.type02 .boxText {width:100%; margin-top:10px;}
+.cptBox.type02 .boxText p {margin-bottom:10px; font-size:17px; font-weight:normal; line-height:1.76; color:#757575;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptBox.type02 .boxArea {padding:35px 20px 30px;}
+    .cptBox.type02 .boxTitle {height:50px; padding-top:4px; padding-left:38px;}
+    .cptBox.type02 .boxTitle em {font-size:15px;}
+    .cptBox.type02 .boxTitle:before {width:30px; height:30px; background:url(/ebook/common/images/icon/icon_reading_classes.svg) left top / 30px no-repeat; top:0;}
+    .cptBox.type02 .boxText {width:100%; margin-top:5px;}
+    .cptBox.type02 .boxText p {margin-bottom:5px; font-size:13px; line-height:1.69;}
+}
+
+.cptBox.inBox .boxArea {width:100%; padding:35px 40px; background:#fff;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptBox.inBox .boxArea {width:100%; padding:35px 20px; background:#fff;}
+}
+
+/* 박스 타이틀 */
+.comBoxTitle {width:100%; margin:50px 0 10px; position:relative;}
+.comBoxTitle:first-child {width:100%; margin:0 0 10px;}
+.comBoxTitle.addList {padding-left:19px;}
+.comBoxTitle.addList:before {content:""; width:12px; height:12px; border-radius:50%; background:#04d6b4; display:block; position:absolute; left:0; top:8px; }
+.comBoxTitle em {font-size:18px; font-weight:bold; line-height:1.76; letter-spacing:-0.05em; color:#000;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comBoxTitle {width:100%; margin:5px 0;}
+    .comBoxTitle em {font-size:15px; font-weight:bold; line-height:1.69;}
+}
+    
+/* 박스 텍스트 - 일반 */
+.comBoxText {margin-top:10px;}
+.comBoxText p {font-size:17px; font-weight:400; line-height:1.76; letter-spacing:-0.05em; text-align:left; color:#757575;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comBoxText {margin-top:5px;}
+    .comBoxText p {font-size:13px;}
+}
+
+/* 텍스트 오른쪽 영역 */
+.comRightText {margin-top: 15px;}
+.comRightText p {font-size: 17px; font-weight: 500; color: #000; letter-spacing: -0.85px; text-align: right;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comRightText {margin-top:10px;}
+    .comRightText p {font-size:13px;}
+}
+
+/* --------------------------------- 부록 --------------------------------- */
+/* 부록 - QnA */
+.cptMsgBox {}
+.cptMsgBox .msgGroup {margin-top:60px;}
+.cptMsgBox .msgGroup:first-child {margin-top:0;}
+.cptMsgBox .msgTitle {width:100%; min-height:82px; padding-left:90px; font-size:20px; font-weight:bold; text-align:left; line-height:1.76; color:#000; display:flex; align-items:center; position:relative;}
+.cptMsgBox .msgTitle:before {content:""; width:80px; height:82px; background:url(/ebook/common/images/icon/icon_qna.svg) center no-repeat; display:block; position:absolute; left:0; top:0;}
+.cptMsgBox .msgGroup.msg01 .msgTitle:before {background-image: url(/ebook/common/images/sub/img_10_01_01.png);}
+.cptMsgBox .msgGroup.msg02 .msgTitle:before {background-image: url(/ebook/common/images/sub/img_10_01_02.png);}
+.cptMsgBox .msgGroup.msg03 .msgTitle:before {background-image: url(/ebook/common/images/sub/img_10_01_03.png);}
+.cptMsgBox .msgGroup.msg04 .msgTitle:before {background-image: url(/ebook/common/images/sub/img_10_01_05.png);}
+.cptMsgBox .msgGroup.msg05 .msgTitle:before {background-image: url(/ebook/common/images/sub/img_10_01_06.png);}
+.cptMsgBox .msgGroup.msg06 .msgTitle:before {background-image: url(/ebook/common/images/sub/img_10_01_07.png);}
+.cptMsgBox .msgGroup.msg07 .msgTitle:before {background-image: url(/ebook/common/images/sub/img_10_01_08.png);}
+.cptMsgBox .msgGroup.msg08 .msgTitle:before {background-image: url(/ebook/common/images/sub/img_10_01_09.png);}
+.cptMsgBox .msgGroup.msg09 .msgTitle:before {background-image: url(/ebook/common/images/sub/img_10_01_10.png);}
+.cptMsgBox .msgCont {margin-top:20px; padding:35px 40px; font-size:17px; font-weight:normal; line-height:1.76; color:#757575; background:#f5f5f5;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptMsgBox .msgGroup {margin-top:30px;}
+    .cptMsgBox .msgTitle {width:100%; min-height:41px; padding-top: 11px; padding-left:50px; font-size:15px; line-height:1.69; align-items: flex-start;}
+    .cptMsgBox .msgTitle:before {content:""; width:40px; height:41px; background:url(/ebook/common/images/icon/icon_qna.svg) center / 40px no-repeat;}
+    .cptMsgBox .msgCont {margin-top:15px; padding:35px 20px; font-size:13px;}
+}
+
+/* --------------------------------- 통합검색 --------------------------------- */
+.cptSearchPage {}
+.cptSearchPage .srchTitle {width:100%; margin-top:50px; text-align:center;}
+.cptSearchPage .srchTitle h3 {line-height: 1.5; font-size: 26px; font-weight: 500; color: #000; letter-spacing: -0.05em; box-shadow: inset 0 -16px 0 #cceaff; display: inline;}
+.cptSearchPage .srchTitle .outShadow {box-shadow: 0 6px 0 #cceaff;}
+.cptSearchPage .srchTitle b {color:#0098ff; font-weight:700;}
+.cptSearchPage .srchCont {margin-top:55px;}
+.cptSearchPage .srchCont + .srchCont {margin-top:95px;}
+.cptSearchPage .srchCont .srchContTitle {border-bottom:2px solid #000;}
+.cptSearchPage .srchCont .srchContTitle .tit {font-size:22px; font-weight:700; line-height:1.76; letter-spacing:-0.05em; color:#000; display:inline;}
+.cptSearchPage .srchCont .srchContTitle i {margin-left:10px; font-size:17px; font-weight:700; font-style:normal;  line-height:1.76; letter-spacing:-0.05em; color:#0098ff;}
+.cptSearchPage .srchCont .srchContTitle.icon {margin-bottom:30px; padding-left:35px; padding-bottom:4px; background:url(/ebook/common/images/icon/icon_nolist.svg) left 3px no-repeat;}
+.cptSearchPage .srchCont .srchResult {}
+.cptSearchPage .srchCont .srchResult .list {padding-top:10px;}
+.cptSearchPage .srchCont .srchResult .item {padding:29px 0 25px; border-bottom:1px solid #dbdbdb;}
+.cptSearchPage .srchCont .srchResult .item:last-child {border-bottom:1px solid #000;}
+.cptSearchPage .postGroup {}
+.cptSearchPage .postGroup .postTitle {}
+.cptSearchPage .postGroup .postTitle .tit {font-size:20px; font-weight:700; line-height:1.76; letter-spacing:-0.05em; color:#000; vertical-align:middle; display:inline-block;}
+.cptSearchPage .postGroup .postTitle .more {margin-left:10px; padding-right:20px; vertical-align:middle; background:url(/ebook/common/images/icon/icon_search_more.svg) right center no-repeat; display:inline-block;}
+.cptSearchPage .postGroup .postTitle .more a {font-size:15px; font-weight:700; line-height:1.76; letter-spacing:-0.05em; color:#000; vertical-align:middle;}
+.cptSearchPage .postGroup .postCont {margin-top:5px; font-size:17px; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; color:#757575; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+.cptSearchPage .postGroup .postCont b {font-weight:500; color:#000;}
+
+@media screen and (min-width: 100px) and (max-width: 1023px) {
+
+    .cptSearchPage .srchTitle {width:100%; margin-top:16px;}
+    .cptSearchPage .srchTitle h3 {font-size: 20px; box-shadow: inset 0 -8px 0 #cceaff;}
+    .cptSearchPage .srchTitle .outShadow {box-shadow: 0 2px 0 #cceaff;}
+
+    .cptSearchPage .srchCont + .srchCont {margin-top:135px;}
+    .cptSearchPage .srchCont .srchContTitle .tit {padding-bottom:6px; font-size:17px;}
+    .cptSearchPage .srchCont .srchContTitle i {font-size:13px;}
+    .cptSearchPage .srchCont .srchContTitle.icon {margin-bottom:20px; padding-left:29px; padding-bottom:4px; background:url(/ebook/common/images/icon/icon_nolist.svg) left 2px / 22px no-repeat;}
+    
+    .cptSearchPage .srchCont .srchResult .item {padding:9px 0 25px; border-bottom:1px solid #dbdbdb;}
+    .cptSearchPage .srchCont .srchResult .item:last-child {border-bottom:1px solid #000;}
+
+    .cptSearchPage .postGroup .postTitle .tit {font-size:15px;}
+    .cptSearchPage .postGroup .postTitle .more {margin-left:10px; padding-right:17px; background:url(/ebook/common/images/icon/icon_search_more.svg) right center / 12px no-repeat;}
+    .cptSearchPage .postGroup .postTitle .more a {font-size:12px;}
+    .cptSearchPage .postGroup .postCont {margin-top:0; font-size:13px; line-height:1.69;}
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------- Form Group --------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+/* 텍스트 칼라 */
+.formTxtBlue {color:#0098ff !important;}
+
+/* 텍스트 옵션 */
+.formBold {font-weight:bold !important;}
+
+/* margin */
+.formMarLeftM {margin-left:20px !important;}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------- 개별 CSS(공통요소 아님) --------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* --------------------------------- 이미지 내 텍스트 처리 --------------------------------- */
+/* 대한민국소개 > 일반정보 - 태극기 */
+.comImgGroup .inImgGroup .flag {width:100%; font-size:17px; font-weight:bold; letter-spacing:-0.05em; color:#000;}
+.comImgGroup .inImgGroup .flag li {position:absolute; top:0;}
+.comImgGroup .inImgGroup .flag li:after {content:""; width:150px; border-top:2px dashed #707070; position:absolute;}
+.comImgGroup .inImgGroup .flag li:nth-child(1) {left:14.3%; padding-top:7.8%;}
+.comImgGroup .inImgGroup .flag li:nth-child(2) {right:14.3%; padding-top:7.8%;}
+.comImgGroup .inImgGroup .flag li:nth-child(3) {left:14.3%; padding-top:23.58%;}
+.comImgGroup .inImgGroup .flag li:nth-child(4) {right:14.3%; padding-top:23.58%;}
+.comImgGroup .inImgGroup .flag li:nth-child(1):after {left:26px; bottom:10px;}
+.comImgGroup .inImgGroup .flag li:nth-child(2):after {right:26px; bottom:10px;}
+.comImgGroup .inImgGroup .flag li:nth-child(3):after {left:26px; bottom:10px;}
+.comImgGroup .inImgGroup .flag li:nth-child(4):after {right:26px; bottom:10px;}
+
+.comImgGroup .inImgGroup .flag.en li:nth-child(1):after {left:42px;}
+.comImgGroup .inImgGroup .flag.en li:nth-child(2):after {right:42px;}
+.comImgGroup .inImgGroup .flag.en li:nth-child(3):after {left:42px;}
+.comImgGroup .inImgGroup .flag.en li:nth-child(4):after {right:42px;}
+
+@media screen and (min-width: 100px) and (max-width: 1439px) {
+    .comImgGroup .inImgGroup .flag li:after {width:100px;}
+}
+@media screen and (min-width: 100px) and (max-width: 1279px) {
+    .comImgGroup .inImgGroup .flag li:after {width:150px;}
+}
+@media screen and (min-width: 100px) and (max-width: 979px) {
+    .comImgGroup .inImgGroup .flag li:after {width:100px;}
+}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .comImgGroup .inImgGroup .flag {width:100%; font-size:10px;}
+    .comImgGroup .inImgGroup .flag li {position:absolute; top:0;}
+    .comImgGroup .inImgGroup .flag li:after {width:40px;}
+    .comImgGroup .inImgGroup .flag li:nth-child(1) {padding-top:6.8%;}
+    .comImgGroup .inImgGroup .flag li:nth-child(2) {padding-top:6.8%;}
+    .comImgGroup .inImgGroup .flag li:nth-child(3) {padding-top:21.58%;}
+    .comImgGroup .inImgGroup .flag li:nth-child(4) {padding-top:21.58%;}
+    .comImgGroup .inImgGroup .flag li:nth-child(1):after {left:15px; bottom:6px;}
+    .comImgGroup .inImgGroup .flag li:nth-child(2):after {right:15px; bottom:6px;}
+    .comImgGroup .inImgGroup .flag li:nth-child(3):after {left:15px; bottom:6px;}
+    .comImgGroup .inImgGroup .flag li:nth-child(4):after {right:15px; bottom:6px;}
+
+    .comImgGroup .inImgGroup .flag.en li:nth-child(1):after {left:23px;}
+    .comImgGroup .inImgGroup .flag.en li:nth-child(2):after {right:23px;}
+    .comImgGroup .inImgGroup .flag.en li:nth-child(3):after {left:23px;}
+    .comImgGroup .inImgGroup .flag.en li:nth-child(4):after {right:23px;}
+}
+
+/* ---------------------------------- 도표 ---------------------------------- */
+/* 챕터 3-1 */
+.cptDiagram0301 {width:100%; margin-top:15px;}
+.cptDiagram0301 .dgmGroup {font-size:0; display:flex; flex-wrap:wrap;}
+.cptDiagram0301 .dgmGroup .item {width:calc(33.33% - 53px); height:120px; margin:0 53px 20px 0; font-size:17px; font-weight:500; color:#000; line-height:1.76; vertical-align:-0.05em; text-align:center; border-radius:60px; background:rgba(204,234,255,0.5); position:relative; display:flex; justify-content:center; align-items:center;}
+.cptDiagram0301 .dgmGroup .item:after {content:""; width:34px; height:29px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01.svg) center no-repeat; position:absolute; right:-44px; top:45px;}
+.cptDiagram0301 .dgmGroup .item:last-child {margin-bottom:0;}
+.cptDiagram0301 .dgmGroup .item:last-child:after {display:none;}
+.cptDiagram0301.ph .dgmGroup .item {height: auto; min-height: 120px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0301 {width:100%; margin-top:10px;}
+    .cptDiagram0301 .dgmGroup .item {width:100%; height:54px; padding:0 10px; margin:0 0 30px 0; font-size:13px;}
+    .cptDiagram0301 .dgmGroup .item:after {width:18px; height:20px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01_m.svg) center no-repeat; right:calc(50% - 9px); top:auto; bottom:-25px;}
+    .cptDiagram0301 .dgmGroup .item br {display:none;}
+    .cptDiagram0301.ph .dgmGroup .item {height: 54px; min-height:auto;}
+}
+
+/* 챕터 3-2 */
+.cptDiagram0302 {width:100%; margin-top:15px;}
+.cptDiagram0302 .dgmGroup {font-size:0;}
+.cptDiagram0302 .dgmGroup .item {width:100%; padding:40px; margin-bottom:54px; border-radius:20px; background:rgba(204,234,255,0.5); position:relative;}
+.cptDiagram0302 .dgmGroup .item:after {content:""; width:29px; height:34px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01_m.svg) center / 29px no-repeat; position:absolute; right:calc(50% - 14.5px); bottom:-44px;}
+.cptDiagram0302 .dgmGroup .item:last-child {margin-bottom:0;}
+.cptDiagram0302 .dgmGroup .item:last-child:after {display:none;}
+.cptDiagram0302 .dgmGroup .dgmContText {width:100%;  font-size:17px; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; color:#000; text-align:center;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0302 {width:100%; margin-top:10px;}
+    .cptDiagram0302 .dgmGroup .item {width:100%; padding:20px; margin-bottom:30px;}
+    .cptDiagram0302 .dgmGroup .item:after {width:18px; height:20px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01_m.svg) center no-repeat; right:calc(50% - 9px); bottom:-25px;}
+    .cptDiagram0302 .dgmGroup .item br {display:none;}
+    .cptDiagram0302 .dgmGroup .dgmContText {font-size:13px; line-height:1.69;}
+}
+
+/* 챕터 3-3 */
+.cptDiagram0303 {width:100%; margin-top:15px;}
+.cptDiagram0303 .dgmGroup {font-size:0; display:flex; flex-wrap:wrap;}
+.cptDiagram0303 .dgmGroup .item {width:calc(33.33% - 53px); margin:0 53px 20px 0; border-radius:20px; position:relative;}
+.cptDiagram0303 .dgmGroup .item.scale2 {width:calc(66.66% - 53px);}
+.cptDiagram0303 .dgmGroup .item.mgTPlus {margin-top:70px;}
+.cptDiagram0303 .dgmGroup .item.mgTPlusM {margin-top:70px;}
+.cptDiagram0303 .dgmGroup .item:after {content:""; width:34px; height:29px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01.svg) center no-repeat; position:absolute; right:-44px; top:calc(50% - 15px);}
+.cptDiagram0303 .dgmGroup .item:last-child:after {display:none;}
+.cptDiagram0303 .dgmGroup .item br.mShow {display: none;}
+.cptDiagram0303 .dgmTitGroup {height:100px; padding:0 10px; border-radius:20px 20px 0 0; background:#0098ff; display:flex; justify-content:center; align-items:center;}
+.cptDiagram0303 .dgmTitGroup .title {padding-left:27px; position:relative;}
+.cptDiagram0303 .dgmTitGroup .num {width: 20px; height: 20px; min-height: 20px; padding-top: 3px; font-family: Roboto; font-size: 12px; font-weight: bold; line-height: 1.25; letter-spacing: -0.05em; text-align: center; color: #0098ff; border-radius: 50%; background: #fff; display: block; position: absolute; left: 0; top: 3px;}
+.cptDiagram0303 .dgmTitGroup .numText {width: 100%; font-size: 17PX; font-weight: 500; line-height: 1.76; letter-spacing: -0.05em; color: #fff; display: inline-block;}
+.cptDiagram0303 .dgmContGroup {height:calc(100% - 100px); padding:35px 20px; border-radius:0 0 20px 20px; background:#f5f5f5; display:flex; align-items:center;}
+.cptDiagram0303 .dgmContGroup .contText {width:100%; font-size:17px; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; color:#000; text-align:center;}
+.cptDiagram0303 .dgmContGroup .numList {width:100%; padding-left:20px;}
+.cptDiagram0303 .dgmContGroup .numList > .unit {margin-top:50px;}
+.cptDiagram0303 .dgmContGroup .numList > .unit:first-child {margin-top:0;}
+.cptDiagram0303 .dgmContGroup .numList > .unit dt {font-size:17px; font-weight:500; line-height:1.76; letter-spacing:-0.05em; color:#000;}
+.cptDiagram0303 .dgmContGroup .numList > .unit dd {padding-left:16px; margin-top:10px; font-size:17px; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; color:#757575;}
+.cptDiagram0303 .cmtUp {width:100%; font-size:17px; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; text-align:center; color:#757575; position:absolute; right:50%; top:-10px; transform:translate(50%,-100%)}
+.cptDiagram0303 .cmtDown {width:100%; font-size:17px; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; text-align:center; color:#757575; position:absolute; right:50%; bottom:-10px; transform:translate(50%,100%)}
+
+.cptDiagram0303.en .dgmGroup .item.mgTPlus {margin-top: 85px;}
+.cptDiagram0303.en .dgmGroup .item.mgTPlusM {margin-top: 85px;}
+
+.cptDiagram0303.ph .dgmGroup .item.mgTPlus {margin-top: 120px;}
+.cptDiagram0303.ph .dgmGroup .item.mgTPlusM {margin-top: 120px;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0303 {width:100%; margin-top:10px;}
+    .cptDiagram0303 .dgmGroup .item {width:100%; padding:0; margin-right:0; margin-bottom:30px;}
+    .cptDiagram0303 .dgmGroup .item.scale2 {width:100%;}
+    .cptDiagram0303 .dgmGroup .item.mgTPlusM {margin-top:0;}
+    .cptDiagram0303 .dgmGroup .item:after {width:18px; height:20px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01_m.svg) center no-repeat; right:calc(50% - 9px); top:auto; bottom:-25px;}
+    .cptDiagram0303 .dgmGroup .item.mgArr:after {bottom:-60px;}
+    .cptDiagram0303 .dgmGroup .item br {display:none;}
+    .cptDiagram0303 .dgmGroup .item br.mShow {display: inline;}
+
+    .cptDiagram0303 .dgmTitGroup {height:auto; padding:15px 20px; display:flex; justify-content:center; align-items:center;}
+    .cptDiagram0303 .dgmTitGroup .title {padding-left:22px;}
+    .cptDiagram0303 .dgmTitGroup .num {width: 15px; height: 15px; min-height: 15px; padding-top: 2px; font-size: 10px; line-height: 1.25; top: 3px;}
+    .cptDiagram0303 .dgmTitGroup .numText {font-size: 13PX; line-height: 1.69;}
+
+    .cptDiagram0303 .dgmContGroup {height:auto; padding:15px 20px; border-radius:0;}
+    .cptDiagram0303 .dgmContGroup .contText {font-size:13px; line-height:1.69;}
+    .cptDiagram0303 .dgmContGroup .numList {width:100%; padding-left:0;}
+    .cptDiagram0303 .dgmContGroup .numList > .unit {margin-top:25px;}
+    .cptDiagram0303 .dgmContGroup .numList > .unit dt {font-size:13px; line-height:1.69;}
+    .cptDiagram0303 .dgmContGroup .numList > .unit dd {margin-top:5px; padding-left:12px; font-size:13px; line-height:1.69;}
+
+    .cptDiagram0303 .cmtUp {font-size:13px;}
+    .cptDiagram0303 .cmtDown {font-size:13px;}
+
+
+    .cptDiagram0303.en .dgmGroup .item.mgTPlusM {margin-top: 0;}
+    .cptDiagram0303 .dgmGroup .item.mgArr:after {bottom: -79px;}
+
+    .cptDiagram0303.ph .dgmGroup .item.mgTPlus {margin-top: 93px;}
+    .cptDiagram0303.ph .dgmGroup .item.mgTPlusM {margin-top: 0;}
+}
+
+/* 챕터 4-1 */
+.cptDiagram0401 {width:100%;}
+.cptDiagram0401 .dgmGroup {margin-bottom: 60px;}
+.cptDiagram0401 .dgmGroup:last-child {margin-bottom: 0;}
+.cptDiagram0401 .dgmtit {margin-bottom: 15px; font-size: 18px; font-weight: 700; color: #000; letter-spacing: -0.9px;}
+.cptDiagram0401 .dgmtit .anchor {width: 9px; height: 18px; margin: 4px 8px 0 12px; font-size: 0; background: url(/ebook/common/images/icon/arrow-L-right-b.svg) center no-repeat; display: inline-block; vertical-align: top;}
+.cptDiagram0401 .dgmCont .item {width: 100%; padding: 0 0 45px 130px; border-bottom: 1px solid #c2c2c2; background: left top no-repeat;}
+.cptDiagram0401 .dgmCont .item.telep {margin-bottom: 30px; background-image: url(/ebook/common/images/icon/icon_telephone.png);}
+.cptDiagram0401 .dgmCont .item.mobile {background-image: url(/ebook/common/images/icon/icon_mobile.png);}
+.cptDiagram0401 .dgmCont .numbering {margin-top: 20px;}
+.cptDiagram0401 .dgmCont .numbering .unit {display: inline-block; vertical-align: middle; font-size: 15px; font-weight: 500; color: #000; letter-spacing: -0.75px;}
+.cptDiagram0401 .dgmCont .numbering .unit::after {display: inline-block; content: "+"; margin: 0 20px; vertical-align: middle; font-size: 17px; color: #757575;}
+.cptDiagram0401 .dgmCont .numbering .unit:last-child:after {display: none;}
+.cptDiagram0401 .dgmCont .numbering .unit .number {width: 20px; height: 20px; border-radius: 20px; margin: 0 2px; text-align: center; line-height: 20px; font-size: 12px; font-weight: 700; color: #fff; letter-spacing: -0.6px; background: #0098ff; display: inline-block; vertical-align: top;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0401 .dgmGroup {margin-bottom: 30px;}
+    .cptDiagram0401 .dgmtit {font-size: 15px;}
+    .cptDiagram0401 .dgmtit .anchor {width: 6px; height: 15px; margin: 2px 8px 0 9px; background-size: 6px;}
+    .cptDiagram0401 .dgmCont .item {padding: 75px 0 30px 0; background-size: 60px;}
+    .cptDiagram0401 .dgmCont .numbering {margin-top: 15px;}
+    .cptDiagram0401 .dgmCont .numbering .unit {margin-bottom: 10px; white-space: nowrap; font-size: 11px;}
+    .cptDiagram0401 .dgmCont .numbering .unit::after {margin: 0 0 0 5px; font-size: 15px;}
+    .cptDiagram0401 .dgmCont .numbering .unit .number {width: 15px; height: 15px; border-radius: 15px; margin: 0 1px; line-height: 15px; font-size: 10px; vertical-align: middle; margin-top: -2px;}
+}
+
+/* 챕터 4-2 */
+.cptDiagram0402 {width:100%; margin-top: 20px;}
+.cptDiagram0402 .dgmGroup {display: flex; flex-wrap: wrap;}
+.cptDiagram0402 .dgmGroup .item {width: 50%; margin-bottom: 20px; display: flex; align-items: center;}
+.cptDiagram0402 .dgmGroup .item .txt {font-size: 17px; letter-spacing: -0.85px; color: #000;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0402 {margin-top: 30px;}
+    .cptDiagram0402 .dgmGroup .item {width: 100%; margin-bottom: 30px;}
+    .cptDiagram0402 .dgmGroup .item img {width: 100px;}
+    .cptDiagram0402 .dgmGroup .item .txt {font-size: 13px; font-weight: 500;}
+}
+
+/* 챕터 5-1 */
+.cptDiagram0501 {width:100%; margin-top:15px;}
+.cptDiagram0501 .dgmGroup {padding-bottom: 40px; font-size:0; display:flex; flex-wrap:wrap; align-items: center;}
+.cptDiagram0501 .dgmGroup .item {width:calc(25% - 40.5px); height:120px; font-size:17px; font-weight:500; color:#000; line-height:1.76; letter-spacing: -0.85px; vertical-align:-0.05em; text-align:center; border-radius:60px; background:rgba(204,234,255,0.5); position:relative; display:flex; justify-content:center; align-items:center;}
+.cptDiagram0501 .dgmGroup .item.next {width:34px; height:29px; margin: 0 10px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01.svg) center no-repeat; position: relative;}
+.cptDiagram0501 .dgmGroup .item.next .txt {font-size: 15px; font-weight: 500; letter-spacing: -0.75px; color: #000; white-space:nowrap; position: absolute; top: 74px; left: 50%; transform: translateX(-50%);}
+
+.cptDiagram0501.ph .dgmGroup {padding-bottom: 90px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0501 {width:100%; margin-top:10px;}
+    .cptDiagram0501 .dgmGroup .item {width:100%; height:54px; font-size:13px;}
+    .cptDiagram0501 .dgmGroup .item.next {width:100%; height:20px; margin: 5px 0; background:url(/ebook/common/images/icon/icon_dgm_arrow_01_m.svg) center no-repeat;}
+    .cptDiagram0501 .dgmGroup .item.next .txt {font-size: 11px; text-align: left; position: absolute; top: 50%; left: calc(50% + 18px); transform: translate(0, -50%);}
+    .cptDiagram0501 .dgmGroup .item br {display:none;}
+    .cptDiagram0501 .dgmGroup .item.next .txt.long {white-space: normal;}
+
+    .cptDiagram0501.ph .dgmGroup {padding-bottom: 40px;}    
+}
+
+/* 챕터 5-2 */
+.cptDiagram0502 {width:100%; margin:15px 0 54px;}
+.cptDiagram0502 .dgmTit {width: 100%;}
+.cptDiagram0502 .dgmTit .tit {width: 100%; padding: 15px 10px; border-radius: 25px 0 25px 0; text-align: center; font-size: 18px; font-weight: 700; letter-spacing: -0.9px; color: #fff; background: #0098ff;}
+.cptDiagram0502 .dgmTit::after {display: block; content: ""; width: 100%; height: 33px; margin-top: 20px; background: url(/ebook/common/images/icon/arrow-L-bottom-g.svg) center no-repeat;}
+.cptDiagram0502 .dgmWrap {width: 100%; margin-top: 20px; display: flex;justify-content: center;}
+.cptDiagram0502 .dgmWrap:last-child {margin-top: 50px;}
+.cptDiagram0502 .dgmGroup {width: calc(50% - 40px); margin-right: 80px;}
+.cptDiagram0502 .dgmGroup:last-child {margin-right: 0;}
+.cptDiagram0502 .dgmGroup .item {width: 100%;}
+.cptDiagram0502 .dgmGroup .item::after {display: block; content: ""; width: 100%; height: 33px; margin: 20px 0; background: url(/ebook/common/images/icon/arrow-L-bottom-g.svg) center no-repeat;}
+.cptDiagram0502 .dgmGroup .item:last-child:after {display: none;}
+.cptDiagram0502 .dgmGroup .item .tit {width: 100%; padding: 15px 0; border-radius: 25px 0 25px 0; text-align: center; font-size: 17px; font-weight: 500; color: #000; letter-spacing: -0.85px; background: #cceaff;}
+.cptDiagram0502 .dgmGroup .item .desc {width: 100%; margin-top: -25px; padding: 25px 35px 30px 35px; border: 3px solid #cceaff; border-top: 25px solid #cceaff; border-radius: 0 0 25px 0; text-align: center; font-size: 17px; line-height: 1.76; letter-spacing: -0.85px; color: #757575;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0502 {margin:10px 0 30px;}
+    .cptDiagram0502 .dgmTit .tit {min-height: 54px;font-size: 13px; font-weight: 500; letter-spacing: -0.65px;display: flex; align-items: center; justify-content: center;}
+    .cptDiagram0502 .dgmTit::after {height: 21px; margin-top: 6px; background-size: 8px;}
+    .cptDiagram0502 .dgmWrap {margin-top: 6px;}
+    .cptDiagram0502 .dgmWrap:last-child {margin-top: 30px;}
+    .cptDiagram0502 .dgmGroup {width: calc(50% - 5px); margin-right: 10px;}
+    .cptDiagram0502 .dgmGroup .item::after {height: 21px; margin: 5px 0; background-size: 8px;}
+    .cptDiagram0502 .dgmGroup .item .tit {min-height: 54px; font-size: 13px;display: flex; align-items: center; justify-content: center;}
+    .cptDiagram0502 .dgmGroup .item .desc {padding: 10px 15px; border: 1px solid #cceaff; border-top: 25px solid #cceaff; font-size: 11px; line-height: 1.63;}
+}
+
+/* 챕터 6-1 */
+.cptDiagram0601 {width:100%; margin:15px 0 50px;}
+.cptDiagram0601 .dgmGroup {font-size:0;} /* display:flex; flex-wrap:nowrap; align-items: stretch;*/
+.cptDiagram0601 .dgmGroup::after {display: block; content: ""; clear: both;}
+.cptDiagram0601 .dgmGroup .item {width: calc(20% - 43.2px); min-height: 300px;margin-right: 54px; padding: 10px 20px; border-radius: 20px; background: rgba(204,234,255,0.5); position: relative; display: flex; align-items: center; float: left;}
+.cptDiagram0601 .dgmGroup .item:last-child {margin-right: 0;}
+.cptDiagram0601 .dgmGroup .item::after {display: block; content: ""; width:34px; height:29px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01.svg) center no-repeat; position: absolute; right: -44px; top: 50%; transform: translateY(-50%);}
+.cptDiagram0601 .dgmGroup .item:last-child:after {display: none;}
+.cptDiagram0601 .dgmGroup .itemDesc {width: 100%;}
+.cptDiagram0601 .dgmGroup .itemDesc > dt {min-height: 140px; font-size: 17px; font-weight: 500; color: #000; line-height: 1.76; letter-spacing: -0.85px; text-align: center; display: flex; align-items: center; justify-content: center;}
+.cptDiagram0601 .dgmGroup .itemDesc > dd {min-height: 140px; border-top: 2px solid #0098ff; font-size: 17px; font-weight: 500; color: #757575; line-height: 1.76; letter-spacing: -0.85px; text-align: center;display: flex; align-items: center; justify-content: center;}
+
+.cptDiagram0601 .dgmGroup.col4 .item {width: calc(25% - 43.2px);}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0601 {margin:10px 0 30px;}
+    .cptDiagram0601 .dgmGroup {display: flex; flex-wrap:wrap; align-items: center;}
+    .cptDiagram0601 .dgmGroup .item {width: 100% !important; min-height:auto;margin-right: 0; margin-bottom: 30px; padding: 0 20px; background:rgba(204,234,255,0.5); float: none;}
+    .cptDiagram0601 .dgmGroup .item:last-child {margin-bottom: 0;}
+    .cptDiagram0601 .dgmGroup .item::after {width:18px; height:20px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01_m.svg) center no-repeat;position: absolute; right:50%; top: auto; bottom: -25px; transform: translate(50%,0);}
+    .cptDiagram0601 .dgmGroup .item:last-child:after {display: none;}
+    .cptDiagram0601 .dgmGroup .itemDesc > dt {width: 100%; min-height: auto; padding: 16px 0 11px; font-size: 13px;}
+    .cptDiagram0601 .dgmGroup .itemDesc > dd {min-height: auto;padding: 11px 0 16px; border-top: 1px solid #0098ff; font-size: 13px; font-weight: 400;}
+    .cptDiagram0601 .dgmGroup .itemDesc br {display: none;}
+}
+
+/* 챕터 6-2 */
+.cptDiagram0602 {width:100%; margin-top:15px;}
+.cptDiagram0602 .dgmGroup {font-size:0; display:flex; flex-wrap:wrap;}
+.cptDiagram0602 .dgmGroup .item {width:calc(33.33% - 36px); min-height:120px; margin:0 53px 0 0; padding: 10px; font-size:17px; font-weight:500; color:#000; line-height:1.76; vertical-align:-0.05em; text-align:center; border-radius:60px; background:rgba(204,234,255,0.5); position:relative; display:flex; justify-content:center; align-items:center;}
+.cptDiagram0602 .dgmGroup .item:after {content:""; width:34px; height:29px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01.svg) center no-repeat; position:absolute; right:-44px; top:50%; transform: translateY(-50%);}
+.cptDiagram0602 .dgmGroup .item:last-child {margin-bottom:0; margin-right: 0;}
+.cptDiagram0602 .dgmGroup .item:last-child:after {display:none;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0602 {width:100%; margin-top:10px;}
+    .cptDiagram0602 .dgmGroup .item {width:100%; min-height:54px; height: auto; margin:0 0 30px 0; padding: 15px 20px; font-size:13px;}
+    .cptDiagram0602 .dgmGroup .item:after {width:18px; height:20px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01_m.svg) center no-repeat; right:calc(50% - 9px); top:auto; bottom:-25px; transform: none;}
+    .cptDiagram0602 .dgmGroup .item br {display:none;}
+    .cptDiagram0602 .dgmGroup .item br.mSame {display: block;}
+}
+
+/* 챕터 6-3 */
+.cptDiagram0603 {width:100%; margin-top:20px;}
+.cptDiagram0603 .dgmGroup .item {width: 100%; margin-bottom: 73px; position: relative; display: flex; align-items: center;}
+.cptDiagram0603 .dgmGroup .item:last-child {margin-bottom: 0;}
+.cptDiagram0603 .dgmGroup .item::after {display: block; content: ""; width: 29px; height: 34px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01_m.svg) center / 29px no-repeat; position: absolute; bottom: -54px; left: calc(32.8% - 10px);transform: translateX(-50%)}
+.cptDiagram0603 .dgmGroup .item:last-child::after {display: none;}
+.cptDiagram0603 .dgmGroup .dgmInfo {width: calc(65.5% - 20px); margin-right: 40px;}
+.cptDiagram0603 .dgmGroup .dgmInfo .tit {width: 100%; padding: 28px 140px 28px 40px; border-radius: 20px 20px 0 0; font-size: 17px; font-weight: 500; color: #fff; letter-spacing: -0.85px; background: #003d66 calc(100% - 40px) center no-repeat;}
+.cptDiagram0603 .dgmGroup .dgmInfo .tit.clss {background-image: url(/ebook/common/images/common/we_class.png);}
+.cptDiagram0603 .dgmGroup .dgmInfo .tit.center {background-image: url(/ebook/common/images/common/we_center.png);}
+.cptDiagram0603 .dgmGroup .dgmInfo .tit.school {background-image: url(/ebook/common/images/common/we_school.png);}
+.cptDiagram0603 .dgmGroup .dgmInfo .tit .name::before { display: inline-block; content: ""; width: 2px; height: 16px; margin: -3px 20px 0 20px; background: #fff; vertical-align: middle;}
+.cptDiagram0603 .dgmGroup .dgmInfo .desc {width: 100%; min-height: 140px; background: #fff; padding: 0 40px; display: flex; align-items: center;}
+
+.cptDiagram0603 .dgmGroup .dgmAdds {width: calc(34.5% - 20px); padding: 20px 40px; border: 4px solid #cceaff; border-radius: 20px; background: #fff; align-self: stretch; display: flex; justify-content: center; align-items: center; position: relative;}
+.cptDiagram0603 .dgmGroup .dgmAdds::after {display: block; content: ""; width: 25px; height: 25px; background: url(/ebook/common/images/common/ballon_tail.png) center no-repeat; position: absolute; left: -25px; top: 50%; transform: translateY(-50%);}
+
+.cptDiagram0603 .dgmGroup .comDotList {margin-top: 0;}
+.cptDiagram0603 .dgmGroup .comDotList .dotItem:first-child {margin-top: 0;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0603 {margin-top:25px;}
+    .cptDiagram0603 .dgmGroup .item {margin-bottom: 30px; flex-wrap: wrap;}
+    .cptDiagram0603 .dgmGroup .item::after {width: 18px; height: 20px; background-size: 18px; bottom: -25px; left: 50%;}
+    .cptDiagram0603 .dgmGroup .dgmInfo {width: 100%; margin-right: 0;}
+    .cptDiagram0603 .dgmGroup .dgmInfo .tit {padding: 18px 100px 18px 20px; font-size: 13px; background: #003d66 calc(100% - 20px) 20px / 70px no-repeat;}
+    .cptDiagram0603 .dgmGroup .dgmInfo .tit .name {display: block; margin-top: 10px;}
+    .cptDiagram0603 .dgmGroup .dgmInfo .tit .name::before { display: none;}
+    .cptDiagram0603 .dgmGroup .dgmInfo .desc {min-height: auto; padding: 20px; display: block;}
+    
+    .cptDiagram0603 .dgmGroup .dgmAdds {width: 100%; margin-top: 20px; padding: 20px; border: 1px solid #cceaff;}
+    .cptDiagram0603 .dgmGroup .dgmAdds::after {width: 16px; height: 16px; background-size: 16px; left: calc(50% - 8px); top: -8px; transform: rotate(90deg) translate(-50%, 0);}
+}
+
+/* 챕터 6-4 */
+.cptDiagram0604 {width:100%; margin:20px 0 60px;}
+.cptDiagram0604 .dgmTit {width: 100%; margin-bottom: 20px;}
+.cptDiagram0604 .dgmTit .tit {width: 100%; padding: 12px 10px; border-radius: 0 20px 0 20px; text-align: center; font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.9px; background: #0098ff;}
+.cptDiagram0604 .dgmGroup {width: 100%; display: flex; flex-wrap: wrap; justify-content: center;}
+.cptDiagram0604 .dgmGroup .item { order: 4; position: relative;}
+.cptDiagram0604 .dgmGroup .item::after {display: block; content: ""; position: absolute;}
+.cptDiagram0604 .dgmGroup .item.od1 {width: 30%; margin-right: 10%; order: 1;}
+.cptDiagram0604 .dgmGroup .item.od2 {width: 30%; margin-left: 10%; order: 3;}
+.cptDiagram0604 .dgmGroup .item.od3 {width: 20%; order: 2; align-self: center;}
+.cptDiagram0604 .dgmGroup .item.od4 {width: 100%; margin: 50px 0 73px;}
+.cptDiagram0604 .dgmGroup .item.od5 {width: 30%; margin-right: 10%;}
+.cptDiagram0604 .dgmGroup .item.od6 {width: 20%;}
+.cptDiagram0604 .dgmGroup .item.od7 {width: 30%; margin-left: 10%;}
+.cptDiagram0604 .dgmGroup .item.od1::after {width: 20%; height: 13px; background: url(/ebook/common/images/icon/icon_dgm_arrow_thin_right.svg) right center no-repeat; top: 50%; right: -27%; transform: translateY(-50%);}
+.cptDiagram0604 .dgmGroup .item.od2::after {width: 20%; height: 13px; background: url(/ebook/common/images/icon/icon_dgm_arrow_thin_left.svg) left center no-repeat; top: 50%; left: -27%; transform: translateY(-50%);}
+.cptDiagram0604 .dgmGroup .item.od3::after {width: 13px; height: 33px; background: url(/ebook/common/images/icon/icon_dgm_arrow_thin_bottom.svg) center no-repeat; bottom: -50px; left: 50%; transform: translateX(-50%);}
+.cptDiagram0604 .dgmGroup .item.od4::after {width: 13px; height: 33px; background: url(/ebook/common/images/icon/icon_dgm_arrow_thin_bottom.svg) center no-repeat; bottom: -50px; left: 50%; transform: translateX(-50%);}
+.cptDiagram0604 .dgmGroup .item.od5::after {width: 120%; height: 13px; background: url(/ebook/common/images/icon/icon_dgm_arrow_thin_both_long.svg) center / 100% 13px no-repeat; bottom: 40px; right: -127%;}
+.cptDiagram0604 .dgmGroup .item.od6::before {width: 81.5%; height: 76px; background: url(/ebook/common/images/icon/icon_dgm_arrow_thin_botleft.svg) center / 100% 76px no-repeat; bottom: 113px; right: 58.5%;display: block; content: ""; position: absolute;}
+.cptDiagram0604 .dgmGroup .item.od6::after {width: 81.5%; height: 76px; background: url(/ebook/common/images/icon/icon_dgm_arrow_thin_botright.svg) center / 100% 76px no-repeat; bottom: 113px; left: 58.5%;}
+.cptDiagram0604 .dgmGroup .item.od7::after {width: 20%; height: 13px; background: url(/ebook/common/images/icon/icon_dgm_arrow_thin_both.svg) center / 100% 13px no-repeat; top: 85px; left: -27%;}
+.cptDiagram0604 .dgmGroup .item .center {width: 100%; min-height: 97px; border-radius: 0 20px 0 20px; line-height: 1.76; text-align: center; font-size: 17px; font-weight: 500; color: #000; letter-spacing: -0.85px; background: #cceaff; display: flex; justify-content: center; align-items: center;}
+.cptDiagram0604 .dgmGroup .item .center.grey {background: #f5f5f5;}
+.cptDiagram0604 .dgmGroup .item.od7 .center {height: 127px;}
+.cptDiagram0604 .dgmGroup .item.od7 .center:first-child {height: 187px; margin-bottom: 40px;}
+.cptDiagram0604 .dgmGroup .item .step {width: 100%; max-width: 200px; height: 50px; margin: 0 auto; padding: 14px 10px; border-radius: 25px; text-align: center; font-size: 17px; font-weight: 500; letter-spacing: -0.85px; color: #fff; background: #003d66;}
+.cptDiagram0604 .dgmGroup .item .step.line2 {padding: 5px 10px; line-height: 1.2;}
+.cptDiagram0604 .dgmGroup .item .caseGroup {width: 100%;}
+.cptDiagram0604 .dgmGroup .item .caseGroup > dt {width: 100%; padding: 13px 10px; border-radius: 0 20px 0 0; text-align: center;font-size: 17px; font-weight: 500; letter-spacing: -0.85px; color: #000; background: #cceaff; }
+.cptDiagram0604 .dgmGroup .item .caseGroup > dd {width: 100%; padding: 0 40px; border: 3px solid #cceaff; border-radius: 0 0 0 20px;}
+.cptDiagram0604 .dgmGroup .item .caseGroup .prgGroup {width: 100%;}
+.cptDiagram0604 .dgmGroup .item .caseGroup .prgGroup li {width: 100%; height: 100px; border-bottom: 1px solid #cceaff; text-align: center; font-size: 17px; letter-spacing: -0.85px; color: #757575; display: flex; justify-content: center; align-items: center;}
+.cptDiagram0604 .dgmGroup .item .caseGroup .prgGroup li:last-child {border-bottom: none;}
+
+.cptDiagram0604.mn .dgmGroup .item.od6::before {bottom: 65px;}
+.cptDiagram0604.mn .dgmGroup .item.od6::after {bottom: 65px;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0604 {margin:10px 0 0;}
+    .cptDiagram0604 .dgmTit {margin-bottom: 15px;}
+    .cptDiagram0604 .dgmTit .tit {padding: 17px 10px; border-radius: 20px 0 20px 0; font-size: 13px; font-weight: 500;}
+    .cptDiagram0604 .dgmGroup .item {width: 100% !important; margin: 0 0 30px 0 !important; padding: 0 80px; order:1 !important;}
+    .cptDiagram0604 .dgmGroup .item::after {width:10px !important; height: 21px !important; background: url(/ebook/common/images/icon/icon_dgm_arrow_thin_bottom.svg) center / 8px no-repeat !important; top:auto !important; bottom: -25px !important; right: auto !important; left: 50% !important; transform: translateX(-50%) !important;}
+    .cptDiagram0604 .dgmGroup .item:last-child:after {display: none;}
+    .cptDiagram0604 .dgmGroup .item.od1::after {background: url(/ebook/common/images/icon/icon_dgm_plus.svg) center no-repeat !important;}
+    .cptDiagram0604 .dgmGroup .item.od6::before {display: none;}
+    .cptDiagram0604 .dgmGroup .item .center {min-height:auto; padding: 16px 5px; border-radius: 20px 0 20px 0; font-size: 13px;}
+    .cptDiagram0604 .dgmGroup .item.od7 .center {height: auto;}
+    .cptDiagram0604 .dgmGroup .item.od7 .center:first-child {height: auto; margin-bottom: 20px; position: relative;}
+    .cptDiagram0604 .dgmGroup .item.od7 .center:first-child::after {display: block; content: ""; position: absolute;width: 10px; height: 10px;background: url(/ebook/common/images/icon/icon_dgm_plus.svg) center no-repeat; bottom: -16px; left: 50%; transform: translateX(-50%);}
+    .cptDiagram0604 .dgmGroup .item .step {max-width:none; height: auto; padding: 15px 5px; font-size: 13px;}
+    .cptDiagram0604 .dgmGroup .item .step.line2 {padding: 15px 5px; line-height: 1.5;}
+    .cptDiagram0604 .dgmGroup .item .caseGroup > dt {padding: 17px 5px; border-radius: 20px 0 0 0;font-size: 13px;}
+    .cptDiagram0604 .dgmGroup .item .caseGroup > dd {padding: 0 15px; border: 1px solid #cceaff; border-radius: 0 0 20px 0;}
+    .cptDiagram0604 .dgmGroup .item .caseGroup .prgGroup li {height: auto; padding: 17px 0;font-size: 11px;}
+}
+
+/* 챕터 7-1 */
+.cptDiagram0701 {width:100%; margin-top:20px;}
+.cptDiagram0701 .dgmGroup::after {display: block; content: ""; clear: both;}
+.cptDiagram0701 .dgmGroup .item {width: calc(33.3333% - 82px); float: left;}
+.cptDiagram0701 .dgmGroup .item.arrow {width: 122px; padding-top: 85px;}
+.cptDiagram0701 .dgmGroup .organ {width: 100%;}
+.cptDiagram0701 .dgmGroup .organ > dt {width: 60px; height: 60px; margin: 0 auto 43px; border-radius: 50%; text-align: center; line-height: 1; font-size: 18px; font-weight: 700; letter-spacing: -0.9px; color: #fff; background: #0098ff; position: relative; display: flex; align-items: center; justify-content: center;}
+.cptDiagram0701 .dgmGroup .organ > dt::after {display: block; content: ""; width: 1px; height: 38px; border-left: 1px dashed #757575; position: absolute; bottom: -38px; left: calc(50% + 1px); transform: translateX(-50%);}
+.cptDiagram0701 .dgmGroup .organ > dd {width: 100%; min-height: 187px; border-radius: 60px; line-height: 1.76; text-align: center; font-size: 17px; font-weight: 500; letter-spacing: -0.85px; color: #000; background: rgba(204,234,255,0.5); display: flex; justify-content: center; align-items: center; position: relative;}
+.cptDiagram0701 .dgmGroup .organ > dd::after {display: block; content: ""; width: 9px; height: 9px; border-radius: 50%; background: #0098ff; position: absolute; top: -4.5px; left: 50%; transform: translateX(-50%);}
+.cptDiagram0701 .dgmGroup .arw {font-size: 15px; font-weight: 500; letter-spacing: -0.75px; line-height: 1.6; text-align: center; display: block;}
+.cptDiagram0701 .dgmGroup .arw.next {margin-bottom: 27px; padding-bottom: 45px; color: #757575; background: url(/ebook/common/images/icon/icon_dgm_arrow_right_grey.svg) center bottom no-repeat;}
+.cptDiagram0701 .dgmGroup .arw.prev {padding-top: 45px; color: #003d66; background: url(/ebook/common/images/icon/icon_dgm_arrow_left_navy.svg) center top no-repeat;}
+
+.cptDiagram0701.en .dgmGroup .organ > dt {/*padding-top: 11px;*/ line-height: 1;}
+.cptDiagram0701.en .dgmGroup .organ > dt.line3 {padding-top: 0;}
+.cptDiagram0701.uz .dgmGroup .organ > dt {word-break: break-all; padding: 0 5px;}
+.cptDiagram0701.ru .dgmGroup .item.arrow {padding-top: 2px;}
+.cptDiagram0701.ru .dgmGroup .organ > dt {font-size: 14px;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0701 {margin-top:15px;}
+    .cptDiagram0701 .dgmGroup .item {width: 100%; float: none;}
+    .cptDiagram0701 .dgmGroup .item.arrow {width: 100%; padding-top: 0; margin: 5px 0; display: flex; }
+    .cptDiagram0701 .dgmGroup .organ > dt {width: 30px; height: 30px; margin: 0 auto 13px; font-size: 11px; font-weight: 500;}
+    .cptDiagram0701 .dgmGroup .organ > dt::after {height: 10px; bottom: -10px;}
+    .cptDiagram0701 .dgmGroup .organ > dd {min-height:auto; padding: 20px 10px; line-height: 2.3; font-size: 13px;}
+    .cptDiagram0701 .dgmGroup .organ > dd::after {width: 5px; height: 5px;top: -2.5px;}
+    .cptDiagram0701 .dgmGroup .arw {width: 50%; font-size: 11px;}
+    .cptDiagram0701 .dgmGroup .arw.next {margin-bottom: 0; padding: 5px 0 5px 40px; text-align: left; background: url(/ebook/common/images/icon/icon_dgm_arrow_bottom_grey.svg) 12px center no-repeat; order: 2;}
+    .cptDiagram0701 .dgmGroup .arw.prev { padding: 5px 40px 5px 0;text-align: right;background: url(/ebook/common/images/icon/icon_dgm_arrow_top_navy.svg) calc(100% - 12px) center no-repeat; order: 1;}
+    .cptDiagram0701 .dgmGroup .arw br {display: none;}
+
+    .cptDiagram0701.en .dgmGroup .organ > dt {/*padding-top: 4.5px;*/ font-size: 10px;}
+    .cptDiagram0701.uz .dgmGroup .organ > dt {line-height: 0.8;}
+    .cptDiagram0701.ru .dgmGroup .item.arrow {padding-top: 0;}
+    .cptDiagram0701.ru .dgmGroup .organ > dt {font-size: 9px; line-height: 0.8;}
+}
+
+/* 챕터 7-2 */
+.cptDiagram0702 {width:100%; margin-top:15px;}
+.cptDiagram0702 .dgmGroup {font-size:0;}
+.cptDiagram0702 .dgmGroup .item {width:100%; padding:40px; margin-bottom:54px; border-radius:20px; background:rgba(204,234,255,0.5); position:relative;}
+.cptDiagram0702 .dgmGroup .item:after {content:""; width:29px; height:34px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01_m.svg) center / 29px no-repeat; position:absolute; right:calc(50% - 14.5px); bottom:-44px;}
+.cptDiagram0702 .dgmGroup .item:last-child {margin-bottom:0;}
+.cptDiagram0702 .dgmGroup .item:last-child:after {display:none;}
+.cptDiagram0702 .dgmGroup .dgmContText {width:100%;  font-size:17px; font-weight:normal; line-height:1.76; letter-spacing:-0.05em; color:#757575; text-align:center;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0702 {width:100%; margin-top:10px;}
+    .cptDiagram0702 .dgmGroup .item {width:100%; padding:20px; margin-bottom:30px;}
+    .cptDiagram0702 .dgmGroup .item:after {width:18px; height:20px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01_m.svg) center no-repeat; right:calc(50% - 9px); bottom:-25px;}
+    .cptDiagram0702 .dgmGroup .item br {display:none;}
+    .cptDiagram0702 .dgmGroup .dgmContText {font-size:13px; line-height:1.69; text-align: left;}
+}
+
+/* 챕터 7-3 */
+.cptDiagram0703 {width:100%;}
+.cptDiagram0703 .dgmGroup {display: flex; flex-wrap: wrap;}
+.cptDiagram0703 .item {width: calc(50% - 40px); margin-right: 80px;}
+.cptDiagram0703 .item:nth-child(2n) {margin-right: 0;}
+.cptDiagram0703 .item:nth-child(n+3) {margin-top: 60px;}
+.cptDiagram0703 .item .imgDesc {margin-top: 10px;}
+.cptDiagram0703 .item .imgDesc > dt {font-size: 18px; font-weight: 700; color: #000; letter-spacing: -0.9px; line-height: 1.6;}
+.cptDiagram0703 .item .imgDesc > dd {margin-top: 15px; font-size: 17px; color: #757575; letter-spacing: -0.85px; line-height: 1.76;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0703 .item {width: 100%; margin-right: 0;}
+    .cptDiagram0703 .item:nth-child(n+2) {margin-top: 30px;}
+    .cptDiagram0703 .item:nth-child(n+3) {margin-top: 30px;}
+    .cptDiagram0703 .item .imgDesc > dt {font-size: 15px;}
+    .cptDiagram0703 .item .imgDesc > dd {margin-top: 8px; font-size: 13px;}
+}
+
+/* 챕터 8-1 */
+.cptDiagram0801 {width:100%; margin-top:15px;}
+.cptDiagram0801 .dgmGroup {font-size:0; display:flex; flex-wrap:wrap;}
+.cptDiagram0801 .dgmGroup .item {width:calc(33.33% - 53px); height:120px; margin:0 53px 70px 0; font-size:17px; font-weight:500; color:#000; line-height:1.76; vertical-align:-0.05em; text-align:center; border-radius:60px; background:rgba(204,234,255,0.5); position:relative; display:flex; justify-content:center; align-items:center;}
+.cptDiagram0801 .dgmGroup .item:after {content:""; width:34px; height:29px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01.svg) center no-repeat; position:absolute; right:-44px; top:45px;}
+.cptDiagram0801 .dgmGroup .item:last-child {margin-bottom:0;}
+.cptDiagram0801 .dgmGroup .item:last-child:after {display:none;}
+.cptDiagram0801 .dgmGroup .item .cmt {width:100%; font-size:15px; font-weight:500; line-height:1.67; color:#000; position:absolute; left:0; top:127px;}
+.cptDiagram0801 .circleGroup {width:100%; height:213px; margin-top:20px; font-size:0; text-align:center; background:#f5f5f5; position:relative;}
+.cptDiagram0801 .circleGroup .circle01 {height:50px; padding:11px 20px 0; font-size:17px; font-weight:500; line-height:1.76; text-align:center; color:#fff; border-radius:25px; background:#003d66; display:inline-block; position:absolute; right:50%; transform:translate(50%,0); top:40px;}
+.cptDiagram0801 .circleGroup .circle01:before {content:""; width:89px; height:74px; background:url(/ebook/common/images/sub/dgm0801_01.svg) center no-repeat; display:block; position:absolute; left:-109px; top:25px;}
+.cptDiagram0801 .circleGroup .circle01:after {content:""; width:89px; height:74px; background:url(/ebook/common/images/sub/dgm0801_02.svg) center no-repeat; display:block; position:absolute; right:-109px; top:25px;}
+.cptDiagram0801 .circleGroup .circle02 {font-size:15px; font-weight:500; line-height:1.76; color:#000; position:absolute; right:calc(50% + 170px); top:145px;}
+.cptDiagram0801 .circleGroup .circle02:before {content:""; width:300px; height:13px; background:url(/ebook/common/images/sub/dgm0801_03.svg) center no-repeat; display:block; position:absolute; right:-320px; top:6px;}
+.cptDiagram0801 .circleGroup .circle03 {font-size:15px; font-weight:500; line-height:1.76; color:#000; position:absolute; left:calc(50% + 170px); top:145px;}
+
+.cptDiagram0801 .dgmGroup .item.longCmt {margin-bottom: 110px;}
+
+.cptDiagram0801.ph .dgmGroup .item {margin-bottom: 130px;}
+.cptDiagram0801.uz .dgmGroup .item {margin-bottom: 130px;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0801 {width:100%; margin-top:10px;}
+    .cptDiagram0801 .dgmGroup .item {width:100%; height:54px; margin:0 0 30px 0; font-size:13px;}
+    .cptDiagram0801 .dgmGroup .item:after {width:18px; height:20px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01_m.svg) center no-repeat; right:calc(50% - 9px); top:auto; bottom:-25px;}
+    .cptDiagram0801 .dgmGroup .item br {display:none;}
+    .cptDiagram0801 .dgmGroup .item:nth-child(2) {margin-bottom:75px;}
+    .cptDiagram0801 .dgmGroup .item:nth-child(3) {margin-bottom:57px;}
+    .cptDiagram0801 .dgmGroup .item:nth-child(4) {margin-bottom:75px;}
+    .cptDiagram0801 .dgmGroup .item:nth-child(5) {margin-bottom:75px;}
+    .cptDiagram0801 .dgmGroup .item:nth-child(2):after {bottom:-70px;}
+    .cptDiagram0801 .dgmGroup .item:nth-child(3):after {bottom:-52px;}
+    .cptDiagram0801 .dgmGroup .item:nth-child(4):after {bottom:-70px;}
+    .cptDiagram0801 .dgmGroup .item:nth-child(5):after {bottom:-70px;}
+    .cptDiagram0801 .dgmGroup .item .cmt {width:100%; font-size:11px; font-weight:500; line-height:1.67; color:#000; position:absolute; left:0; top:65px;}
+    .cptDiagram0801 .dgmGroup .item .cmt br {display:inline;}
+    .cptDiagram0801 .circleGroup {width:100%; height:195px; margin-top:0; }
+    .cptDiagram0801 .circleGroup .circle01 {padding:13px 16px 0; font-size:13px; line-height:1.69;}
+    .cptDiagram0801 .circleGroup .circle01:before {content:""; width:29px; height:66px; background:url(/ebook/common/images/sub/dgm0801_01_m.svg) center no-repeat; display:block; position:absolute; left:-29px; top:25px;}
+    .cptDiagram0801 .circleGroup .circle01:after {content:""; width:29px; height:66px; background:url(/ebook/common/images/sub/dgm0801_02_m.svg) center no-repeat; display:block; position:absolute; right:-29px; top:25px;}
+    .cptDiagram0801 .circleGroup .circle02 {font-size:11px; line-height:1.69; position:absolute; right:calc(50% + 76px); top:135px;}
+    .cptDiagram0801 .circleGroup .circle02:before {content:""; width:133px; height:8px; background:url(/ebook/common/images/sub/dgm0801_03_m.svg) center no-repeat; display:block; position:absolute; right:-143px; top:6px;}
+    .cptDiagram0801 .circleGroup .circle03 {font-size:11px; line-height:1.69; position:absolute; left:calc(50% + 76px); top:135px;}
+
+
+    .cptDiagram0801 .dgmGroup .item.longCmt:nth-child(4) {margin-bottom: 112px;}
+    .cptDiagram0801 .dgmGroup .item.longCmt:nth-child(4):after {bottom: -107px;}
+    .cptDiagram0801 .circleGroup.en .circle01 {padding: 8px 16px 0; line-height: 1.3;}
+    .cptDiagram0801 .circleGroup.en .circle03 {left: calc(50% + 72px); line-height: 1.4;}
+    .cptDiagram0801 .circleGroup.en .circle03 br {display: none;}
+
+    .cptDiagram0801.ph .dgmGroup .item {margin-bottom: 30px;}
+    .cptDiagram0801.ph .dgmGroup .item:nth-child(2) {margin-bottom: 75px;}
+    .cptDiagram0801.ph .dgmGroup .item:nth-child(3) {margin-bottom: 62px;}
+    .cptDiagram0801.ph .dgmGroup .item:nth-child(4) {margin-bottom: 100px;}
+    .cptDiagram0801.ph .dgmGroup .item:nth-child(5) {margin-bottom: 75px;}
+    .cptDiagram0801.ph .dgmGroup .item:nth-child(4):after {bottom:-90px;}
+    .cptDiagram0801.ph .circleGroup .circle01 {padding: 0 16px; line-height: 1.3; display: flex; justify-content: center; align-items: center;}
+    .cptDiagram0801.ph .circleGroup .circle03 {left: calc(50% + 72px); line-height: 1.3; font-size: 10px;}
+    
+    .cptDiagram0801.mn .circleGroup .circle01 {padding:3px 20px 0; line-height: 1;}
+
+    .cptDiagram0801.uz .dgmGroup .item {margin-bottom: 30px;}
+    .cptDiagram0801.uz .dgmGroup .item:nth-child(2) {margin-bottom: 75px;}
+    .cptDiagram0801.uz .dgmGroup .item:nth-child(3) {margin-bottom: 62px;}
+    .cptDiagram0801.uz .dgmGroup .item:nth-child(4) {margin-bottom: 100px;}
+    .cptDiagram0801.uz .dgmGroup .item:nth-child(5) {margin-bottom: 75px;}
+    .cptDiagram0801.uz .dgmGroup .item:nth-child(4):after {bottom:-90px;}
+    .cptDiagram0801.uz .circleGroup .circle01 {padding: 0 16px; line-height: 1.3; display: flex; justify-content: center; align-items: center;}
+}
+    
+/* 챕터 9-1 */
+.cptDiagram0901 {width:100%; margin-top:15px;}
+.cptDiagram0901 .dgmGroup {font-size:0; } /*display:flex; flex-wrap:wrap;*/
+.cptDiagram0901 .dgmGroup::after {display: block; content: ""; clear: both;}
+.cptDiagram0901 .dgmGroup .item {width:calc(25% - 15px); margin-left:20px; border-radius:20px; position:relative; float: left;}
+.cptDiagram0901 .dgmGroup .item:first-child {margin-left:0;}
+.cptDiagram0901 .dgmTitGroup {height:80px; padding:0 10px; border-radius:20px 20px 0 0; background:#0098ff; display:flex; justify-content:center; align-items:center;}
+.cptDiagram0901 .dgmTitGroup .title {padding-left:27px; position:relative;}
+.cptDiagram0901 .dgmTitGroup .num {width: 20px; height: 20px; min-height: 20px; padding-top: 3px; font-family: Roboto; font-size: 12px; font-weight: bold; line-height: 1.25; letter-spacing: -0.05em; text-align: center; color: #0098ff; border-radius: 50%; background: #fff; display: block; position: absolute; left: 0; top: 3px;}
+.cptDiagram0901 .dgmTitGroup .numText {width: 100%; font-size: 17PX; font-weight: 500; line-height: 1.76; letter-spacing: -0.05em; color: #fff; display: inline-block;}
+.cptDiagram0901 .dgmContGroup {min-height:220px; padding:25px 20px; border-radius:0 0 20px 20px; background:#f5f5f5; display:flex;}
+.cptDiagram0901 .dgmBtmGroup {height:80px; padding:0 10px; font-size:17px; font-weight:500; line-height:1.76; color:#000; border-radius:0 0 20px 20px; background:#cceaff; display:flex; justify-content:center; align-items:center;}
+.cptDiagram0901 .dgmBtmGroup .contText {text-align: center;}
+
+.cptDiagram0901.en .dgmContGroup {min-height: calc(100% - 160px);}
+
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0901 {width:100%; margin-top:10px;}
+    .cptDiagram0901 .dgmGroup .item {width:100%; padding:0; margin-left:0; margin-bottom:15px; float: none;}
+    .cptDiagram0901 .dgmTitGroup {height:auto; padding:15px 20px; display:flex; justify-content:center; align-items:center;}
+    .cptDiagram0901 .dgmTitGroup .title {padding-left:22px;}
+    .cptDiagram0901 .dgmTitGroup .num {width: 15px; height: 15px; min-height: 15px; padding-top: 2px; font-size: 10px; line-height: 1.25; top: 3px;}
+    .cptDiagram0901 .dgmTitGroup .numText {font-size: 13PX; line-height: 1.69;}
+    .cptDiagram0901 .dgmContGroup {min-height: auto; padding:15px 20px; border-radius:0;}
+    .cptDiagram0901 .dgmBtmGroup {height:auto; padding:15px 20px; font-size:13px; display:flex; justify-content:center; align-items:center;}
+    
+    .cptDiagram0901.en .dgmContGroup {min-height: auto;}
+    .cptDiagram0901.en .dgmBtmGroup br {display: none;}
+}
+
+/* 챕터 9-2 */
+.cptDiagram0902 {width:100%; margin-top:15px;}
+.cptDiagram0902 .dgmGroup {font-size:0; display:flex; flex-wrap:wrap;}
+.cptDiagram0902 .dgmGroup .item {width:calc(33.33% - 53px); height:120px; margin:0 53px 20px 0; font-size:17px; font-weight:500; color:#000; line-height:1.76; vertical-align:-0.05em; text-align:center; border-radius:60px; background:rgba(204,234,255,0.5); position:relative; display:flex; justify-content:center; align-items:center;}
+.cptDiagram0902 .dgmGroup .item:after {content:""; width:34px; height:29px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01.svg) center no-repeat; position:absolute; right:-44px; top:45px;}
+.cptDiagram0902 .dgmGroup .item:first-child {color:#fff; background:#0098ff;}
+.cptDiagram0902 .dgmGroup .item:last-child {margin-bottom:0; color:#fff; background:#0098ff;}
+.cptDiagram0902 .dgmGroup .item:last-child:after {display:none;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptDiagram0902 {width:100%; margin-top:10px;}
+    .cptDiagram0902 .dgmGroup .item {width:100%; height:54px; margin:0 0 30px 0; font-size:13px;}
+    .cptDiagram0902 .dgmGroup .item:after {width:18px; height:20px; background:url(/ebook/common/images/icon/icon_dgm_arrow_01_m.svg) center no-repeat; right:calc(50% - 9px); top:auto; bottom:-25px;}
+    .cptDiagram0902 .dgmGroup .item br {display:none;}
+    .cptDiagram0902 .dgmGroup .item .mShow {display: inline;}
+}
+
+
+/* 저작권정책 */
+.cptPrivacy {}
+.cptPrivacy .privacyTitle {font-size:26px; font-weight:700; line-height:1.04; color:#000;}
+.cptPrivacy .privacyText {margin-top:15px; font-size:17px; font-weight:400; line-height:1.76; color:#757575;}
+.cptPrivacy .privacyText span {display:inline-block;}
+.cptPrivacy .privacyText b {margin-top:5px; font-weight:500; color:#000; display:inline-block;}
+.cptPrivacy .privacyImgTitle {margin-top:50px; font-size:18px; font-weight:700; line-height:1.04; color:#000;}
+.cptPrivacy .privacyImgGroup {width:100%; margin-top:20px; margin-bottom:20px; font-size:0; }
+.cptPrivacy .privacyImgGroup > .item {width:calc(25% - 15px); margin-left:20px; font-size:0; display:inline-block;}
+.cptPrivacy .privacyImgGroup > .item:first-child {margin-left:0;}
+.cptPrivacy .privacyImgGroup > .item .imgBox {width:100%;}
+.cptPrivacy .privacyImgGroup > .item .imgBox img {width:100%;}
+.cptPrivacy .privacyImgGroup > .item .textBox {width:100%; height:40px; padding-top:7px; font-size:17px; font-weight:700; line-height:1.59; color:#fff; text-align:center; background:#0098ff;}
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptPrivacy .privacyTitle {font-size:17px;}
+    .cptPrivacy .privacyText {margin-top:10px; font-size:13px;}
+    .cptPrivacy .privacyImgTitle {font-size:15px;}
+    .cptPrivacy .privacyImgGroup > .item {width:calc(50% - 5px); margin-left:10px;}
+    .cptPrivacy .privacyImgGroup > .item:nth-child(2n + 1) {margin-left:0;}
+    .cptPrivacy .privacyImgGroup > .item:nth-child(n + 3) {margin-top:10px;}
+    .cptPrivacy .privacyImgGroup > .item .textBox {height:32px; font-size:13px;}
+}
+
+/* PDF 다운로드 팝업 */
+.cptForm {width: 100%; margin-top: 50px;}
+.cptForm .formItem {margin-bottom: 40px;}
+.cptForm .formItem h6 {margin-bottom: 15px; font-size: 20px; font-weight: 700; color: #000;}
+.cptForm .formItem h6 .required {margin-left: 3px; font-size: 16px; color: #ff2020; font-weight: 700; display: inline-block; vertical-align: middle;}
+.cptForm .formItem .chkBox {display: flex; justify-content: flex-start; align-items: center; column-gap: 20px;}
+.cptForm .formItem .chkBox.center {justify-content: center;}
+.cptForm .formItem .chkBox li {position: relative;}
+.cptForm .formItem .chkBox input[type=radio] {width: 1px; height: 1px; font-size: 0; position: absolute; top: -1px; left: -1px; opacity: 0.01; overflow: hidden;}
+.cptForm .formItem .chkBox input[type=radio] + label {padding: 2px 0 2px 32px; font-size: 18px; color: #000; background: url(/ebook/common/images/icon/icon_check_off.png) left center / 25px no-repeat; cursor: pointer;}
+.cptForm .formItem .chkBox input[type=radio]:checked + label {background-image: url(/ebook/common/images/icon/ico_downcheck_on.svg);}
+.cptForm .formItem .chkBox input[type=checkbox] {width: 1px; height: 1px; font-size: 0; position: absolute; top: -1px; left: -1px; opacity: 0.01; overflow: hidden;}
+.cptForm .formItem .chkBox input[type=checkbox] + label {padding:2px 0 2px 32px; font-size: 18px; color: #000; background: url(/ebook/common/images/icon/ico_downcheck_off.svg) left center no-repeat;cursor: pointer;}
+.cptForm .formItem .chkBox input[type=checkbox]:checked + label {background-image: url(/ebook/common/images/icon/ico_downcheck_on.svg);}
+.cptForm .formItem .slctBox select {width: 100%; max-width: 250px; height: 50px; border: 1px solid #dbdbdb; padding: 0 20px; font-size: 15px; font-weight: 500; color: #000; background: url(/ebook/common/images/icon/arw_slct.svg) calc(100% - 20px) center no-repeat; }
+
+.cptForm .formItem .form {margin-top: 30px;}
+.cptForm .formItem .form dt {margin-bottom: 5px; font-size: 16px; font-weight: 500; color: #000;}
+.cptForm .formItem .form dt .required {font-size: 16px; font-weight: 700; color: #ff2020; margin-left: 3px; display: inline-block; vertical-align: middle;}
+.cptForm .formItem .form dd input[type=text] {width: 100%; height: 50px; border: none; border-bottom: 2px solid #dbdbdb; font-size: 16px; font-weight: 500; color: #000;}
+.cptForm .formItem .form dd input[type=text]::placeholder {color: #dbdbdb;}
+.cptForm .formItem .chkInfoBox {width: 100%; margin-bottom: 20px; padding: 30px; background: #f5f5f5;}
+.cptForm .formItem .chkInfoBox .chkInfo {font-size: 15px; color: #000; line-height: 1.8; word-break: keep-all;}
+.cptForm .formItem .chkInfoBox .chkInfo em {font-weight: 500;}
+.cptForm .formBtn {margin-top: 40px; text-align: center;}
+.cptForm .formBtn .btnBlue {width: 100%; max-width: 250px; height: 65px; line-height: 64px; background: #0098ff; color: #fff; font-size: 20px; font-weight: 500; display: inline-block; vertical-align: middle;}
+
+@media screen and (min-width: 100px) and (max-width: 767px) {
+    .cptForm {margin-top: 40px;}
+    .cptForm .formItem h6 {font-size: 17px;}
+    .cptForm .formItem h6 .required {font-size: 17px;}
+    .cptForm .formItem .chkBox input[type=radio] + label {padding: 2px 0 2px 27px; font-size: 14px; background-size: 20px;}
+    .cptForm .formItem .chkBox input[type=checkbox] + label {padding: 2px 0 2px 27px; font-size: 14px; background-size: 20px;}
+    .cptForm .formItem .slctBox select {max-width:none; height: 45px; font-size: 14px;}
+    
+    .cptForm .formItem .form dd input[type=text] { height: 40px; border-bottom: 1px solid #dbdbdb; font-size: 14px; }
+    .cptForm .formItem .chkInfoBox {padding: 30px 20px;}
+    .cptForm .formItem .chkInfoBox .chkInfo {font-size: 14px; }
+    .cptForm .formItem .chkInfoBox .chkInfo .pcOnly {display: none;}
+    .cptForm .formBtn .btnBlue {max-width: none; height: 60px; line-height: 59px; font-size: 17px;}    
+}
+
+
+/* ----------------------------------------- Form Group ----------------------------------------- */
+/* ----------------------------------------- Compnent Name ----------------------------------------- */
+/* ----------------------------------------- Common Name ----------------------------------------- */
+
+
+/* Component Type */
+/* Common Type */
+/* Form Name or Form Type */
