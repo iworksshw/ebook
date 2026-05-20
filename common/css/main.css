@@ -1,9 +1,9 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 .lytMain {width: 100%;}
 
 /* 메인비주얼 */
-.lytMain .mainVisual {width: 100%; padding: 90px 0 110px; text-align: center; background: url(/common/images/main/main_visual01.jpg) center / cover no-repeat;}
+.lytMain .mainVisual {width: 100%; padding: 90px 0 110px; text-align: center; background: url(/ebook/common/images/main/main_visual01.jpg) center / cover no-repeat;}
 .lytMain .mainVisual .visTit {margin-bottom: 25px; font-size: 40px; color: #000; letter-spacing: -2px; line-height: 1.3; word-break: keep-all;}
 .lytMain .mainVisual .visTit b {color: #0098ff; font-weight: 700;}
 .lytMain .mainVisual .visSrch {margin: 25px 0 30px; padding: 0 50px;}
@@ -11,12 +11,12 @@
 .lytMain .mainVisual .visSrch .unit {position: relative;}
 .lytMain .mainVisual .visSrch .unit.input {width: calc(100% - 255px);max-width: 743px;}
 .lytMain .mainVisual .visSrch .unit.input::after {display: block; content: ""; width: 1px; height: 30px; background: #000; opacity: 0.1; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
-.lytMain .mainVisual .visSrch .visSlct {width: 165px; height: 80px; padding: 0 40px 0 50px; border-radius: 40px 0 0 40px; border: 5px solid #0098ff; border-right: none; font-size: 20px; font-weight: 500; color: #000; letter-spacing: -1px; background: #fff url(/common/images/icon/arrow-s-down-k.svg) calc(100% - 23px) center / 11px no-repeat; display: block; outline:none; cursor:pointer;}
+.lytMain .mainVisual .visSrch .visSlct {width: 165px; height: 80px; padding: 0 40px 0 50px; border-radius: 40px 0 0 40px; border: 5px solid #0098ff; border-right: none; font-size: 20px; font-weight: 500; color: #000; letter-spacing: -1px; background: #fff url(/ebook/common/images/icon/arrow-s-down-k.svg) calc(100% - 23px) center / 11px no-repeat; display: block; outline:none; cursor:pointer;}
 .lytMain .mainVisual .visSrch .visInput {width: 100%;  height: 80px; padding: 0 30px; border: 5px solid #0098ff; border-left: none; border-right: none; font-size: 26px; font-weight: 500; letter-spacing: -1.3px; color: #000; display: block; outline:none;}
 .lytMain .mainVisual .visSrch .visInput::placeholder {color: #757575;}
 .lytMain .mainVisual .visSrch .visInput::-webkit-input-placeholder {color: #757575;}
 .lytMain .mainVisual .visSrch .visInput:-ms-input-placeholder {color: #757575;}
-.lytMain .mainVisual .visSrch .visSrchBtn {width: 90px; height: 80px; border-radius: 0 40px 40px 0; font-size: 0; background: #0098ff url(/common/images/icon/icon_search.svg) center / 50px no-repeat;}
+.lytMain .mainVisual .visSrch .visSrchBtn {width: 90px; height: 80px; border-radius: 0 40px 40px 0; font-size: 0; background: #0098ff url(/ebook/common/images/icon/icon_search.svg) center / 50px no-repeat;}
 .lytMain .mainVisual .visTag {margin-top: 30px;}
 .lytMain .mainVisual .visTag .item {margin-right: 10px; display: inline-block;}
 .lytMain .mainVisual .visTag .item:last-child {margin-right: 0;}
@@ -28,7 +28,7 @@
 @media screen and (min-width: 100px) and (max-width: 1279px) {}
 
 @media screen and (min-width: 100px) and (max-width: 767px) {
-    .lytMain .mainVisual {padding: 110px 0 172px; background: url(/common/images/main/main_visual01_m.jpg) center / cover no-repeat; position: relative;}
+    .lytMain .mainVisual {padding: 110px 0 172px; background: url(/ebook/common/images/main/main_visual01_m.jpg) center / cover no-repeat; position: relative;}
     .lytMain .mainVisual .visTit {font-size: 25px; padding: 0 20px; letter-spacing: -1.25px; }
     .lytMain .mainVisual .visSrch {margin: 25px 0 14px;}
     .lytMain .mainVisual .visSrch .unit.slct {display: none;}
@@ -44,18 +44,18 @@
     /* 2024.02.20 추가 */
     .lytMain .mainVisual .visScrll img {width: 50px; height: 50px;}
     .lytMain .mainVisual .visScrll::before {display: block; content: ""; width: 4px; height: 4px; border-radius: 50%; background: #19fe83; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); animation: scrlFade 1s infinite normal;}
-    .lytMain .mainVisual .visScrll::after {display: block; content: ""; width: 11px; height: 7px; background: url(/common/images/icon/icon-scorll-arw.png) center no-repeat; position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%); animation: scrlDown 0.5s infinite alternate;}
+    .lytMain .mainVisual .visScrll::after {display: block; content: ""; width: 11px; height: 7px; background: url(/ebook/common/images/icon/icon-scorll-arw.png) center no-repeat; position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%); animation: scrlDown 0.5s infinite alternate;}
     
 }
 
 /* 메인 의견등록 */
 .lytMain .mainOpinion {width:100%; text-align:center; background:#e5f4ff;}
-.lytMain .mainOpinion .text {height:68px; margin-right:15px; padding-top:19px; padding-left:80px; font-size:18px; color:#000; line-height:30px; vertical-align:middle; background:url(/common/images/icon/icon_mainbtm.svg) left center no-repeat; display:inline-block;}
-.lytMain .mainOpinion .btnOpinion {height:42px; margin:13px 0; padding:0 55px 0 28px; font-size:16px; color:#fff; border:0; border-radius:21px; vertical-align:middle; background:#19d6fe url(/common/images/icon/btn_mainbtm.svg) calc(100% - 27px) center no-repeat; display:inline-block;}
+.lytMain .mainOpinion .text {height:68px; margin-right:15px; padding-top:19px; padding-left:80px; font-size:18px; color:#000; line-height:30px; vertical-align:middle; background:url(/ebook/common/images/icon/icon_mainbtm.svg) left center no-repeat; display:inline-block;}
+.lytMain .mainOpinion .btnOpinion {height:42px; margin:13px 0; padding:0 55px 0 28px; font-size:16px; color:#fff; border:0; border-radius:21px; vertical-align:middle; background:#19d6fe url(/ebook/common/images/icon/btn_mainbtm.svg) calc(100% - 27px) center no-repeat; display:inline-block;}
 @media screen and (min-width: 100px) and (max-width: 767px) {
-    .lytMain .mainOpinion {text-align:left; background:#e5f4ff url(/common/images/icon/icon_mainbtm.svg) 30px 30px no-repeat;}
+    .lytMain .mainOpinion {text-align:left; background:#e5f4ff url(/ebook/common/images/icon/icon_mainbtm.svg) 30px 30px no-repeat;}
     .lytMain .mainOpinion .text{height:auto; padding-left:120px; padding-top:30px; padding-right:30px; font-size:13px; line-height:1.5; text-align:left; background:none;}
-    .lytMain .mainOpinion .btnOpinion {height: 35px; margin-left: 120px; padding:0 50px 0 24px; font-size:14px; background:#0098ff url(/common/images/icon/btn_mainbtm.svg) calc(100% - 23px) center /19px no-repeat;}
+    .lytMain .mainOpinion .btnOpinion {height: 35px; margin-left: 120px; padding:0 50px 0 24px; font-size:14px; background:#0098ff url(/ebook/common/images/icon/btn_mainbtm.svg) calc(100% - 23px) center /19px no-repeat;}
 }
 
 /* 대메뉴 */
@@ -65,7 +65,7 @@
 .lytMain .mainBigmenu .item {width: 30%; margin-right: 5%; position: relative;}
 .lytMain .mainBigmenu .item:nth-child(3n) {margin-right: 0;}
 .lytMain .mainBigmenu .item:nth-child(n+4) {margin-top: 100px;}
-.lytMain .mainBigmenu .item::before {display: block; content: ""; width: 120%; padding-top: 465px; background: url(/common/images/main/main_shadow.png) center bottom / contain no-repeat; position: absolute; bottom: -120px; left: 50%; transform: translateX(-50%); visibility: hidden; opacity: 0; translate: all 0.2s;}
+.lytMain .mainBigmenu .item::before {display: block; content: ""; width: 120%; padding-top: 465px; background: url(/ebook/common/images/main/main_shadow.png) center bottom / contain no-repeat; position: absolute; bottom: -120px; left: 50%; transform: translateX(-50%); visibility: hidden; opacity: 0; translate: all 0.2s;}
 .lytMain .mainBigmenu .menuThum {width: 100%; padding-top: 200px; position: relative;}
 .lytMain .mainBigmenu .menuThum img {width: 100%;height:100%; max-width:100%; max-height:100%; object-fit:cover; position:absolute; left:0; top:0;}
 .lytMain .mainBigmenu .menuTit {width: 100%; height: calc(100% - 200px); padding: 26px 30px; min-height: 180px; overflow: hidden;background: #fff;  position: relative;}
@@ -131,13 +131,13 @@
 .lytMain .mainAdds .item:first-child {width: calc(33.3333% - 27px); margin-left: 0;}
 .lytMain .mainAdds .item::after {display: block; content: ""; width: 1px; height: 120px; background: #dbdbdb; position: absolute; top: 10px; left: -50px; }
 .lytMain .mainAdds .item:first-child:after {display: none;}
-.lytMain .mainAdds .item.icon01 {background-image: url(/common/images/main/main_icon_supple.jpg);}
-.lytMain .mainAdds .item.icon02 {background-image: url(/common/images/main/main_icon_FAQ.jpg);}
-.lytMain .mainAdds .item.icon03 {background-image: url(/common/images/main/main_icon_plus.jpg);}
+.lytMain .mainAdds .item.icon01 {background-image: url(/ebook/common/images/main/main_icon_supple.jpg);}
+.lytMain .mainAdds .item.icon02 {background-image: url(/ebook/common/images/main/main_icon_FAQ.jpg);}
+.lytMain .mainAdds .item.icon03 {background-image: url(/ebook/common/images/main/main_icon_plus.jpg);}
 .lytMain .mainAdds .adds {width: 100%; padding: 13px 0;}
 .lytMain .mainAdds .adds .tit {font-size: 25px; font-weight: 700; color: #000; letter-spacing: -1.25px;}
 .lytMain .mainAdds .adds .conts .txt {font-size: 17px; color: #757575; letter-spacing: -0.85px; line-height: 1.6;}
-.lytMain .mainAdds .adds .conts .goPage {display: inline-block; margin-top: 20px; padding-right: 20px; font-size: 15px; font-weight: 700; color: #000; letter-spacing: -0.75px; background: url(/common/images/icon/btn_more.png) right center no-repeat;}
+.lytMain .mainAdds .adds .conts .goPage {display: inline-block; margin-top: 20px; padding-right: 20px; font-size: 15px; font-weight: 700; color: #000; letter-spacing: -0.75px; background: url(/ebook/common/images/icon/btn_more.png) right center no-repeat;}
 
 @media screen and (min-width: 100px) and (max-width: 1400px) {
     .lytMain .mainAdds .item {width: 100%; margin-left:0; padding:30px 40px 30px 160px;}

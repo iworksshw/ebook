@@ -1,4 +1,4 @@
-
+﻿
 @charset "UTF-8";
 
 /* ------------------------------------------------------------------------------------------------------ */
@@ -19,7 +19,7 @@
 .modPopup.on .popupInMotion {opacity:0; transform:scale(0.7); animation: popOpenScale 0.3s linear forwards;}
 @keyframes popOpenScale { 0% {opacity:0; transform:scale(0.7);} 100% {opacity:1; transform:scale(1);} }
 
-.modPopup .btnPopClose {width:75px; height:75px; font-size:0; border:0; background:url(/common/images/icon/btn_close.svg) center / 75px no-repeat; position:absolute; right:-80px; top:-15px; cursor:pointer;}
+.modPopup .btnPopClose {width:75px; height:75px; font-size:0; border:0; background:url(/ebook/common/images/icon/btn_close.svg) center / 75px no-repeat; position:absolute; right:-80px; top:-15px; cursor:pointer;}
 .modPopup .popupContGroup {height:100%; max-height: calc(100vh - 100px); padding:50px; overflow:auto; box-shadow: 5px 10px 30px 0 rgba(0, 0, 0, 0.5);}
 .modPopup .popupContGroup.noPd {padding:0;}
 .modPopup .popupContGroup::-webkit-scrollbar {width: 6px;}
@@ -30,7 +30,7 @@
 	/* 모바일 > 딤팝업 */
 	.modPopup.modal {z-index:1500;}
 	.modPopup.modal .popupArea {width:calc(100% - 40px) !important; max-width:none;}
-    .modPopup.modal .btnPopClose {width:48px; height:48px; background:url(/common/images/icon/btn_close.svg) center / 48px no-repeat; position:absolute; right:0px; top:-48px;}
+    .modPopup.modal .btnPopClose {width:48px; height:48px; background:url(/ebook/common/images/icon/btn_close.svg) center / 48px no-repeat; position:absolute; right:0px; top:-48px;}
     .modPopup.modal .popupContGroup {padding:30px 20px;}
 	
 	/* 모바일 > 풀팝업 */
@@ -93,13 +93,13 @@
 .lytFootBtns .footbtnGroup .item:first-child {margin-right: 10px;}
 .lytFootBtns .footbtnGroup .item.mHome {display: none;}
 .lytFootBtns .footbtnGroup .arrowBtn {width: 80px; height: 80px; border-radius: 50%; font-size: 0; background-color: rgba(204,234,255,0.5); background-position: 50% 50%; background-repeat: no-repeat; display: block;position: relative; transition: all 0.3s;}
-.lytFootBtns .footbtnGroup .arrowBtn.prev {background-image: url(/common/images/icon/arrow-m-left-k.svg);}
-.lytFootBtns .footbtnGroup .arrowBtn.next {background-image: url(/common/images/icon/arrow-m-right-k.svg);}
+.lytFootBtns .footbtnGroup .arrowBtn.prev {background-image: url(/ebook/common/images/icon/arrow-m-left-k.svg);}
+.lytFootBtns .footbtnGroup .arrowBtn.next {background-image: url(/ebook/common/images/icon/arrow-m-right-k.svg);}
 .lytFootBtns .footbtnGroup .arrowBtn .btnName {width: 100%; font-size: 15px; font-weight: 700; color: #000; text-align: center; display: inline-block; position: absolute; left: 0; bottom: -35px; opacity: 0; transition: all 0.3s;}
 
 .lytFootBtns .footbtnGroup .arrowBtn:hover {background-color: #0098ff;box-shadow: 0 3px 10px rgba(0,0,0,0.2); transition: all 0.3s;}
-.lytFootBtns .footbtnGroup .arrowBtn.prev:hover {background-image: url(/common/images/icon/arrow-m-left-w.svg); background-position: calc(50% - 5px) 50%;}
-.lytFootBtns .footbtnGroup .arrowBtn.next:hover {background-image: url(/common/images/icon/arrow-m-right-w.svg);background-position: calc(50% + 5px) 50%;}
+.lytFootBtns .footbtnGroup .arrowBtn.prev:hover {background-image: url(/ebook/common/images/icon/arrow-m-left-w.svg); background-position: calc(50% - 5px) 50%;}
+.lytFootBtns .footbtnGroup .arrowBtn.next:hover {background-image: url(/ebook/common/images/icon/arrow-m-right-w.svg);background-position: calc(50% + 5px) 50%;}
 .lytFootBtns .footbtnGroup .arrowBtn:hover .btnName { bottom: -25px; opacity: 1; transition: all 0.3s;}
 
 @media screen and (min-width: 100px) and (max-width: 767px) {
@@ -108,15 +108,15 @@
     .lytFootBtns .footbtnGroup .item {width: 30%; float: none;}
     .lytFootBtns .footbtnGroup .item:first-child {margin-right:0;}
     .lytFootBtns .footbtnGroup .item.mHome {display: block;}
-    .lytFootBtns .footbtnGroup .homeBtn {width: 100%; height: 48px; font-size: 0; background: url(/common/images/icon/icon_home_blue.svg) center no-repeat; display: block;}
+    .lytFootBtns .footbtnGroup .homeBtn {width: 100%; height: 48px; font-size: 0; background: url(/ebook/common/images/icon/icon_home_blue.svg) center no-repeat; display: block;}
     .lytFootBtns .footbtnGroup .arrowBtn {width: 100%; height: 48px; border-radius: 0; background-color: transparent;transition: none;}
-    .lytFootBtns .footbtnGroup .arrowBtn.prev {background-image: url(/common/images/icon/icon_prev.svg);}
-    .lytFootBtns .footbtnGroup .arrowBtn.next {background-image: url(/common/images/icon/icon_next.svg);}
+    .lytFootBtns .footbtnGroup .arrowBtn.prev {background-image: url(/ebook/common/images/icon/icon_prev.svg);}
+    .lytFootBtns .footbtnGroup .arrowBtn.next {background-image: url(/ebook/common/images/icon/icon_next.svg);}
     .lytFootBtns .footbtnGroup .arrowBtn .btnName {display: none;}
     
     .lytFootBtns .footbtnGroup .arrowBtn:hover {background-color: transparent;box-shadow: none; transition: none;}
-    .lytFootBtns .footbtnGroup .arrowBtn.prev:hover {background-image: url(/common/images/icon/icon_prev.svg); background-position: 50% 50%;}
-    .lytFootBtns .footbtnGroup .arrowBtn.next:hover {background-image: url(/common/images/icon/icon_next.svg);background-position: 50% 50%;}
+    .lytFootBtns .footbtnGroup .arrowBtn.prev:hover {background-image: url(/ebook/common/images/icon/icon_prev.svg); background-position: 50% 50%;}
+    .lytFootBtns .footbtnGroup .arrowBtn.next:hover {background-image: url(/ebook/common/images/icon/icon_next.svg);background-position: 50% 50%;}
     .lytFootBtns .footbtnGroup .arrowBtn:hover .btnName {display: none;}
 }
 
